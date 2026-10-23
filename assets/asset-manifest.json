@@ -25,6 +25,15 @@
                 "url": "https://www.sina.cn/news/detail/5283406508458991.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-wolves-asheng.webp",
+            "left": 16.083333333333332,
+            "top": 19.833333333333332,
+            "width": 81.15293560606061,
+            "fadeStart": 61.05555555555556,
+            "fadeEnd": 68.55555555555556
           }
         },
         {
@@ -44,7 +53,168 @@
                 "url": "https://www.sina.cn/news/detail/5248979253592617.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-wolves-shen.webp",
+            "left": 26.5,
+            "top": 17.22222222222222,
+            "width": 67.07505518763797,
+            "fadeStart": 67.00555555555555,
+            "fadeEnd": 74.44444444444444
           }
+        },
+        {
+          "id": "wolves-xiaobailong",
+          "name": "小白龍",
+          "team": "wolves",
+          "role": "item",
+          "card": "assets/cards/wolves-xiaobailong.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "顏晨陽",
+            "birthday": "08-28",
+            "intro": "廣州狼隊道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源",
+                "url": "https://www.weibo.com/6550442728/Pk2fuafuZ"
+              },
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5336843134441558.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://sina.cn/news/detail/5340484584868792.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5352176899064178.html",
+            "imageUrl": "https://wx1.sinaimg.cn/large/0079iZo4ly1ihwa4ztrm2j31z00wr1kx.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-wolves-xiaobailong.webp",
+            "left": -4.75,
+            "top": 17.055555555555557,
+            "width": 92.91666666666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "wolves-jiuyan",
+          "name": "舊言",
+          "team": "wolves",
+          "role": "item",
+          "card": "assets/cards/wolves-jiuyan.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "唐帥",
+            "birthday": "10-25",
+            "intro": "廣州狼隊道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／當季名單",
+                "url": "https://sina.cn/news/detail/5340484584868792.html"
+              },
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5225426462182571.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340484584868792.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5354751241225058.html",
+            "imageUrl": "https://wx3.sinaimg.cn/large/0079NSNPgy1ii4hsq9qdrj31ww12s4mq.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-wolves-jiuyan.webp",
+            "left": 26.583333333333332,
+            "top": 17.88888888888889,
+            "width": 63.166666666666664,
+            "fadeStart": 66.61111111111111,
+            "fadeEnd": 74.11111111111111
+          },
+          "photoNote": null
+        },
+        {
+          "id": "wolves-linlong",
+          "name": "麟龍",
+          "team": "wolves",
+          "role": "item",
+          "card": "assets/cards/wolves-linlong.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "陳嘉俊",
+            "birthday": "09-30",
+            "intro": "廣州狼隊道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5017733542971821.html"
+              },
+              {
+                "label": "生日來源",
+                "url": "https://lottery.media.weibo.com/lottery/h5/history/list?mid=5216719049854118"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://sina.cn/news/detail/5340484584868792.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5356934820530780.html",
+            "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPgy1iibgku44t1j31ww12say0.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-wolves-linlong.webp",
+            "left": 12.666666666666666,
+            "top": 18.055555555555557,
+            "width": 67.33333333333333,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "wolves-lin",
+          "name": "Lin",
+          "team": "wolves",
+          "role": "item",
+          "card": "assets/cards/wolves-lin.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": true,
+          "profile": {
+            "realName": "鍾志華",
+            "birthday": null,
+            "intro": "廣州狼隊道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／當季名單",
+                "url": "https://sina.cn/news/detail/5340484584868792.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340484584868792.html"
+              }
+            ]
+          },
+          "photoNote": "定裝照待核對，先收錄當季名單與已確認的個人資料。"
         }
       ]
     },
@@ -70,6 +240,15 @@
                 "url": "https://sina.cn/news/detail/5340542844275294.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-rsg-hanhan.webp",
+            "left": 1.9166666666666667,
+            "top": 19.333333333333332,
+            "width": 88.80729166666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
         },
         {
@@ -93,6 +272,15 @@
                 "url": "https://www.toutiao.com/article/7265898908579299897/"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-rsg-fengzai.webp",
+            "left": 13.166666666666666,
+            "top": 16.833333333333332,
+            "width": 83.16489361702128,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
         },
         {
@@ -116,6 +304,15 @@
                 "url": "https://www.sina.cn/news/detail/5301888258937413.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-rsg-xiaoyu.webp",
+            "left": 5.666666666666667,
+            "top": 20.61111111111111,
+            "width": 69.06815055031447,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
         },
         {
@@ -135,7 +332,134 @@
                 "url": "https://www.sina.cn/media/5093548036"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-rsg-haishen.webp",
+            "left": -3.0833333333333335,
+            "top": 17.61111111111111,
+            "width": 111.78103333102986,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
+        },
+        {
+          "id": "rsg-duck",
+          "name": "Duck",
+          "team": "rsg",
+          "role": "item",
+          "card": "assets/cards/rsg-duck.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "張燦",
+            "birthday": "09-09",
+            "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／生日來源／當季名單",
+                "url": "https://www.sina.cn/media/5093548036"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5347836577451670.html",
+            "imageUrl": "https://wx3.sinaimg.cn/large/005yI0wAgy1ihifn45o6sj31l50wrdox.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-rsg-duck.webp",
+            "left": 8.333333333333334,
+            "top": 16.88888888888889,
+            "width": 91.5,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "rsg-nianjiu",
+          "name": "念舊",
+          "team": "rsg",
+          "role": "item",
+          "card": "assets/cards/rsg-nianjiu.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": "02-12",
+            "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/media/5093548036"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5344237562628374.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/005yI0wAgy1ih6ybco650j31me0wqalu.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-rsg-nianjiu.webp",
+            "left": 8.416666666666666,
+            "top": 17.38888888888889,
+            "width": 92.91666666666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "rsg-feiyuan",
+          "name": "緋鳶",
+          "team": "rsg",
+          "role": "item",
+          "card": "assets/cards/rsg-feiyuan.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/media/5093548036"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5345296078865270.html",
+            "imageUrl": "https://wx3.sinaimg.cn/large/005yI0wAgy1ihabsscd6hj31lt0wrn7d.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-rsg-feiyuan.webp",
+            "left": -4.916666666666667,
+            "top": 17.055555555555557,
+            "width": 100.08333333333333,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
         }
       ]
     },
@@ -152,10 +476,24 @@
           "width": 600,
           "height": 900,
           "profile": {
-            "realName": null,
+            "realName": "謝俊宇",
             "birthday": null,
             "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-            "sources": []
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+              }
+            ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-rw-beifeng.webp",
+            "left": 8.083333333333334,
+            "top": 17.333333333333332,
+            "width": 93.01317934782607,
+            "fadeStart": 65.77777777777777,
+            "fadeEnd": 73.27777777777777
           }
         },
         {
@@ -171,6 +509,10 @@
             "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
             "sources": [
               {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+              },
+              {
                 "label": "本人生日貼文",
                 "url": "https://www.sina.cn/news/detail/5323631349732393.html"
               },
@@ -179,7 +521,160 @@
                 "url": "https://www.sina.cn/news/detail/5323638459076147.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-rw-walker.webp",
+            "left": 19.666666666666668,
+            "top": 16.555555555555557,
+            "width": 81.55882352941177,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
+        },
+        {
+          "id": "rw-yehe",
+          "name": "野鶴",
+          "team": "rw",
+          "role": "item",
+          "card": "assets/cards/rw-yehe.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "鄭仰昇",
+            "birthday": null,
+            "intro": "RW道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／當季名單",
+                "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5357219228167533.html",
+            "imageUrl": "https://wx1.sinaimg.cn/large/007atyVlgy1iicd8qi5nzj31rp0zuk3u.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-rw-yehe.webp",
+            "left": 15.333333333333334,
+            "top": 17,
+            "width": 77.00000000000001,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "rw-yi",
+          "name": "伊",
+          "team": "rw",
+          "role": "item",
+          "card": "assets/cards/rw-yi.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "劉齊",
+            "birthday": "09-24",
+            "intro": "RW道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／當季名單",
+                "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+              },
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/media/6567738947"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5355471776777879.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/007atyVlgy1ii6sjtbregj31rp0zuk3j.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-rw-yi.webp",
+            "left": 13,
+            "top": 17.166666666666668,
+            "width": 75.66666666666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "rw-feiyu",
+          "name": "飛魚",
+          "team": "rw",
+          "role": "item",
+          "card": "assets/cards/rw-feiyu.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "關世杰",
+            "birthday": null,
+            "intro": "RW道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340579668165610.html"
+              },
+              {
+                "label": "當季名單／姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5355102370270290.html",
+            "imageUrl": "https://wx2.sinaimg.cn/large/007atyVlgy1ii5m4i6sduj31rp0zuwqs.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-rw-feiyu.webp",
+            "left": 3.75,
+            "top": 18.944444444444443,
+            "width": 85.25,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "rw-lingbian",
+          "name": "伶變",
+          "team": "rw",
+          "role": "item",
+          "card": "assets/cards/rw-lingbian.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "楊自伶",
+            "birthday": null,
+            "intro": "RW道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／當季名單",
+                "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5282235730364459.html",
+            "imageUrl": "https://wx3.sinaimg.cn/large/0079NSNPly1ibp2xtko2ag30jg0jgu1c.gif"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-rw-lingbian.webp",
+            "left": -11.666666666666666,
+            "top": 10,
+            "width": 122.91666666666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": "照片採用 2026 春季賽 RW 官方定裝素材。"
         }
       ]
     },
@@ -209,6 +704,15 @@
                 "url": "https://www.sina.cn/news/detail/5340500841202881.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-kz-yang.webp",
+            "left": 6.416666666666667,
+            "top": 16.88888888888889,
+            "width": 69.79787685774949,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
         },
         {
@@ -228,6 +732,15 @@
                 "url": "https://www.sina.cn/news/detail/5355734623846763.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-kz-lion.webp",
+            "left": 12.916666666666666,
+            "top": 16.833333333333332,
+            "width": 64.74236641221374,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
         },
         {
@@ -242,7 +755,122 @@
             "birthday": null,
             "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
             "sources": []
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-kz-aya.webp",
+            "left": 12.833333333333334,
+            "top": 17.333333333333332,
+            "width": 74.58480085947191,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
+        },
+        {
+          "id": "kz-taiyang",
+          "name": "太陽",
+          "team": "kz",
+          "role": "item",
+          "card": "assets/cards/kz-taiyang.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "KZ道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340504532978164.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5342308565520171.html",
+            "imageUrl": "https://wx2.sinaimg.cn/large/007IKZohgy1igzmvolivhj31jk1jk4pe.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-kz-taiyang.webp",
+            "left": 7.583333333333333,
+            "top": 14.38888888888889,
+            "width": 86.75,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "kz-wu",
+          "name": "霧",
+          "team": "kz",
+          "role": "item",
+          "card": "assets/cards/kz-wu.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": "02-21",
+            "intro": "KZ道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340504532978164.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5342308565520171.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/007IKZohgy1igzmvon7afj31jk1jk1i1.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-kz-wu.webp",
+            "left": 7.75,
+            "top": 14.722222222222221,
+            "width": 86.41666666666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "kz-meng",
+          "name": "夢",
+          "team": "kz",
+          "role": "item",
+          "card": "assets/cards/kz-meng.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "KZ道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340504532978164.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5356894978049913.html",
+            "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPgy1iibc02zqs9j31tk10jwxl.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-kz-meng.webp",
+            "left": 23.333333333333332,
+            "top": 16.333333333333332,
+            "width": 62,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
         }
       ]
     },
@@ -268,6 +896,15 @@
                 "url": "https://www.sina.cn/news/detail/5322081579303072.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-xrock-ani.webp",
+            "left": 14.416666666666666,
+            "top": 15.722222222222221,
+            "width": 74.17803921568628,
+            "fadeStart": 64.83333333333333,
+            "fadeEnd": 72.33333333333333
           }
         },
         {
@@ -291,7 +928,168 @@
                 "url": "https://www.sina.cn/news/detail/5298988619663609.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-xrock-yi.webp",
+            "left": 11.833333333333334,
+            "top": 15.11111111111111,
+            "width": 70.70427728613569,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
+        },
+        {
+          "id": "xrock-sasa",
+          "name": "颯颯",
+          "team": "xrock",
+          "role": "item",
+          "card": "assets/cards/xrock-sasa.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": "02-10",
+            "intro": "XROCK道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5335147299209749.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5355440709829017.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/0079NSNPgy1ii6ozcp4xfj31rq0zt143.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-xrock-sasa.webp",
+            "left": 19.166666666666668,
+            "top": 18.88888888888889,
+            "width": 54.333333333333336,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "xrock-peng",
+          "name": "Peng",
+          "team": "xrock",
+          "role": "item",
+          "card": "assets/cards/xrock-peng.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "XROCK道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5335147299209749.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5282243279847980.html",
+            "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPly1ibp30dl9ayg30jg0jgb2q.gif"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-xrock-peng.webp",
+            "left": -18.333333333333332,
+            "top": 8.222222222222221,
+            "width": 141.08333333333334,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": "照片採用 2026 春季賽 eStar 時期官方定裝素材。"
+        },
+        {
+          "id": "xrock-yingzi",
+          "name": "影子",
+          "team": "xrock",
+          "role": "item",
+          "card": "assets/cards/xrock-yingzi.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "鍾京岸",
+            "birthday": null,
+            "intro": "XROCK道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340547993832090.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5335147299209749.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5354382830601283.html",
+            "imageUrl": "https://wx3.sinaimg.cn/large/8e9395f9gy1ii3bh87oohj21040kb779.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-xrock-yingzi.webp",
+            "left": 8.833333333333334,
+            "top": 16.38888888888889,
+            "width": 64.25,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "xrock-dongdong",
+          "name": "東東",
+          "team": "xrock",
+          "role": "item",
+          "card": "assets/cards/xrock-dongdong.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": "10-16",
+            "intro": "XROCK道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/media/6051082245"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5335147299209749.html"
+              },
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5354438253610997.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://wiki.biligame.com/qqspeed/%E6%96%87%E4%BB%B6:EStar.%E4%B8%9C%E4%B8%9C.png",
+            "imageUrl": "https://patchwiki.biligame.com/images/qqspeed/5/59/cs69xtm8slymv46c8czh3yuraddqg3x.png"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-xrock-dongdong.webp",
+            "left": -7.666666666666667,
+            "top": 11.444444444444445,
+            "width": 114.33333333333333,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": "照片採用較早公開的 eStar 時期一般站姿定裝照。"
         }
       ]
     },
@@ -317,6 +1115,15 @@
                 "url": "https://www.sina.cn/news/detail/5340572857666160.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-qy-minmin.webp",
+            "left": 16.333333333333332,
+            "top": 15.944444444444445,
+            "width": 74.9969806763285,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
         },
         {
@@ -331,7 +1138,164 @@
             "birthday": null,
             "intro": "QY競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
             "sources": []
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-qy-qianxun.webp",
+            "left": 20.333333333333332,
+            "top": 18.444444444444443,
+            "width": 61.14316239316239,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
+        },
+        {
+          "id": "qy-xuanzang",
+          "name": "玄奘",
+          "team": "qy",
+          "role": "item",
+          "card": "assets/cards/qy-xuanzang.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": "07-12",
+            "intro": "QY道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5186215206977977.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5344834361492182.html",
+            "imageUrl": "https://wx1.sinaimg.cn/large/007MeFwugy1ih8up54jbqj30j60j6myi.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-qy-xuanzang.webp",
+            "left": 10.25,
+            "top": 13.555555555555555,
+            "width": 84.91666666666666,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "qy-xiaoju",
+          "name": "小鞠",
+          "team": "qy",
+          "role": "item",
+          "card": "assets/cards/qy-xiaoju.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "QY道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5356869373658325.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/0079NSNPgy1iib928i9hrj31tk10fdyu.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-qy-xiaoju.webp",
+            "left": 4.416666666666667,
+            "top": 18.444444444444443,
+            "width": 92.91666666666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "qy-lu",
+          "name": "路",
+          "team": "qy",
+          "role": "item",
+          "card": "assets/cards/qy-lu.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "QY道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5344834361492182.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/007MeFwugy1ih8up5fm1tj30j60j6q47.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-qy-lu.webp",
+            "left": 6.833333333333333,
+            "top": 14.444444444444445,
+            "width": 84.91666666666666,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "qy-gandong",
+          "name": "感動",
+          "team": "qy",
+          "role": "item",
+          "card": "assets/cards/qy-gandong.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "王鴻霖",
+            "birthday": "10-18",
+            "intro": "QY道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340587867771462.html"
+              },
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5355499554080430.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5344834361492182.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/007MeFwugy1ih8up5eibjj31jk1jk7wh.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-qy-gandong.webp",
+            "left": 4.916666666666667,
+            "top": 14.166666666666666,
+            "width": 92.41666666666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
         }
       ]
     },
@@ -361,6 +1325,15 @@
                 "url": "https://www.sina.cn/news/detail/5344790167159558.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-wz-yueshang.webp",
+            "left": -0.9166666666666666,
+            "top": 17.166666666666668,
+            "width": 83.90398550724639,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
         },
         {
@@ -380,7 +1353,172 @@
                 "url": "https://weibo.com/7813832396/Q5UYV7WSj"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-wz-anuo.webp",
+            "left": 16,
+            "top": 19.38888888888889,
+            "width": 65.96527777777779,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
+        },
+        {
+          "id": "wz-zui",
+          "name": "最",
+          "team": "wz",
+          "role": "item",
+          "card": "assets/cards/wz-zui.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": null,
+            "birthday": "02-10",
+            "intro": "Wz道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340527328233219.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5261578274605864.html",
+            "imageUrl": "https://wx1.sinaimg.cn/large/0079NSNPgy1i9v8zrurx7j30u0140e81.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-wz-zui.webp",
+            "left": 6.75,
+            "top": 13.277777777777779,
+            "width": 84.25,
+            "fadeStart": 61.72222222222222,
+            "fadeEnd": 69.22222222222223
+          },
+          "photoNote": "照片採用較早公開的定裝照。"
+        },
+        {
+          "id": "wz-beining",
+          "name": "北檸",
+          "team": "wz",
+          "role": "item",
+          "card": "assets/cards/wz-beining.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "成銘",
+            "birthday": null,
+            "intro": "Wz道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340504679514629.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340527328233219.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5355421645930585.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/008wO2KMgy1ii6mqpgg1nj31hw0u0dma.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-wz-beining.webp",
+            "left": 9.083333333333334,
+            "top": 17.88888888888889,
+            "width": 85.33333333333333,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "wz-erjia",
+          "name": "二嘉",
+          "team": "wz",
+          "role": "item",
+          "card": "assets/cards/wz-erjia.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "梁嘉俊",
+            "birthday": "07-04",
+            "intro": "Wz道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340512229524559.html"
+              },
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5186215206977977.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340527328233219.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5352923835925300.html",
+            "imageUrl": "https://wx4.sinaimg.cn/large/008wO2KMgy1ihynwv04ppj31i70u07ab.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-wz-erjia.webp",
+            "left": 1.0833333333333333,
+            "top": 19.88888888888889,
+            "width": 81.91666666666667,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
+        },
+        {
+          "id": "wz-guleng",
+          "name": "顧冷",
+          "team": "wz",
+          "role": "item",
+          "card": "assets/cards/wz-guleng.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "高洪煒",
+            "birthday": null,
+            "intro": "Wz道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340519778746828.html"
+              },
+              {
+                "label": "當季名單",
+                "url": "https://www.sina.cn/news/detail/5340527328233219.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5340519778746828.html",
+            "imageUrl": "https://wx1.sinaimg.cn/large/008wO2KMgy1igv3zv4kubj31r80zkjxi.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-wz-guleng.webp",
+            "left": 14.833333333333334,
+            "top": 17.27777777777778,
+            "width": 68.5,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
         }
       ]
     },
@@ -406,6 +1544,15 @@
                 "url": "https://www.sina.cn/news/detail/5340852578686045.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-ag-heiren.webp",
+            "left": -7.75,
+            "top": 17.5,
+            "width": 108.07088744588744,
+            "fadeStart": 66.11111111111111,
+            "fadeEnd": 73.61111111111111
           }
         },
         {
@@ -425,6 +1572,15 @@
                 "url": "https://www.sina.cn/news/detail/5340870333174237.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-ag-zhong.webp",
+            "left": -13.5,
+            "top": 18,
+            "width": 96.2842371142158,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
         },
         {
@@ -448,7 +1604,130 @@
                 "url": "https://www.sina.cn/news/detail/5356243620725618.html"
               }
             ]
+          },
+          "role": "racing",
+          "depth": {
+            "portrait": "assets/cards/portrait-ag-donggua.webp",
+            "left": -6.25,
+            "top": 18.055555555555557,
+            "width": 110.71120954841886,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           }
+        },
+        {
+          "id": "ag-feixue",
+          "name": "飛雪",
+          "team": "ag",
+          "role": "item",
+          "card": "assets/cards/ag-feixue.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "方鑫",
+            "birthday": "02-01",
+            "intro": "AG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／當季名單",
+                "url": "https://www.sina.cn/news/detail/5340963322200391.html"
+              },
+              {
+                "label": "生日來源",
+                "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5261578274605864.html",
+            "imageUrl": "https://wx1.sinaimg.cn/large/0079NSNPgy1i9v8zp1imrj30u0140b29.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-ag-feixue.webp",
+            "left": 15.583333333333334,
+            "top": 16.333333333333332,
+            "width": 67.75,
+            "fadeStart": 62.333333333333336,
+            "fadeEnd": 69.83333333333333
+          },
+          "photoNote": "照片採用較早公開的定裝照。"
+        },
+        {
+          "id": "ag-yu",
+          "name": "Yu",
+          "team": "ag",
+          "role": "item",
+          "card": "assets/cards/ag-yu.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "王呈宇",
+            "birthday": null,
+            "intro": "AG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／當季名單",
+                "url": "https://www.sina.cn/news/detail/5340963322200391.html"
+              },
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340895260180649.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5340895260180649.html",
+            "imageUrl": "https://wx3.sinaimg.cn/large/007Mk4Q1gy1igwage4jz4j30j60y3qfi.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-ag-yu.webp",
+            "left": 17.166666666666668,
+            "top": 17.055555555555557,
+            "width": 67.83333333333333,
+            "fadeStart": 56.72222222222222,
+            "fadeEnd": 64.22222222222223
+          },
+          "photoNote": null
+        },
+        {
+          "id": "ag-bobo",
+          "name": "波波",
+          "team": "ag",
+          "role": "item",
+          "card": "assets/cards/ag-bobo.webp",
+          "width": 600,
+          "height": 900,
+          "photoPending": false,
+          "profile": {
+            "realName": "王俊波",
+            "birthday": null,
+            "intro": "AG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+            "sources": [
+              {
+                "label": "姓名來源／當季名單",
+                "url": "https://www.sina.cn/news/detail/5340963322200391.html"
+              },
+              {
+                "label": "姓名來源",
+                "url": "https://www.sina.cn/news/detail/5340883348357136.html"
+              }
+            ]
+          },
+          "photoSource": {
+            "url": "https://www.sina.cn/news/detail/5340883348357136.html",
+            "imageUrl": "https://wx2.sinaimg.cn/large/007Mk4Q1gy1igw92udw9pj30j60y3n9t.jpg"
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-ag-bobo.webp",
+            "left": 14.25,
+            "top": 19.77777777777778,
+            "width": 72.25000000000001,
+            "fadeStart": 61.888888888888886,
+            "fadeEnd": 69.38888888888889
+          },
+          "photoNote": null
         }
       ]
     }
@@ -471,6 +1750,15 @@
             "url": "https://www.sina.cn/news/detail/5283406508458991.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-wolves-asheng.webp",
+        "left": 16.083333333333332,
+        "top": 19.833333333333332,
+        "width": 81.15293560606061,
+        "fadeStart": 61.05555555555556,
+        "fadeEnd": 68.55555555555556
       }
     },
     {
@@ -490,6 +1778,15 @@
             "url": "https://www.sina.cn/news/detail/5248979253592617.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-wolves-shen.webp",
+        "left": 26.5,
+        "top": 17.22222222222222,
+        "width": 67.07505518763797,
+        "fadeStart": 67.00555555555555,
+        "fadeEnd": 74.44444444444444
       }
     },
     {
@@ -509,6 +1806,15 @@
             "url": "https://sina.cn/news/detail/5340542844275294.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-rsg-hanhan.webp",
+        "left": 1.9166666666666667,
+        "top": 19.333333333333332,
+        "width": 88.80729166666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -532,6 +1838,15 @@
             "url": "https://www.toutiao.com/article/7265898908579299897/"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-rsg-fengzai.webp",
+        "left": 13.166666666666666,
+        "top": 16.833333333333332,
+        "width": 83.16489361702128,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -555,6 +1870,15 @@
             "url": "https://www.sina.cn/news/detail/5301888258937413.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-rsg-xiaoyu.webp",
+        "left": 5.666666666666667,
+        "top": 20.61111111111111,
+        "width": 69.06815055031447,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -574,6 +1898,15 @@
             "url": "https://www.sina.cn/media/5093548036"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-rsg-haishen.webp",
+        "left": -3.0833333333333335,
+        "top": 17.61111111111111,
+        "width": 111.78103333102986,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -584,10 +1917,24 @@
       "width": 600,
       "height": 900,
       "profile": {
-        "realName": null,
+        "realName": "謝俊宇",
         "birthday": null,
         "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-        "sources": []
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+          }
+        ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-rw-beifeng.webp",
+        "left": 8.083333333333334,
+        "top": 17.333333333333332,
+        "width": 93.01317934782607,
+        "fadeStart": 65.77777777777777,
+        "fadeEnd": 73.27777777777777
       }
     },
     {
@@ -603,6 +1950,10 @@
         "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
         "sources": [
           {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+          },
+          {
             "label": "本人生日貼文",
             "url": "https://www.sina.cn/news/detail/5323631349732393.html"
           },
@@ -611,6 +1962,15 @@
             "url": "https://www.sina.cn/news/detail/5323638459076147.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-rw-walker.webp",
+        "left": 19.666666666666668,
+        "top": 16.555555555555557,
+        "width": 81.55882352941177,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -634,6 +1994,15 @@
             "url": "https://www.sina.cn/news/detail/5340500841202881.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-kz-yang.webp",
+        "left": 6.416666666666667,
+        "top": 16.88888888888889,
+        "width": 69.79787685774949,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -653,6 +2022,15 @@
             "url": "https://www.sina.cn/news/detail/5355734623846763.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-kz-lion.webp",
+        "left": 12.916666666666666,
+        "top": 16.833333333333332,
+        "width": 64.74236641221374,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -667,6 +2045,15 @@
         "birthday": null,
         "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
         "sources": []
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-kz-aya.webp",
+        "left": 12.833333333333334,
+        "top": 17.333333333333332,
+        "width": 74.58480085947191,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -686,6 +2073,15 @@
             "url": "https://www.sina.cn/news/detail/5322081579303072.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-xrock-ani.webp",
+        "left": 14.416666666666666,
+        "top": 15.722222222222221,
+        "width": 74.17803921568628,
+        "fadeStart": 64.83333333333333,
+        "fadeEnd": 72.33333333333333
       }
     },
     {
@@ -709,6 +2105,15 @@
             "url": "https://www.sina.cn/news/detail/5298988619663609.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-xrock-yi.webp",
+        "left": 11.833333333333334,
+        "top": 15.11111111111111,
+        "width": 70.70427728613569,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -728,6 +2133,15 @@
             "url": "https://www.sina.cn/news/detail/5340572857666160.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-qy-minmin.webp",
+        "left": 16.333333333333332,
+        "top": 15.944444444444445,
+        "width": 74.9969806763285,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -742,6 +2156,15 @@
         "birthday": null,
         "intro": "QY競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
         "sources": []
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-qy-qianxun.webp",
+        "left": 20.333333333333332,
+        "top": 18.444444444444443,
+        "width": 61.14316239316239,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -765,6 +2188,15 @@
             "url": "https://www.sina.cn/news/detail/5344790167159558.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-wz-yueshang.webp",
+        "left": -0.9166666666666666,
+        "top": 17.166666666666668,
+        "width": 83.90398550724639,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -784,6 +2216,15 @@
             "url": "https://weibo.com/7813832396/Q5UYV7WSj"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-wz-anuo.webp",
+        "left": 16,
+        "top": 19.38888888888889,
+        "width": 65.96527777777779,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -803,6 +2244,15 @@
             "url": "https://www.sina.cn/news/detail/5340852578686045.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-ag-heiren.webp",
+        "left": -7.75,
+        "top": 17.5,
+        "width": 108.07088744588744,
+        "fadeStart": 66.11111111111111,
+        "fadeEnd": 73.61111111111111
       }
     },
     {
@@ -822,6 +2272,15 @@
             "url": "https://www.sina.cn/news/detail/5340870333174237.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-ag-zhong.webp",
+        "left": -13.5,
+        "top": 18,
+        "width": 96.2842371142158,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
     },
     {
@@ -845,14 +2304,1173 @@
             "url": "https://www.sina.cn/news/detail/5356243620725618.html"
           }
         ]
+      },
+      "role": "racing",
+      "depth": {
+        "portrait": "assets/cards/portrait-ag-donggua.webp",
+        "left": -6.25,
+        "top": 18.055555555555557,
+        "width": 110.71120954841886,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       }
+    },
+    {
+      "id": "wolves-xiaobailong",
+      "name": "小白龍",
+      "team": "wolves",
+      "role": "item",
+      "card": "assets/cards/wolves-xiaobailong.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "顏晨陽",
+        "birthday": "08-28",
+        "intro": "廣州狼隊道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源",
+            "url": "https://www.weibo.com/6550442728/Pk2fuafuZ"
+          },
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5336843134441558.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://sina.cn/news/detail/5340484584868792.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5352176899064178.html",
+        "imageUrl": "https://wx1.sinaimg.cn/large/0079iZo4ly1ihwa4ztrm2j31z00wr1kx.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-wolves-xiaobailong.webp",
+        "left": -4.75,
+        "top": 17.055555555555557,
+        "width": 92.91666666666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "wolves-jiuyan",
+      "name": "舊言",
+      "team": "wolves",
+      "role": "item",
+      "card": "assets/cards/wolves-jiuyan.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "唐帥",
+        "birthday": "10-25",
+        "intro": "廣州狼隊道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／當季名單",
+            "url": "https://sina.cn/news/detail/5340484584868792.html"
+          },
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5225426462182571.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340484584868792.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5354751241225058.html",
+        "imageUrl": "https://wx3.sinaimg.cn/large/0079NSNPgy1ii4hsq9qdrj31ww12s4mq.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-wolves-jiuyan.webp",
+        "left": 26.583333333333332,
+        "top": 17.88888888888889,
+        "width": 63.166666666666664,
+        "fadeStart": 66.61111111111111,
+        "fadeEnd": 74.11111111111111
+      },
+      "photoNote": null
+    },
+    {
+      "id": "wolves-linlong",
+      "name": "麟龍",
+      "team": "wolves",
+      "role": "item",
+      "card": "assets/cards/wolves-linlong.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "陳嘉俊",
+        "birthday": "09-30",
+        "intro": "廣州狼隊道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5017733542971821.html"
+          },
+          {
+            "label": "生日來源",
+            "url": "https://lottery.media.weibo.com/lottery/h5/history/list?mid=5216719049854118"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://sina.cn/news/detail/5340484584868792.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5356934820530780.html",
+        "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPgy1iibgku44t1j31ww12say0.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-wolves-linlong.webp",
+        "left": 12.666666666666666,
+        "top": 18.055555555555557,
+        "width": 67.33333333333333,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "wolves-lin",
+      "name": "Lin",
+      "team": "wolves",
+      "role": "item",
+      "card": "assets/cards/wolves-lin.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": true,
+      "profile": {
+        "realName": "鍾志華",
+        "birthday": null,
+        "intro": "廣州狼隊道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／當季名單",
+            "url": "https://sina.cn/news/detail/5340484584868792.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340484584868792.html"
+          }
+        ]
+      },
+      "photoNote": "定裝照待核對，先收錄當季名單與已確認的個人資料。"
+    },
+    {
+      "id": "rsg-duck",
+      "name": "Duck",
+      "team": "rsg",
+      "role": "item",
+      "card": "assets/cards/rsg-duck.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "張燦",
+        "birthday": "09-09",
+        "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／生日來源／當季名單",
+            "url": "https://www.sina.cn/media/5093548036"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5347836577451670.html",
+        "imageUrl": "https://wx3.sinaimg.cn/large/005yI0wAgy1ihifn45o6sj31l50wrdox.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-rsg-duck.webp",
+        "left": 8.333333333333334,
+        "top": 16.88888888888889,
+        "width": 91.5,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "rsg-nianjiu",
+      "name": "念舊",
+      "team": "rsg",
+      "role": "item",
+      "card": "assets/cards/rsg-nianjiu.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": "02-12",
+        "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/media/5093548036"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5344237562628374.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/005yI0wAgy1ih6ybco650j31me0wqalu.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-rsg-nianjiu.webp",
+        "left": 8.416666666666666,
+        "top": 17.38888888888889,
+        "width": 92.91666666666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "rsg-feiyuan",
+      "name": "緋鳶",
+      "team": "rsg",
+      "role": "item",
+      "card": "assets/cards/rsg-feiyuan.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/media/5093548036"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5345296078865270.html",
+        "imageUrl": "https://wx3.sinaimg.cn/large/005yI0wAgy1ihabsscd6hj31lt0wrn7d.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-rsg-feiyuan.webp",
+        "left": -4.916666666666667,
+        "top": 17.055555555555557,
+        "width": 100.08333333333333,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "rw-yehe",
+      "name": "野鶴",
+      "team": "rw",
+      "role": "item",
+      "card": "assets/cards/rw-yehe.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "鄭仰昇",
+        "birthday": null,
+        "intro": "RW道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／當季名單",
+            "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5357219228167533.html",
+        "imageUrl": "https://wx1.sinaimg.cn/large/007atyVlgy1iicd8qi5nzj31rp0zuk3u.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-rw-yehe.webp",
+        "left": 15.333333333333334,
+        "top": 17,
+        "width": 77.00000000000001,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "rw-yi",
+      "name": "伊",
+      "team": "rw",
+      "role": "item",
+      "card": "assets/cards/rw-yi.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "劉齊",
+        "birthday": "09-24",
+        "intro": "RW道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／當季名單",
+            "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+          },
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/media/6567738947"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5355471776777879.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/007atyVlgy1ii6sjtbregj31rp0zuk3j.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-rw-yi.webp",
+        "left": 13,
+        "top": 17.166666666666668,
+        "width": 75.66666666666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "rw-feiyu",
+      "name": "飛魚",
+      "team": "rw",
+      "role": "item",
+      "card": "assets/cards/rw-feiyu.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "關世杰",
+        "birthday": null,
+        "intro": "RW道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340579668165610.html"
+          },
+          {
+            "label": "當季名單／姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5355102370270290.html",
+        "imageUrl": "https://wx2.sinaimg.cn/large/007atyVlgy1ii5m4i6sduj31rp0zuwqs.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-rw-feiyu.webp",
+        "left": 3.75,
+        "top": 18.944444444444443,
+        "width": 85.25,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "rw-lingbian",
+      "name": "伶變",
+      "team": "rw",
+      "role": "item",
+      "card": "assets/cards/rw-lingbian.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "楊自伶",
+        "birthday": null,
+        "intro": "RW道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／當季名單",
+            "url": "https://www.sina.cn/news/detail/5340581989187663.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5282235730364459.html",
+        "imageUrl": "https://wx3.sinaimg.cn/large/0079NSNPly1ibp2xtko2ag30jg0jgu1c.gif"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-rw-lingbian.webp",
+        "left": -11.666666666666666,
+        "top": 10,
+        "width": 122.91666666666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": "照片採用 2026 春季賽 RW 官方定裝素材。"
+    },
+    {
+      "id": "kz-taiyang",
+      "name": "太陽",
+      "team": "kz",
+      "role": "item",
+      "card": "assets/cards/kz-taiyang.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "KZ道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340504532978164.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5342308565520171.html",
+        "imageUrl": "https://wx2.sinaimg.cn/large/007IKZohgy1igzmvolivhj31jk1jk4pe.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-kz-taiyang.webp",
+        "left": 7.583333333333333,
+        "top": 14.38888888888889,
+        "width": 86.75,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "kz-wu",
+      "name": "霧",
+      "team": "kz",
+      "role": "item",
+      "card": "assets/cards/kz-wu.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": "02-21",
+        "intro": "KZ道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340504532978164.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5342308565520171.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/007IKZohgy1igzmvon7afj31jk1jk1i1.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-kz-wu.webp",
+        "left": 7.75,
+        "top": 14.722222222222221,
+        "width": 86.41666666666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "kz-meng",
+      "name": "夢",
+      "team": "kz",
+      "role": "item",
+      "card": "assets/cards/kz-meng.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "KZ道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340504532978164.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5356894978049913.html",
+        "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPgy1iibc02zqs9j31tk10jwxl.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-kz-meng.webp",
+        "left": 23.333333333333332,
+        "top": 16.333333333333332,
+        "width": 62,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "xrock-sasa",
+      "name": "颯颯",
+      "team": "xrock",
+      "role": "item",
+      "card": "assets/cards/xrock-sasa.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": "02-10",
+        "intro": "XROCK道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5335147299209749.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5355440709829017.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/0079NSNPgy1ii6ozcp4xfj31rq0zt143.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-xrock-sasa.webp",
+        "left": 19.166666666666668,
+        "top": 18.88888888888889,
+        "width": 54.333333333333336,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "xrock-peng",
+      "name": "Peng",
+      "team": "xrock",
+      "role": "item",
+      "card": "assets/cards/xrock-peng.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "XROCK道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5335147299209749.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5282243279847980.html",
+        "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPly1ibp30dl9ayg30jg0jgb2q.gif"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-xrock-peng.webp",
+        "left": -18.333333333333332,
+        "top": 8.222222222222221,
+        "width": 141.08333333333334,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": "照片採用 2026 春季賽 eStar 時期官方定裝素材。"
+    },
+    {
+      "id": "xrock-yingzi",
+      "name": "影子",
+      "team": "xrock",
+      "role": "item",
+      "card": "assets/cards/xrock-yingzi.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "鍾京岸",
+        "birthday": null,
+        "intro": "XROCK道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340547993832090.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5335147299209749.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5354382830601283.html",
+        "imageUrl": "https://wx3.sinaimg.cn/large/8e9395f9gy1ii3bh87oohj21040kb779.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-xrock-yingzi.webp",
+        "left": 8.833333333333334,
+        "top": 16.38888888888889,
+        "width": 64.25,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "xrock-dongdong",
+      "name": "東東",
+      "team": "xrock",
+      "role": "item",
+      "card": "assets/cards/xrock-dongdong.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": "10-16",
+        "intro": "XROCK道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/media/6051082245"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5335147299209749.html"
+          },
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5354438253610997.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://wiki.biligame.com/qqspeed/%E6%96%87%E4%BB%B6:EStar.%E4%B8%9C%E4%B8%9C.png",
+        "imageUrl": "https://patchwiki.biligame.com/images/qqspeed/5/59/cs69xtm8slymv46c8czh3yuraddqg3x.png"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-xrock-dongdong.webp",
+        "left": -7.666666666666667,
+        "top": 11.444444444444445,
+        "width": 114.33333333333333,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": "照片採用較早公開的 eStar 時期一般站姿定裝照。"
+    },
+    {
+      "id": "qy-xuanzang",
+      "name": "玄奘",
+      "team": "qy",
+      "role": "item",
+      "card": "assets/cards/qy-xuanzang.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": "07-12",
+        "intro": "QY道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5186215206977977.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5344834361492182.html",
+        "imageUrl": "https://wx1.sinaimg.cn/large/007MeFwugy1ih8up54jbqj30j60j6myi.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-qy-xuanzang.webp",
+        "left": 10.25,
+        "top": 13.555555555555555,
+        "width": 84.91666666666666,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "qy-xiaoju",
+      "name": "小鞠",
+      "team": "qy",
+      "role": "item",
+      "card": "assets/cards/qy-xiaoju.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "QY道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5356869373658325.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/0079NSNPgy1iib928i9hrj31tk10fdyu.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-qy-xiaoju.webp",
+        "left": 4.416666666666667,
+        "top": 18.444444444444443,
+        "width": 92.91666666666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "qy-lu",
+      "name": "路",
+      "team": "qy",
+      "role": "item",
+      "card": "assets/cards/qy-lu.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "QY道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5344834361492182.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/007MeFwugy1ih8up5fm1tj30j60j6q47.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-qy-lu.webp",
+        "left": 6.833333333333333,
+        "top": 14.444444444444445,
+        "width": 84.91666666666666,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "qy-gandong",
+      "name": "感動",
+      "team": "qy",
+      "role": "item",
+      "card": "assets/cards/qy-gandong.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "王鴻霖",
+        "birthday": "10-18",
+        "intro": "QY道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340587867771462.html"
+          },
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5355499554080430.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5344834361492182.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/007MeFwugy1ih8up5eibjj31jk1jk7wh.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-qy-gandong.webp",
+        "left": 4.916666666666667,
+        "top": 14.166666666666666,
+        "width": 92.41666666666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "wz-zui",
+      "name": "最",
+      "team": "wz",
+      "role": "item",
+      "card": "assets/cards/wz-zui.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": null,
+        "birthday": "02-10",
+        "intro": "Wz道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340527328233219.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5261578274605864.html",
+        "imageUrl": "https://wx1.sinaimg.cn/large/0079NSNPgy1i9v8zrurx7j30u0140e81.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-wz-zui.webp",
+        "left": 6.75,
+        "top": 13.277777777777779,
+        "width": 84.25,
+        "fadeStart": 61.72222222222222,
+        "fadeEnd": 69.22222222222223
+      },
+      "photoNote": "照片採用較早公開的定裝照。"
+    },
+    {
+      "id": "wz-beining",
+      "name": "北檸",
+      "team": "wz",
+      "role": "item",
+      "card": "assets/cards/wz-beining.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "成銘",
+        "birthday": null,
+        "intro": "Wz道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340504679514629.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340527328233219.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5355421645930585.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/008wO2KMgy1ii6mqpgg1nj31hw0u0dma.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-wz-beining.webp",
+        "left": 9.083333333333334,
+        "top": 17.88888888888889,
+        "width": 85.33333333333333,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "wz-erjia",
+      "name": "二嘉",
+      "team": "wz",
+      "role": "item",
+      "card": "assets/cards/wz-erjia.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "梁嘉俊",
+        "birthday": "07-04",
+        "intro": "Wz道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340512229524559.html"
+          },
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5186215206977977.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340527328233219.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5352923835925300.html",
+        "imageUrl": "https://wx4.sinaimg.cn/large/008wO2KMgy1ihynwv04ppj31i70u07ab.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-wz-erjia.webp",
+        "left": 1.0833333333333333,
+        "top": 19.88888888888889,
+        "width": 81.91666666666667,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "wz-guleng",
+      "name": "顧冷",
+      "team": "wz",
+      "role": "item",
+      "card": "assets/cards/wz-guleng.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "高洪煒",
+        "birthday": null,
+        "intro": "Wz道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340519778746828.html"
+          },
+          {
+            "label": "當季名單",
+            "url": "https://www.sina.cn/news/detail/5340527328233219.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5340519778746828.html",
+        "imageUrl": "https://wx1.sinaimg.cn/large/008wO2KMgy1igv3zv4kubj31r80zkjxi.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-wz-guleng.webp",
+        "left": 14.833333333333334,
+        "top": 17.27777777777778,
+        "width": 68.5,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
+    },
+    {
+      "id": "ag-feixue",
+      "name": "飛雪",
+      "team": "ag",
+      "role": "item",
+      "card": "assets/cards/ag-feixue.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "方鑫",
+        "birthday": "02-01",
+        "intro": "AG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／當季名單",
+            "url": "https://www.sina.cn/news/detail/5340963322200391.html"
+          },
+          {
+            "label": "生日來源",
+            "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5261578274605864.html",
+        "imageUrl": "https://wx1.sinaimg.cn/large/0079NSNPgy1i9v8zp1imrj30u0140b29.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-ag-feixue.webp",
+        "left": 15.583333333333334,
+        "top": 16.333333333333332,
+        "width": 67.75,
+        "fadeStart": 62.333333333333336,
+        "fadeEnd": 69.83333333333333
+      },
+      "photoNote": "照片採用較早公開的定裝照。"
+    },
+    {
+      "id": "ag-yu",
+      "name": "Yu",
+      "team": "ag",
+      "role": "item",
+      "card": "assets/cards/ag-yu.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "王呈宇",
+        "birthday": null,
+        "intro": "AG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／當季名單",
+            "url": "https://www.sina.cn/news/detail/5340963322200391.html"
+          },
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340895260180649.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5340895260180649.html",
+        "imageUrl": "https://wx3.sinaimg.cn/large/007Mk4Q1gy1igwage4jz4j30j60y3qfi.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-ag-yu.webp",
+        "left": 17.166666666666668,
+        "top": 17.055555555555557,
+        "width": 67.83333333333333,
+        "fadeStart": 56.72222222222222,
+        "fadeEnd": 64.22222222222223
+      },
+      "photoNote": null
+    },
+    {
+      "id": "ag-bobo",
+      "name": "波波",
+      "team": "ag",
+      "role": "item",
+      "card": "assets/cards/ag-bobo.webp",
+      "width": 600,
+      "height": 900,
+      "photoPending": false,
+      "profile": {
+        "realName": "王俊波",
+        "birthday": null,
+        "intro": "AG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
+        "sources": [
+          {
+            "label": "姓名來源／當季名單",
+            "url": "https://www.sina.cn/news/detail/5340963322200391.html"
+          },
+          {
+            "label": "姓名來源",
+            "url": "https://www.sina.cn/news/detail/5340883348357136.html"
+          }
+        ]
+      },
+      "photoSource": {
+        "url": "https://www.sina.cn/news/detail/5340883348357136.html",
+        "imageUrl": "https://wx2.sinaimg.cn/large/007Mk4Q1gy1igw92udw9pj30j60y3n9t.jpg"
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-ag-bobo.webp",
+        "left": 14.25,
+        "top": 19.77777777777778,
+        "width": 72.25000000000001,
+        "fadeStart": 61.888888888888886,
+        "fadeEnd": 69.38888888888889
+      },
+      "photoNote": null
     }
   ],
   "assetSummary": {
-    "cards": 20,
-    "logos": 9,
-    "totalImageBytes": 3677110,
     "files": [
+      {
+        "file": "assets/logos/league.webp",
+        "width": 320,
+        "height": 267,
+        "bytes": 80862,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/wolves.webp",
+        "width": 320,
+        "height": 280,
+        "bytes": 18704,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/rsg.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 41370,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/rw.webp",
+        "width": 320,
+        "height": 212,
+        "bytes": 34724,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/kz.webp",
+        "width": 320,
+        "height": 233,
+        "bytes": 38098,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/xrock.webp",
+        "width": 320,
+        "height": 258,
+        "bytes": 44724,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/qy.webp",
+        "width": 299,
+        "height": 320,
+        "bytes": 60932,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/wz.webp",
+        "width": 232,
+        "height": 320,
+        "bytes": 62020,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/ag.webp",
+        "width": 230,
+        "height": 320,
+        "bytes": 23538,
+        "alpha": true
+      },
       {
         "file": "assets/cards/wolves-asheng.webp",
         "width": 600,
@@ -866,13 +3484,6 @@
         "height": 900,
         "bytes": 165824,
         "alpha": false
-      },
-      {
-        "file": "assets/logos/wolves.webp",
-        "width": 320,
-        "height": 280,
-        "bytes": 18704,
-        "alpha": true
       },
       {
         "file": "assets/cards/rsg-hanhan.webp",
@@ -903,13 +3514,6 @@
         "alpha": false
       },
       {
-        "file": "assets/logos/rsg.webp",
-        "width": 320,
-        "height": 320,
-        "bytes": 41370,
-        "alpha": true
-      },
-      {
         "file": "assets/cards/rw-beifeng.webp",
         "width": 600,
         "height": 900,
@@ -922,13 +3526,6 @@
         "height": 900,
         "bytes": 162008,
         "alpha": false
-      },
-      {
-        "file": "assets/logos/rw.webp",
-        "width": 320,
-        "height": 212,
-        "bytes": 34724,
-        "alpha": true
       },
       {
         "file": "assets/cards/kz-yang.webp",
@@ -952,13 +3549,6 @@
         "alpha": false
       },
       {
-        "file": "assets/logos/kz.webp",
-        "width": 320,
-        "height": 233,
-        "bytes": 38098,
-        "alpha": true
-      },
-      {
         "file": "assets/cards/xrock-ani.webp",
         "width": 600,
         "height": 900,
@@ -971,13 +3561,6 @@
         "height": 900,
         "bytes": 164554,
         "alpha": false
-      },
-      {
-        "file": "assets/logos/xrock.webp",
-        "width": 320,
-        "height": 258,
-        "bytes": 44724,
-        "alpha": true
       },
       {
         "file": "assets/cards/qy-minmin.webp",
@@ -994,13 +3577,6 @@
         "alpha": false
       },
       {
-        "file": "assets/logos/qy.webp",
-        "width": 299,
-        "height": 320,
-        "bytes": 60932,
-        "alpha": true
-      },
-      {
         "file": "assets/cards/wz-yueshang.webp",
         "width": 600,
         "height": 900,
@@ -1013,13 +3589,6 @@
         "height": 900,
         "bytes": 167126,
         "alpha": false
-      },
-      {
-        "file": "assets/logos/wz.webp",
-        "width": 232,
-        "height": 320,
-        "bytes": 62020,
-        "alpha": true
       },
       {
         "file": "assets/cards/ag-heiren.webp",
@@ -1043,19 +3612,561 @@
         "alpha": false
       },
       {
-        "file": "assets/logos/ag.webp",
-        "width": 230,
-        "height": 320,
-        "bytes": 23538,
+        "file": "assets/cards/wolves-xiaobailong.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 151738,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wolves-jiuyan.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 167924,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wolves-linlong.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 168780,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wolves-lin.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 155466,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rsg-duck.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 150040,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rsg-nianjiu.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 160196,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rsg-feiyuan.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 159034,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rw-yehe.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 166326,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rw-yi.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 160572,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rw-feiyu.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 161496,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rw-lingbian.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 170712,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/kz-taiyang.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 161668,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/kz-wu.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 161256,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/kz-meng.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 164792,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/xrock-sasa.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 165802,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/xrock-peng.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 164030,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/xrock-yingzi.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 160502,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/xrock-dongdong.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 159148,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/qy-xuanzang.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 170282,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/qy-xiaoju.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 162852,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/qy-lu.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 172678,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/qy-gandong.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 179434,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wz-zui.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 167230,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wz-beining.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 167660,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wz-erjia.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 164880,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wz-guleng.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 168038,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/ag-feixue.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 168328,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/ag-yu.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 167912,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/ag-bobo.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 171374,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/portrait-wolves-asheng.webp",
+        "width": 581,
+        "height": 524,
+        "bytes": 53330,
         "alpha": true
       },
       {
-        "file": "assets/logos/league.webp",
-        "width": 320,
-        "height": 267,
-        "bytes": 80862,
+        "file": "assets/cards/portrait-wolves-shen.webp",
+        "width": 412,
+        "height": 533,
+        "bytes": 46738,
         "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rsg-hanhan.webp",
+        "width": 578,
+        "height": 548,
+        "bytes": 39152,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rsg-fengzai.webp",
+        "width": 477,
+        "height": 550,
+        "bytes": 43190,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rsg-xiaoyu.webp",
+        "width": 953,
+        "height": 1894,
+        "bytes": 154958,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rsg-haishen.webp",
+        "width": 1100,
+        "height": 1584,
+        "bytes": 189808,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rw-beifeng.webp",
+        "width": 566,
+        "height": 549,
+        "bytes": 46028,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rw-walker.webp",
+        "width": 470,
+        "height": 551,
+        "bytes": 39312,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-kz-yang.webp",
+        "width": 398,
+        "height": 526,
+        "bytes": 32916,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-kz-lion.webp",
+        "width": 345,
+        "height": 512,
+        "bytes": 41168,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-kz-aya.webp",
+        "width": 794,
+        "height": 1819,
+        "bytes": 173164,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-xrock-ani.webp",
+        "width": 458,
+        "height": 525,
+        "bytes": 40982,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-xrock-yi.webp",
+        "width": 325,
+        "height": 562,
+        "bytes": 36260,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-qy-minmin.webp",
+        "width": 421,
+        "height": 528,
+        "bytes": 42700,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-qy-qianxun.webp",
+        "width": 388,
+        "height": 545,
+        "bytes": 46470,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wz-yueshang.webp",
+        "width": 471,
+        "height": 518,
+        "bytes": 46350,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wz-anuo.webp",
+        "width": 322,
+        "height": 541,
+        "bytes": 36004,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-ag-heiren.webp",
+        "width": 677,
+        "height": 528,
+        "bytes": 47716,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-ag-zhong.webp",
+        "width": 827,
+        "height": 2370,
+        "bytes": 216202,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-ag-donggua.webp",
+        "width": 488,
+        "height": 1204,
+        "bytes": 86092,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wolves-xiaobailong.webp",
+        "width": 665,
+        "height": 740,
+        "bytes": 37708,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wolves-jiuyan.webp",
+        "width": 640,
+        "height": 855,
+        "bytes": 76846,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wolves-linlong.webp",
+        "width": 605,
+        "height": 870,
+        "bytes": 72360,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rsg-duck.webp",
+        "width": 685,
+        "height": 730,
+        "bytes": 44792,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rsg-nianjiu.webp",
+        "width": 635,
+        "height": 740,
+        "bytes": 51070,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rsg-feiyuan.webp",
+        "width": 810,
+        "height": 735,
+        "bytes": 62028,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rw-yehe.webp",
+        "width": 665,
+        "height": 825,
+        "bytes": 63264,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rw-yi.webp",
+        "width": 570,
+        "height": 835,
+        "bytes": 52642,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rw-feiyu.webp",
+        "width": 725,
+        "height": 825,
+        "bytes": 64172,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-rw-lingbian.webp",
+        "width": 700,
+        "height": 700,
+        "bytes": 55210,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-kz-taiyang.webp",
+        "width": 1080,
+        "height": 1470,
+        "bytes": 136980,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-kz-wu.webp",
+        "width": 1080,
+        "height": 1470,
+        "bytes": 130076,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-kz-meng.webp",
+        "width": 540,
+        "height": 845,
+        "bytes": 61020,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-xrock-sasa.webp",
+        "width": 475,
+        "height": 810,
+        "bytes": 44456,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-xrock-peng.webp",
+        "width": 700,
+        "height": 700,
+        "bytes": 62092,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-xrock-yingzi.webp",
+        "width": 285,
+        "height": 458,
+        "bytes": 25456,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-xrock-dongdong.webp",
+        "width": 1000,
+        "height": 1000,
+        "bytes": 63886,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-qy-xuanzang.webp",
+        "width": 373,
+        "height": 507,
+        "bytes": 33508,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-qy-xiaoju.webp",
+        "width": 775,
+        "height": 820,
+        "bytes": 73362,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-qy-lu.webp",
+        "width": 373,
+        "height": 507,
+        "bytes": 32830,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-qy-gandong.webp",
+        "width": 1080,
+        "height": 1470,
+        "bytes": 232748,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wz-zui.webp",
+        "width": 805,
+        "height": 803,
+        "bytes": 121424,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wz-beining.webp",
+        "width": 635,
+        "height": 700,
+        "bytes": 56746,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wz-erjia.webp",
+        "width": 630,
+        "height": 685,
+        "bytes": 55170,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wz-guleng.webp",
+        "width": 715,
+        "height": 1157,
+        "bytes": 91448,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-ag-feixue.webp",
+        "width": 675,
+        "height": 800,
+        "bytes": 80662,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-ag-yu.webp",
+        "width": 635,
+        "height": 663,
+        "bytes": 68712,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-ag-bobo.webp",
+        "width": 635,
+        "height": 655,
+        "bytes": 70126,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/depth-frame.webp",
+        "width": 720,
+        "height": 1080,
+        "bytes": 193764,
+        "alpha": false
       }
-    ]
+    ],
+    "totalBytes": 12120358,
+    "count": 107
+  },
+  "depthFrame": "assets/cards/depth-frame.webp",
+  "updatedAt": "2026-10-23",
+  "collectionCounts": {
+    "racing": 20,
+    "item": 29,
+    "total": 49,
+    "portraitPending": 1
   }
 }
