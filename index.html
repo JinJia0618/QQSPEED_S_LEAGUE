@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#130b25">
+  <meta name="description" content="2026 S聯賽秋季賽競速選手圖鑑。瀏覽八支隊伍、二十位競速選手與專屬選手卡牌。">
+  <title>S聯賽秋季賽｜競速選手圖鑑</title>
+  <link rel="icon" type="image/webp" href="assets/logos/league.webp">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#teams">前往隊伍與選手</a>
+  <div class="ambient" aria-hidden="true"><i></i><i></i><i></i></div>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="S聯賽競速選手圖鑑首頁">
+      <img src="assets/logos/league.webp" width="92" height="78" alt="QQ飛車手遊 S聯賽">
+      <span class="brand-copy"><b>選手圖鑑</b><span>S LEAGUE PLAYER COLLECTION</span></span>
+    </a>
+    <a class="header-link" href="#teams">瀏覽隊伍 <span aria-hidden="true">↗</span></a>
+    <div class="season-stamp"><span class="live-dot"></span>2026 秋季賽</div>
+  </header>
+
+  <main>
+    <section class="intro wrap" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow"><span></span> THE SPEED. THE PLAYERS.</p>
+        <h1 id="page-title">認識賽道上的<em>每一位選手。</em></h1>
+        <p class="intro-copy">八支隊伍，二十位競速選手。<br class="mobile-break">選擇隊伍，展開秋季賽專屬卡牌。</p>
+      </div>
+      <div class="season-numbers" aria-label="8支隊伍，20位競速選手">
+        <div><strong>08</strong><span>支隊伍</span></div>
+        <span class="slash" aria-hidden="true">/</span>
+        <div><strong>20</strong><span>位競速選手</span></div>
+      </div>
+    </section>
+
+    <section id="teams" class="roster-section wrap" aria-labelledby="teams-title">
+      <div class="team-heading"><h2 id="teams-title">點選你想瀏覽的隊伍</h2><span>EXPLORE THE TEAMS</span></div>
+      <div id="team-selector" class="team-selector" role="group" aria-label="參賽隊伍"><p class="loading">正在載入八隊與選手卡牌…</p></div>
+
+      <div class="arena" id="arena">
+        <div class="arena-lines" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="arena-topline">
+          <div class="current-team"><img id="current-team-logo" alt="" width="44" height="44"><div><span class="micro-label" id="arena-category">PLAYER COLLECTION</span><h3 id="current-team-name">—</h3></div><span id="roster-count" class="roster-count"></span></div>
+          <p class="interaction-hint" id="interaction-hint"><span aria-hidden="true">↗</span><span class="desktop-hint">滑鼠移入，展開選手卡牌</span><span class="touch-hint">輕點卡牌，瀏覽選手</span></p>
+        </div>
+        <div id="player-stage" class="player-stage" role="group" aria-label="選手卡牌，移動滑鼠或使用Tab與方向鍵瀏覽"></div>
+        <div class="player-caption">
+          <span class="micro-label">CURRENT PLAYER · 目前瀏覽</span>
+          <div><strong id="chosen-name">—</strong><span id="chosen-team"></span></div>
+        </div>
+      </div>
+
+      <section class="roster-panel" aria-labelledby="roster-title">
+        <div class="roster-heading"><div><p class="eyebrow">THE RACING ROSTER</p><h3 id="roster-title"><span id="roster-team-name">—</span>競速名單</h3></div><p>點選名字，瀏覽對應卡牌。</p></div>
+        <div id="player-roster" class="player-roster" role="group" aria-label="目前隊伍的競速選手"></div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="site-footer wrap"><div><span class="footer-mark">S /</span><span>八支隊伍，二十位競速選手。</span></div><p>2026 S LEAGUE AUTUMN <span>非官方選手圖鑑</span></p><a href="#">回到頂端 ↑</a></footer>
+  <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+  <noscript><p class="noscript">請開啟 JavaScript，瀏覽隊伍名單與互動選手卡牌。</p></noscript>
+</body>
+</html>
