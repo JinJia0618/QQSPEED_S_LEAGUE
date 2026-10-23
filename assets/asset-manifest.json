@@ -1,0 +1,595 @@
+{
+  "season": "2026 S聯賽秋季賽",
+  "cardFont": "朝華標題 B",
+  "league": "assets/logos/league.webp",
+  "teams": [
+    {
+      "id": "wolves",
+      "name": "廣州狼隊",
+      "logo": "assets/logos/wolves.webp",
+      "players": [
+        {
+          "id": "wolves-asheng",
+          "name": "阿升",
+          "team": "wolves",
+          "card": "assets/cards/wolves-asheng.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "wolves-shen",
+          "name": "Shen",
+          "team": "wolves",
+          "card": "assets/cards/wolves-shen.webp",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "rsg",
+      "name": "RSG",
+      "logo": "assets/logos/rsg.webp",
+      "players": [
+        {
+          "id": "rsg-hanhan",
+          "name": "晗晗",
+          "team": "rsg",
+          "card": "assets/cards/rsg-hanhan.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "rsg-fengzai",
+          "name": "風仔",
+          "team": "rsg",
+          "card": "assets/cards/rsg-fengzai.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "rsg-xiaoyu",
+          "name": "小鈺",
+          "team": "rsg",
+          "card": "assets/cards/rsg-xiaoyu.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "rsg-haishen",
+          "name": "海神",
+          "team": "rsg",
+          "card": "assets/cards/rsg-haishen.webp",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "rw",
+      "name": "RW",
+      "logo": "assets/logos/rw.webp",
+      "players": [
+        {
+          "id": "rw-beifeng",
+          "name": "北風",
+          "team": "rw",
+          "card": "assets/cards/rw-beifeng.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "rw-walker",
+          "name": "沃克",
+          "team": "rw",
+          "card": "assets/cards/rw-walker.webp",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "kz",
+      "name": "KZ",
+      "logo": "assets/logos/kz.webp",
+      "players": [
+        {
+          "id": "kz-yang",
+          "name": "YanG",
+          "team": "kz",
+          "card": "assets/cards/kz-yang.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "kz-lion",
+          "name": "獅子",
+          "team": "kz",
+          "card": "assets/cards/kz-lion.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "kz-aya",
+          "name": "Aya",
+          "team": "kz",
+          "card": "assets/cards/kz-aya.webp",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "xrock",
+      "name": "XROCK",
+      "logo": "assets/logos/xrock.webp",
+      "players": [
+        {
+          "id": "xrock-ani",
+          "name": "Ani",
+          "team": "xrock",
+          "card": "assets/cards/xrock-ani.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "xrock-yi",
+          "name": "義",
+          "team": "xrock",
+          "card": "assets/cards/xrock-yi.webp",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "qy",
+      "name": "QY",
+      "logo": "assets/logos/qy.webp",
+      "players": [
+        {
+          "id": "qy-minmin",
+          "name": "閩閩",
+          "team": "qy",
+          "card": "assets/cards/qy-minmin.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "qy-qianxun",
+          "name": "千尋",
+          "team": "qy",
+          "card": "assets/cards/qy-qianxun.webp",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "wz",
+      "name": "Wz",
+      "logo": "assets/logos/wz.webp",
+      "players": [
+        {
+          "id": "wz-yueshang",
+          "name": "月上",
+          "team": "wz",
+          "card": "assets/cards/wz-yueshang.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "wz-anuo",
+          "name": "阿諾",
+          "team": "wz",
+          "card": "assets/cards/wz-anuo.webp",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    },
+    {
+      "id": "ag",
+      "name": "AG",
+      "logo": "assets/logos/ag.webp",
+      "players": [
+        {
+          "id": "ag-heiren",
+          "name": "HeiRen",
+          "team": "ag",
+          "card": "assets/cards/ag-heiren.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "ag-zhong",
+          "name": "Zhong",
+          "team": "ag",
+          "card": "assets/cards/ag-zhong.webp",
+          "width": 600,
+          "height": 900
+        },
+        {
+          "id": "ag-donggua",
+          "name": "冬瓜",
+          "team": "ag",
+          "card": "assets/cards/ag-donggua.webp",
+          "width": 600,
+          "height": 900
+        }
+      ]
+    }
+  ],
+  "players": [
+    {
+      "id": "wolves-asheng",
+      "name": "阿升",
+      "team": "wolves",
+      "card": "assets/cards/wolves-asheng.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "wolves-shen",
+      "name": "Shen",
+      "team": "wolves",
+      "card": "assets/cards/wolves-shen.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "rsg-hanhan",
+      "name": "晗晗",
+      "team": "rsg",
+      "card": "assets/cards/rsg-hanhan.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "rsg-fengzai",
+      "name": "風仔",
+      "team": "rsg",
+      "card": "assets/cards/rsg-fengzai.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "rsg-xiaoyu",
+      "name": "小鈺",
+      "team": "rsg",
+      "card": "assets/cards/rsg-xiaoyu.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "rsg-haishen",
+      "name": "海神",
+      "team": "rsg",
+      "card": "assets/cards/rsg-haishen.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "rw-beifeng",
+      "name": "北風",
+      "team": "rw",
+      "card": "assets/cards/rw-beifeng.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "rw-walker",
+      "name": "沃克",
+      "team": "rw",
+      "card": "assets/cards/rw-walker.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "kz-yang",
+      "name": "YanG",
+      "team": "kz",
+      "card": "assets/cards/kz-yang.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "kz-lion",
+      "name": "獅子",
+      "team": "kz",
+      "card": "assets/cards/kz-lion.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "kz-aya",
+      "name": "Aya",
+      "team": "kz",
+      "card": "assets/cards/kz-aya.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "xrock-ani",
+      "name": "Ani",
+      "team": "xrock",
+      "card": "assets/cards/xrock-ani.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "xrock-yi",
+      "name": "義",
+      "team": "xrock",
+      "card": "assets/cards/xrock-yi.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "qy-minmin",
+      "name": "閩閩",
+      "team": "qy",
+      "card": "assets/cards/qy-minmin.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "qy-qianxun",
+      "name": "千尋",
+      "team": "qy",
+      "card": "assets/cards/qy-qianxun.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "wz-yueshang",
+      "name": "月上",
+      "team": "wz",
+      "card": "assets/cards/wz-yueshang.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "wz-anuo",
+      "name": "阿諾",
+      "team": "wz",
+      "card": "assets/cards/wz-anuo.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "ag-heiren",
+      "name": "HeiRen",
+      "team": "ag",
+      "card": "assets/cards/ag-heiren.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "ag-zhong",
+      "name": "Zhong",
+      "team": "ag",
+      "card": "assets/cards/ag-zhong.webp",
+      "width": 600,
+      "height": 900
+    },
+    {
+      "id": "ag-donggua",
+      "name": "冬瓜",
+      "team": "ag",
+      "card": "assets/cards/ag-donggua.webp",
+      "width": 600,
+      "height": 900
+    }
+  ],
+  "assetSummary": {
+    "cards": 20,
+    "logos": 9,
+    "totalImageBytes": 3677110,
+    "files": [
+      {
+        "file": "assets/cards/wolves-asheng.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 166604,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wolves-shen.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 165824,
+        "alpha": false
+      },
+      {
+        "file": "assets/logos/wolves.webp",
+        "width": 320,
+        "height": 280,
+        "bytes": 18704,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/rsg-hanhan.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 163392,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rsg-fengzai.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 167542,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rsg-xiaoyu.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 164984,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rsg-haishen.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 166520,
+        "alpha": false
+      },
+      {
+        "file": "assets/logos/rsg.webp",
+        "width": 320,
+        "height": 320,
+        "bytes": 41370,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/rw-beifeng.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 159664,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/rw-walker.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 162008,
+        "alpha": false
+      },
+      {
+        "file": "assets/logos/rw.webp",
+        "width": 320,
+        "height": 212,
+        "bytes": 34724,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/kz-yang.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 160892,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/kz-lion.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 168372,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/kz-aya.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 160960,
+        "alpha": false
+      },
+      {
+        "file": "assets/logos/kz.webp",
+        "width": 320,
+        "height": 233,
+        "bytes": 38098,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/xrock-ani.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 160012,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/xrock-yi.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 164554,
+        "alpha": false
+      },
+      {
+        "file": "assets/logos/xrock.webp",
+        "width": 320,
+        "height": 258,
+        "bytes": 44724,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/qy-minmin.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 168262,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/qy-qianxun.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 170158,
+        "alpha": false
+      },
+      {
+        "file": "assets/logos/qy.webp",
+        "width": 299,
+        "height": 320,
+        "bytes": 60932,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/wz-yueshang.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 159938,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/wz-anuo.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 167126,
+        "alpha": false
+      },
+      {
+        "file": "assets/logos/wz.webp",
+        "width": 232,
+        "height": 320,
+        "bytes": 62020,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/ag-heiren.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 159046,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/ag-zhong.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 154834,
+        "alpha": false
+      },
+      {
+        "file": "assets/cards/ag-donggua.webp",
+        "width": 600,
+        "height": 900,
+        "bytes": 161446,
+        "alpha": false
+      },
+      {
+        "file": "assets/logos/ag.webp",
+        "width": 230,
+        "height": 320,
+        "bytes": 23538,
+        "alpha": true
+      },
+      {
+        "file": "assets/logos/league.webp",
+        "width": 320,
+        "height": 267,
+        "bytes": 80862,
+        "alpha": true
+      }
+    ]
+  }
+}
