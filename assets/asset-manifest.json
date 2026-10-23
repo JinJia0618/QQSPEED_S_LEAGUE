@@ -81,9 +81,17 @@
           "height": 900,
           "profile": {
             "realName": "陳豪杰",
-            "birthday": null,
+            "birthday": "02-14",
             "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
             "sources": [
+              {
+                "label": "官博生日貼文",
+                "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+              },
+              {
+                "label": "公開生日祝賀",
+                "url": "https://www.sina.cn/news/detail/4876056886774159.html"
+              },
               {
                 "label": "公開採訪",
                 "url": "https://www.toutiao.com/article/7265898908579299897/"
@@ -163,9 +171,18 @@
           "height": 900,
           "profile": {
             "realName": "高子堯",
-            "birthday": null,
+            "birthday": "07-23",
             "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-            "sources": []
+            "sources": [
+              {
+                "label": "本人生日貼文",
+                "url": "https://www.sina.cn/news/detail/5323631349732393.html"
+              },
+              {
+                "label": "公開生日祝賀",
+                "url": "https://www.sina.cn/news/detail/5323638459076147.html"
+              }
+            ]
           }
         }
       ]
@@ -335,10 +352,14 @@
           "width": 600,
           "height": 900,
           "profile": {
-            "realName": null,
+            "realName": "唐璽",
             "birthday": "09-19",
             "intro": "Wz競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
             "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://weibo.com/7813832396/Qyb632v1M"
+              },
               {
                 "label": "官博生日貼文",
                 "url": "https://www.sina.cn/news/detail/5344790167159558.html"
@@ -354,10 +375,15 @@
           "width": 600,
           "height": 900,
           "profile": {
-            "realName": null,
+            "realName": "譚爾諾",
             "birthday": null,
             "intro": "Wz競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-            "sources": []
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://weibo.com/7813832396/Q5UYV7WSj"
+              }
+            ]
           }
         }
       ]
@@ -498,9 +524,17 @@
       "height": 900,
       "profile": {
         "realName": "陳豪杰",
-        "birthday": null,
+        "birthday": "02-14",
         "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
         "sources": [
+          {
+            "label": "官博生日貼文",
+            "url": "https://www.sina.cn/news/detail/5261578274605864.html"
+          },
+          {
+            "label": "公開生日祝賀",
+            "url": "https://www.sina.cn/news/detail/4876056886774159.html"
+          },
           {
             "label": "公開採訪",
             "url": "https://www.toutiao.com/article/7265898908579299897/"
@@ -573,9 +607,18 @@
       "height": 900,
       "profile": {
         "realName": "高子堯",
-        "birthday": null,
+        "birthday": "07-23",
         "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-        "sources": []
+        "sources": [
+          {
+            "label": "本人生日貼文",
+            "url": "https://www.sina.cn/news/detail/5323631349732393.html"
+          },
+          {
+            "label": "公開生日祝賀",
+            "url": "https://www.sina.cn/news/detail/5323638459076147.html"
+          }
+        ]
       }
     },
     {
@@ -717,10 +760,14 @@
       "width": 600,
       "height": 900,
       "profile": {
-        "realName": null,
+        "realName": "唐璽",
         "birthday": "09-19",
         "intro": "Wz競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
         "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://weibo.com/7813832396/Qyb632v1M"
+          },
           {
             "label": "官博生日貼文",
             "url": "https://www.sina.cn/news/detail/5344790167159558.html"
@@ -736,10 +783,15 @@
       "width": 600,
       "height": 900,
       "profile": {
-        "realName": null,
+        "realName": "譚爾諾",
         "birthday": null,
         "intro": "Wz競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-        "sources": []
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://weibo.com/7813832396/Q5UYV7WSj"
+          }
+        ]
       }
     },
     {
