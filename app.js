@@ -4,7 +4,9 @@
   const $$ = selector => [...document.querySelectorAll(selector)];
   const stage = $('#player-stage');
   const roster = $('#player-roster');
+  const viewer = $('#card-viewer');
   let data, team, selected;
+  let viewerTrigger, viewerScrollY = 0, previousBodyTop = '', backdropPressed = false;
   const escape = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
   function announce(message) { $('#announcement').textContent = message; }
@@ -19,7 +21,7 @@
     const middle = (team.players.length - 1) / 2;
     stage.innerHTML = team.players.map((player, index) => {
       const d = index - middle;
-      return `<button type="button" class="card-slot entering" data-player="${player.id}" aria-label="瀏覽${escape(team.name)} ${escape(player.name)} 選手卡" aria-pressed="${selected.id === player.id}" style="--d:${d};--angle:${d * 9};--y:${d * d * 13};--index:${index};--z:${10 - Math.ceil(Math.abs(d))}"><span class="card-visual"><img src="${player.card}" alt="${escape(team.name)} ${escape(player.name)} 秋季賽選手卡" width="600" height="900" draggable="false"></span></button>`;
+      return `<button type="button" class="card-slot entering" data-player="${player.id}" aria-label="放大檢視${escape(team.name)} ${escape(player.name)} 選手卡" aria-haspopup="dialog" aria-controls="card-viewer" aria-pressed="${selected.id === player.id}" style="--d:${d};--angle:${d * 9};--y:${d * d * 13};--index:${index};--z:${10 - Math.ceil(Math.abs(d))}"><span class="card-visual"><img src="${player.card}" alt="${escape(team.name)} ${escape(player.name)} 秋季賽選手卡" width="600" height="900" draggable="false"></span></button>`;
     }).join('');
     setTimeout(() => $$('.card-slot.entering').forEach(el => el.classList.remove('entering')), 650);
   }
@@ -74,6 +76,45 @@
     return centers.reduce((best, item) => !best || Math.abs(item.x - clientX) < Math.abs(best.x - clientX) ? item : best, null)?.el;
   }
 
+  function openCardViewer(card) {
+    if (viewer.open) return;
+    const player = team.players.find(item => item.id === card.dataset.player);
+    if (!player) return;
+    activate(player.id);
+    viewerTrigger = card;
+    $('#card-viewer-title').textContent = `${team.name} · ${player.name}`;
+    $('#card-viewer-image').src = player.card;
+    $('#card-viewer-image').alt = `${team.name} ${player.name} 秋季賽選手卡`;
+    viewerScrollY = window.scrollY;
+    previousBodyTop = document.body.style.top;
+    document.body.style.top = `-${viewerScrollY}px`;
+    document.body.classList.add('card-viewer-open');
+    viewer.showModal();
+  }
+
+  function outsideViewer(event) {
+    const box = viewer.getBoundingClientRect();
+    return event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom;
+  }
+
+  $('#close-card-viewer').addEventListener('click', () => viewer.close());
+  viewer.addEventListener('pointerdown', event => {
+    backdropPressed = event.target === viewer && outsideViewer(event);
+  });
+  viewer.addEventListener('pointercancel', () => { backdropPressed = false; });
+  viewer.addEventListener('click', event => {
+    if (backdropPressed && event.target === viewer && outsideViewer(event)) viewer.close();
+    backdropPressed = false;
+  });
+  viewer.addEventListener('close', () => {
+    document.body.classList.remove('card-viewer-open');
+    document.body.style.top = previousBodyTop;
+    window.scrollTo({top: viewerScrollY, behavior: 'instant'});
+    backdropPressed = false;
+    if (viewerTrigger?.isConnected) viewerTrigger.focus({preventScroll: true});
+    viewerTrigger = null;
+  });
+
   stage.addEventListener('pointermove', event => {
     if (event.pointerType !== 'mouse' || !data) return;
     const rect = stage.getBoundingClientRect();
@@ -89,10 +130,10 @@
   });
   stage.addEventListener('focusout', event => { if (!stage.contains(event.relatedTarget)) restDeck(); });
   stage.addEventListener('click', event => {
-    const card = event.detail === 0 ? event.target.closest('.card-slot') : nearestCard(event.clientX);
-    if (card) {
+    const card = event.target.closest('.card-slot');
+    if (card && stage.contains(card) && data) {
       card.focus({preventScroll: true});
-      activate(card.dataset.player);
+      openCardViewer(card);
     }
   });
   stage.addEventListener('keydown', event => {

@@ -44,9 +44,9 @@
         <div class="arena-lines" aria-hidden="true"><span></span><span></span><span></span></div>
         <div class="arena-topline">
           <div class="current-team"><img id="current-team-logo" alt="" width="44" height="44"><div><span class="micro-label" id="arena-category">PLAYER COLLECTION</span><h3 id="current-team-name">—</h3></div><span id="roster-count" class="roster-count"></span></div>
-          <p class="interaction-hint" id="interaction-hint"><span aria-hidden="true">↗</span><span class="desktop-hint">滑鼠移入，展開選手卡牌</span><span class="touch-hint">輕點卡牌，瀏覽選手</span></p>
+          <p class="interaction-hint" id="interaction-hint"><span aria-hidden="true">↗</span><span class="desktop-hint">滑鼠移入展開，點擊卡牌放大</span><span class="touch-hint">輕點卡牌，放大檢視</span></p>
         </div>
-        <div id="player-stage" class="player-stage" role="group" aria-label="選手卡牌，移動滑鼠或使用Tab與方向鍵瀏覽"></div>
+        <div id="player-stage" class="player-stage" role="group" aria-label="選手卡牌，移動滑鼠或使用Tab與方向鍵瀏覽，點選卡牌可放大檢視"></div>
         <div class="player-caption">
           <span class="micro-label">CURRENT PLAYER · 目前瀏覽</span>
           <div><strong id="chosen-name">—</strong><span id="chosen-team"></span></div>
@@ -61,6 +61,15 @@
   </main>
 
   <footer class="site-footer wrap"><div><span class="footer-mark">S /</span><span>八支隊伍，二十位競速選手。</span></div><p>2026 S LEAGUE AUTUMN <span>非官方選手圖鑑</span></p><a href="#">回到頂端 ↑</a></footer>
+  <dialog id="card-viewer" class="card-viewer" aria-labelledby="card-viewer-title">
+    <div class="card-viewer-panel">
+      <header class="card-viewer-header">
+        <div><p class="micro-label">PLAYER CARD</p><h2 id="card-viewer-title">選手卡牌</h2></div>
+        <button type="button" id="close-card-viewer" class="card-viewer-close" aria-label="關閉卡牌放大檢視" autofocus><span aria-hidden="true">×</span>關閉</button>
+      </header>
+      <img id="card-viewer-image" class="card-viewer-image" width="600" height="900" alt="">
+    </div>
+  </dialog>
   <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
   <noscript><p class="noscript">請開啟 JavaScript，瀏覽隊伍名單與互動選手卡牌。</p></noscript>
 </body>
