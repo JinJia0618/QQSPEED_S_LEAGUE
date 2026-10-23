@@ -237,4 +237,88 @@ body.card-viewer-open{position:fixed;inset-inline:0;width:100%;overflow:hidden}
 .card-profile-sources a:hover{text-decoration-color:var(--gold)}
 @media(max-width:760px){.card-viewer{width:min(620px,calc(100vw - 24px));max-width:calc(100vw - 24px)}.card-viewer-panel{padding:14px;gap:14px}.card-viewer-content{grid-template-columns:minmax(0,1fr);gap:20px}.card-viewer-interaction{--viewer-card-width:300px;padding:24px}.card-viewer-profile{padding:3px 10px 12px}.card-viewer-profile h3{font-size:30px;margin-bottom:21px}.card-profile-facts{gap:18px;padding-bottom:21px}.card-profile-facts dd{font-size:15px}.card-profile-intro{margin-top:20px}.card-viewer-hint{font-size:9px}.card-viewer-header h2{font-size:17px}}
 @media(max-width:430px){.card-viewer-header{gap:12px}.card-viewer-header h2{font-size:16px}.card-viewer-close{padding-inline:10px}.card-viewer-profile{padding-inline:5px}.card-profile-intro{font-size:12px}}
-@media(hover:none),(prefers-reduced-motion:reduce){.card-viewer-interaction{perspective:none;padding:12px 8px}.card-viewer-tilt{transform:none!important;transition:none;will-change:auto;box-shadow:0 12px 28px #05020e88}.card-viewer-foil,.card-viewer-glare{display:none}.card-viewer-hint{display:none}}
+
+/* Collection filters and the complete team overview. */
+.collection-navigation{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:26px}
+.role-selector{display:inline-flex;flex:none;gap:5px;padding:5px;border:1px solid var(--line);border-radius:7px;background:#1a102b}
+.role-selector button{display:flex;align-items:center;justify-content:center;gap:9px;min-height:42px;min-width:102px;padding:8px 18px;border:1px solid transparent;border-radius:4px;background:transparent;color:#bca7d0;font-size:13px;letter-spacing:1px;transition:background .2s,color .2s,border-color .2s}
+.role-selector button span{display:grid;place-items:center;min-width:20px;height:20px;padding:0 5px;border-radius:4px;background:#b593df13;color:#aa90c2;font:11px Arial,sans-serif;letter-spacing:0}
+.role-selector button:hover{color:var(--ink);background:#a97ae51a}
+.role-selector button[aria-pressed=true]{color:var(--gold);border-color:#d9b76d55;background:linear-gradient(135deg,#7c4aad55,#3c254b)}
+.role-selector button[aria-pressed=true] span{background:#f4d98b1c;color:var(--gold)}
+.collection-navigation>p{margin:0;font-size:11px;line-height:1.8;letter-spacing:.5px;color:#ac97bf}
+.collection-navigation+.arena{margin-top:16px}
+.card-role-label{display:none}
+.roster-player-name small{display:block;margin-top:4px;color:#a18ab8;font-size:9px;line-height:1.4;font-weight:400;letter-spacing:1.2px}
+.empty-roster{display:grid;place-items:center;min-height:240px;color:var(--muted);font-size:13px;text-align:center}
+
+/* Keep the scene's ancestors unfiltered and unclipped so Z layers stay separate. */
+.card-viewer-content{gap:32px;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
+.card-viewer-header{z-index:10}
+.card-viewer-interaction{--viewer-card-width:min(330px,max(220px,calc((100vh - 300px) * .6666667)));--viewer-card-width:min(330px,max(220px,calc((100dvh - 300px) * .6666667)));padding:34px 44px 32px;perspective:1000px;perspective-origin:50% 45%;isolation:auto}
+.card-viewer-tilt{transform-style:preserve-3d}
+.card-viewer-tilt[data-view="depth"]{transform:rotateX(var(--tilt-x,-2deg)) rotateY(var(--tilt-y,-4deg)) translateZ(var(--card-depth,0px));box-shadow:none}
+.card-viewer-image{position:absolute;inset:0}
+.card-depth-scene{position:absolute;inset:0;display:none;transform-style:preserve-3d;pointer-events:none}
+.card-viewer-tilt[data-view="depth"]>.card-viewer-image{visibility:hidden}
+.card-viewer-tilt[data-view="depth"]>.card-depth-scene{display:block}
+.card-viewer-tilt[data-view="original"]>.card-depth-scene{display:none}
+.card-depth-scene>*{position:absolute;backface-visibility:hidden;-webkit-backface-visibility:hidden;pointer-events:none}
+.depth-back{inset:0;border:1px solid #9d8562;border-radius:2px;background:linear-gradient(135deg,#bd9460,#44214f 18%,#180b2b 70%,#c39b58);transform:translateZ(-4px);box-shadow:var(--shadow-x,9px) var(--shadow-y,24px) var(--shadow-blur,35px) #03000dc9}
+.depth-back:before{content:"";position:absolute;inset:0;border:1px solid #7c4fb0;box-shadow:inset 3px 0 0 #f0d39370,inset -3px 0 0 #432054;transform:translateZ(5px)}
+.depth-background{inset:0;width:100%;height:100%;object-fit:fill;transform:translateZ(0)}
+.depth-portal{display:none}
+.depth-portrait-wrap{inset:0;transform:translate3d(var(--parallax-x,0px),var(--parallax-y,0px),30px);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 var(--portrait-fade-start,67%),transparent var(--portrait-fade-end,74%),transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 var(--portrait-fade-start,67%),transparent var(--portrait-fade-end,74%),transparent 100%)}
+#depth-portrait{position:absolute;max-width:none;height:auto;object-fit:contain;filter:drop-shadow(2px 5px 5px #10051a33);user-select:none;-webkit-user-select:none}
+.depth-heading,.depth-plaque{inset:0;width:100%;height:100%;object-fit:fill;user-select:none;-webkit-user-select:none}
+.depth-heading{clip-path:inset(0 0 91%);transform:translateZ(2px)}
+.depth-plaque{clip-path:inset(74% 0 0);transform:translateZ(2px)}
+.depth-league-logo,.depth-team-logo{top:8.1%;width:20%;height:11.2%;object-fit:contain;filter:drop-shadow(0 3px 2px #10071d88);transform:translateZ(5px)}
+.depth-league-logo{left:6.4%}
+.depth-team-logo{right:6.4%}
+.card-viewer-tilt[data-view="depth"]>.card-viewer-foil,.card-viewer-tilt[data-view="depth"]>.card-viewer-glare{transform:translateZ(32px)}
+.card-viewer-tilt[data-view="depth"]>.card-viewer-foil{box-shadow:none}
+.card-view-controls{position:relative;z-index:2;display:flex;justify-content:center;gap:5px;width:max-content;max-width:100%;margin:12px auto 11px;padding:4px;border:1px solid #b28fc438;border-radius:6px;background:#130b24}
+.card-view-controls button{min-height:36px;padding:7px 14px;border:1px solid transparent;border-radius:3px;background:transparent;color:#a892c0;font-size:11px;letter-spacing:.5px;transition:color .2s,background .2s,border-color .2s}
+.card-view-controls button:hover{color:#f8e8b7;background:#f4d98b0a}
+.card-view-controls button[aria-pressed=true]{color:var(--gold);border-color:#c5a16455;background:linear-gradient(130deg,#5a397d80,#352040)}
+.card-viewer-profile{align-self:center}
+
+@media(max-width:760px){
+  .collection-navigation{align-items:flex-start;flex-direction:column;gap:10px;margin-top:19px}
+  .role-selector{width:100%;gap:4px}
+  .role-selector button{flex:1;min-width:0;min-height:42px;padding:8px 10px;font-size:12px;gap:7px}
+  .collection-navigation>p{padding-left:2px;font-size:10px}
+  .collection-navigation+.arena{margin-top:14px}
+  .card-viewer-content{grid-template-columns:minmax(0,1fr);gap:23px}
+  .card-viewer-interaction{--viewer-card-width:min(280px,calc(100vw - 132px));padding:29px 38px 28px;perspective:1000px}
+  .card-view-controls{margin-top:10px}
+  .card-viewer-profile{padding:12px 10px;border-top:1px solid var(--line)}
+}
+@media(max-width:430px){
+  .card-viewer-interaction{--viewer-card-width:min(260px,calc(100vw - 126px));padding-inline:32px}
+  .card-viewer-profile{padding-inline:5px}
+  .card-view-controls button{padding-inline:12px}
+}
+@media(hover:none){
+  .card-viewer-tilt{will-change:auto}
+  .card-viewer-foil,.card-viewer-glare,.card-viewer-hint{display:none}
+  .card-viewer-tilt[data-view="depth"]{transform:rotateX(-2deg) rotateY(-5deg)}
+}
+@media(prefers-reduced-motion:reduce){
+  .card-viewer-tilt,.card-viewer-tilt[data-view="depth"]{transform:none!important;transition:none;will-change:auto}
+  .card-viewer-foil,.card-viewer-glare,.card-viewer-hint{display:none}
+}
+
+/* A restrained laminate reflection preserves the original photography and artwork. */
+.card-viewer-foil{background:linear-gradient(115deg,transparent 28%,#fff4d52b 46%,#ffffff40 50%,transparent 66%);background-size:220% 180%;background-position:var(--foil-x,50%) var(--foil-y,50%);mix-blend-mode:screen}
+.depth-portrait-wrap{clip-path:inset(9% 4.2% 25.3%)}
+
+/* Full team collection uses the same fan as the role collections. */
+.player-stage.is-overview{--card-width:208px;--spread:85px;--fan-angle:5deg;--lift:65px;height:460px}
+.player-stage.is-overview[data-count="7"]{--spread:78px}
+.player-stage.is-overview .card-role-label{display:none}
+@media(max-width:1050px){.player-stage.is-overview{--card-width:190px;--spread:66px;height:430px}}
+@media(max-width:760px){.player-stage.is-overview{--card-width:clamp(140px,29vw,190px);--spread:8.2vw;--fan-angle:3deg;--lift:45px;height:390px}.player-stage.is-overview[data-count="7"]{--spread:7.2vw}}
+@media(max-width:430px){.player-stage.is-overview{--card-width:38vw;--spread:7.5vw;--fan-angle:3deg;--lift:36px;height:340px}.player-stage.is-overview[data-count="7"]{--spread:6.4vw}}
+.card-profile-photo-note{font-size:12px;line-height:1.7;color:var(--muted);margin:0 0 20px}
