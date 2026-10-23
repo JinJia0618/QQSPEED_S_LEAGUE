@@ -14,7 +14,18 @@
           "team": "wolves",
           "card": "assets/cards/wolves-asheng.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": null,
+            "birthday": "04-03",
+            "intro": "廣州狼隊競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "本人生日貼文",
+                "url": "https://www.sina.cn/news/detail/5283406508458991.html"
+              }
+            ]
+          }
         },
         {
           "id": "wolves-shen",
@@ -22,7 +33,18 @@
           "team": "wolves",
           "card": "assets/cards/wolves-shen.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "沈俊文",
+            "birthday": "12-29",
+            "intro": "廣州狼隊競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "官博生日貼文",
+                "url": "https://www.sina.cn/news/detail/5248979253592617.html"
+              }
+            ]
+          }
         }
       ]
     },
@@ -37,7 +59,18 @@
           "team": "rsg",
           "card": "assets/cards/rsg-hanhan.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "胡賀林",
+            "birthday": null,
+            "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://sina.cn/news/detail/5340542844275294.html"
+              }
+            ]
+          }
         },
         {
           "id": "rsg-fengzai",
@@ -45,7 +78,18 @@
           "team": "rsg",
           "card": "assets/cards/rsg-fengzai.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "陳豪杰",
+            "birthday": null,
+            "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "公開採訪",
+                "url": "https://www.toutiao.com/article/7265898908579299897/"
+              }
+            ]
+          }
         },
         {
           "id": "rsg-xiaoyu",
@@ -53,7 +97,22 @@
           "team": "rsg",
           "card": "assets/cards/rsg-xiaoyu.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": null,
+            "birthday": "05-24",
+            "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "官博生日貼文",
+                "url": "https://www.sina.cn/news/detail/5169767310950640.html"
+              },
+              {
+                "label": "本人生日貼文",
+                "url": "https://www.sina.cn/news/detail/5301888258937413.html"
+              }
+            ]
+          }
         },
         {
           "id": "rsg-haishen",
@@ -61,7 +120,18 @@
           "team": "rsg",
           "card": "assets/cards/rsg-haishen.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "周鵬飛",
+            "birthday": null,
+            "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/media/5093548036"
+              }
+            ]
+          }
         }
       ]
     },
@@ -76,7 +146,13 @@
           "team": "rw",
           "card": "assets/cards/rw-beifeng.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": []
+          }
         },
         {
           "id": "rw-walker",
@@ -84,7 +160,13 @@
           "team": "rw",
           "card": "assets/cards/rw-walker.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "高子堯",
+            "birthday": null,
+            "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": []
+          }
         }
       ]
     },
@@ -99,7 +181,22 @@
           "team": "kz",
           "card": "assets/cards/kz-yang.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "楊輔強",
+            "birthday": "10-10",
+            "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "官博生日貼文",
+                "url": "https://www.sina.cn/news/detail/5352468009191828.html"
+              },
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5340500841202881.html"
+              }
+            ]
+          }
         },
         {
           "id": "kz-lion",
@@ -107,7 +204,18 @@
           "team": "kz",
           "card": "assets/cards/kz-lion.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "鍾浩",
+            "birthday": "10-19",
+            "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "官博生日貼文",
+                "url": "https://www.sina.cn/news/detail/5355734623846763.html"
+              }
+            ]
+          }
         },
         {
           "id": "kz-aya",
@@ -115,7 +223,13 @@
           "team": "kz",
           "card": "assets/cards/kz-aya.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": []
+          }
         }
       ]
     },
@@ -130,7 +244,18 @@
           "team": "xrock",
           "card": "assets/cards/xrock-ani.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "楊康豪",
+            "birthday": null,
+            "intro": "XROCK競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5322081579303072.html"
+              }
+            ]
+          }
         },
         {
           "id": "xrock-yi",
@@ -138,7 +263,22 @@
           "team": "xrock",
           "card": "assets/cards/xrock-yi.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "郝錦飛",
+            "birthday": "05-16",
+            "intro": "XROCK競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5294872919544876.html"
+              },
+              {
+                "label": "官博生日貼文",
+                "url": "https://www.sina.cn/news/detail/5298988619663609.html"
+              }
+            ]
+          }
         }
       ]
     },
@@ -153,7 +293,18 @@
           "team": "qy",
           "card": "assets/cards/qy-minmin.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "余閩",
+            "birthday": null,
+            "intro": "QY競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5340572857666160.html"
+              }
+            ]
+          }
         },
         {
           "id": "qy-qianxun",
@@ -161,7 +312,13 @@
           "team": "qy",
           "card": "assets/cards/qy-qianxun.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "QY競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": []
+          }
         }
       ]
     },
@@ -176,7 +333,18 @@
           "team": "wz",
           "card": "assets/cards/wz-yueshang.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": null,
+            "birthday": "09-19",
+            "intro": "Wz競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "官博生日貼文",
+                "url": "https://www.sina.cn/news/detail/5344790167159558.html"
+              }
+            ]
+          }
         },
         {
           "id": "wz-anuo",
@@ -184,7 +352,13 @@
           "team": "wz",
           "card": "assets/cards/wz-anuo.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": null,
+            "birthday": null,
+            "intro": "Wz競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": []
+          }
         }
       ]
     },
@@ -199,7 +373,18 @@
           "team": "ag",
           "card": "assets/cards/ag-heiren.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "葛安",
+            "birthday": null,
+            "intro": "AG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5340852578686045.html"
+              }
+            ]
+          }
         },
         {
           "id": "ag-zhong",
@@ -207,7 +392,18 @@
           "team": "ag",
           "card": "assets/cards/ag-zhong.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "王睿辰",
+            "birthday": null,
+            "intro": "AG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5340870333174237.html"
+              }
+            ]
+          }
         },
         {
           "id": "ag-donggua",
@@ -215,7 +411,22 @@
           "team": "ag",
           "card": "assets/cards/ag-donggua.webp",
           "width": 600,
-          "height": 900
+          "height": 900,
+          "profile": {
+            "realName": "史貽天",
+            "birthday": "10-20",
+            "intro": "AG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+            "sources": [
+              {
+                "label": "姓名公開資料",
+                "url": "https://www.sina.cn/news/detail/5340859554071126.html"
+              },
+              {
+                "label": "官博生日貼文",
+                "url": "https://www.sina.cn/news/detail/5356243620725618.html"
+              }
+            ]
+          }
         }
       ]
     }
@@ -227,7 +438,18 @@
       "team": "wolves",
       "card": "assets/cards/wolves-asheng.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": null,
+        "birthday": "04-03",
+        "intro": "廣州狼隊競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "本人生日貼文",
+            "url": "https://www.sina.cn/news/detail/5283406508458991.html"
+          }
+        ]
+      }
     },
     {
       "id": "wolves-shen",
@@ -235,7 +457,18 @@
       "team": "wolves",
       "card": "assets/cards/wolves-shen.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "沈俊文",
+        "birthday": "12-29",
+        "intro": "廣州狼隊競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "官博生日貼文",
+            "url": "https://www.sina.cn/news/detail/5248979253592617.html"
+          }
+        ]
+      }
     },
     {
       "id": "rsg-hanhan",
@@ -243,7 +476,18 @@
       "team": "rsg",
       "card": "assets/cards/rsg-hanhan.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "胡賀林",
+        "birthday": null,
+        "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://sina.cn/news/detail/5340542844275294.html"
+          }
+        ]
+      }
     },
     {
       "id": "rsg-fengzai",
@@ -251,7 +495,18 @@
       "team": "rsg",
       "card": "assets/cards/rsg-fengzai.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "陳豪杰",
+        "birthday": null,
+        "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "公開採訪",
+            "url": "https://www.toutiao.com/article/7265898908579299897/"
+          }
+        ]
+      }
     },
     {
       "id": "rsg-xiaoyu",
@@ -259,7 +514,22 @@
       "team": "rsg",
       "card": "assets/cards/rsg-xiaoyu.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": null,
+        "birthday": "05-24",
+        "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "官博生日貼文",
+            "url": "https://www.sina.cn/news/detail/5169767310950640.html"
+          },
+          {
+            "label": "本人生日貼文",
+            "url": "https://www.sina.cn/news/detail/5301888258937413.html"
+          }
+        ]
+      }
     },
     {
       "id": "rsg-haishen",
@@ -267,7 +537,18 @@
       "team": "rsg",
       "card": "assets/cards/rsg-haishen.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "周鵬飛",
+        "birthday": null,
+        "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/media/5093548036"
+          }
+        ]
+      }
     },
     {
       "id": "rw-beifeng",
@@ -275,7 +556,13 @@
       "team": "rw",
       "card": "assets/cards/rw-beifeng.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": []
+      }
     },
     {
       "id": "rw-walker",
@@ -283,7 +570,13 @@
       "team": "rw",
       "card": "assets/cards/rw-walker.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "高子堯",
+        "birthday": null,
+        "intro": "RW競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": []
+      }
     },
     {
       "id": "kz-yang",
@@ -291,7 +584,22 @@
       "team": "kz",
       "card": "assets/cards/kz-yang.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "楊輔強",
+        "birthday": "10-10",
+        "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "官博生日貼文",
+            "url": "https://www.sina.cn/news/detail/5352468009191828.html"
+          },
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5340500841202881.html"
+          }
+        ]
+      }
     },
     {
       "id": "kz-lion",
@@ -299,7 +607,18 @@
       "team": "kz",
       "card": "assets/cards/kz-lion.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "鍾浩",
+        "birthday": "10-19",
+        "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "官博生日貼文",
+            "url": "https://www.sina.cn/news/detail/5355734623846763.html"
+          }
+        ]
+      }
     },
     {
       "id": "kz-aya",
@@ -307,7 +626,13 @@
       "team": "kz",
       "card": "assets/cards/kz-aya.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": []
+      }
     },
     {
       "id": "xrock-ani",
@@ -315,7 +640,18 @@
       "team": "xrock",
       "card": "assets/cards/xrock-ani.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "楊康豪",
+        "birthday": null,
+        "intro": "XROCK競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5322081579303072.html"
+          }
+        ]
+      }
     },
     {
       "id": "xrock-yi",
@@ -323,7 +659,22 @@
       "team": "xrock",
       "card": "assets/cards/xrock-yi.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "郝錦飛",
+        "birthday": "05-16",
+        "intro": "XROCK競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5294872919544876.html"
+          },
+          {
+            "label": "官博生日貼文",
+            "url": "https://www.sina.cn/news/detail/5298988619663609.html"
+          }
+        ]
+      }
     },
     {
       "id": "qy-minmin",
@@ -331,7 +682,18 @@
       "team": "qy",
       "card": "assets/cards/qy-minmin.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "余閩",
+        "birthday": null,
+        "intro": "QY競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5340572857666160.html"
+          }
+        ]
+      }
     },
     {
       "id": "qy-qianxun",
@@ -339,7 +701,13 @@
       "team": "qy",
       "card": "assets/cards/qy-qianxun.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "QY競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": []
+      }
     },
     {
       "id": "wz-yueshang",
@@ -347,7 +715,18 @@
       "team": "wz",
       "card": "assets/cards/wz-yueshang.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": null,
+        "birthday": "09-19",
+        "intro": "Wz競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "官博生日貼文",
+            "url": "https://www.sina.cn/news/detail/5344790167159558.html"
+          }
+        ]
+      }
     },
     {
       "id": "wz-anuo",
@@ -355,7 +734,13 @@
       "team": "wz",
       "card": "assets/cards/wz-anuo.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": null,
+        "birthday": null,
+        "intro": "Wz競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": []
+      }
     },
     {
       "id": "ag-heiren",
@@ -363,7 +748,18 @@
       "team": "ag",
       "card": "assets/cards/ag-heiren.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "葛安",
+        "birthday": null,
+        "intro": "AG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5340852578686045.html"
+          }
+        ]
+      }
     },
     {
       "id": "ag-zhong",
@@ -371,7 +767,18 @@
       "team": "ag",
       "card": "assets/cards/ag-zhong.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "王睿辰",
+        "birthday": null,
+        "intro": "AG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5340870333174237.html"
+          }
+        ]
+      }
     },
     {
       "id": "ag-donggua",
@@ -379,7 +786,22 @@
       "team": "ag",
       "card": "assets/cards/ag-donggua.webp",
       "width": 600,
-      "height": 900
+      "height": 900,
+      "profile": {
+        "realName": "史貽天",
+        "birthday": "10-20",
+        "intro": "AG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
+        "sources": [
+          {
+            "label": "姓名公開資料",
+            "url": "https://www.sina.cn/news/detail/5340859554071126.html"
+          },
+          {
+            "label": "官博生日貼文",
+            "url": "https://www.sina.cn/news/detail/5356243620725618.html"
+          }
+        ]
+      }
     }
   ],
   "assetSummary": {
