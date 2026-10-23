@@ -67,7 +67,33 @@
         <div><p class="micro-label">PLAYER CARD</p><h2 id="card-viewer-title">選手卡牌</h2></div>
         <button type="button" id="close-card-viewer" class="card-viewer-close" aria-label="關閉卡牌放大檢視" autofocus><span aria-hidden="true">×</span>關閉</button>
       </header>
-      <img id="card-viewer-image" class="card-viewer-image" width="600" height="900" alt="">
+      <div class="card-viewer-content">
+        <div class="card-viewer-showcase">
+          <div id="card-viewer-interaction" class="card-viewer-interaction">
+            <div id="card-viewer-tilt" class="card-viewer-tilt">
+              <img id="card-viewer-image" class="card-viewer-image" width="600" height="900" alt="" draggable="false">
+              <span class="card-viewer-foil" aria-hidden="true"></span>
+              <span class="card-viewer-glare" aria-hidden="true"></span>
+            </div>
+          </div>
+          <p class="card-viewer-hint">移動滑鼠，感受卡牌的立體角度與光澤。</p>
+        </div>
+        <aside class="card-viewer-profile" aria-labelledby="card-profile-title">
+          <p class="eyebrow">PLAYER PROFILE</p>
+          <h3 id="card-profile-title">選手簡介</h3>
+          <dl class="card-profile-facts">
+            <div><dt>隊伍</dt><dd id="card-profile-team">—</dd></div>
+            <div><dt>定位</dt><dd>競速手</dd></div>
+            <div><dt>本名</dt><dd id="card-profile-real-name">待補充</dd></div>
+            <div><dt>生日</dt><dd id="card-profile-birthday">待補充</dd></div>
+          </dl>
+          <p id="card-profile-intro" class="card-profile-intro"></p>
+          <div id="card-profile-sources-block" class="card-profile-sources-block" hidden>
+            <h4>資料來源</h4>
+            <ul id="card-profile-sources" class="card-profile-sources"></ul>
+          </div>
+        </aside>
+      </div>
     </div>
   </dialog>
   <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>

@@ -5,8 +5,13 @@
   const stage = $('#player-stage');
   const roster = $('#player-roster');
   const viewer = $('#card-viewer');
+  const viewerInteraction = $('#card-viewer-interaction');
+  const viewerTilt = $('#card-viewer-tilt');
+  const viewerReducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const viewerFineHover = matchMedia('(hover: hover) and (pointer: fine)');
   let data, team, selected;
   let viewerTrigger, viewerScrollY = 0, previousBodyTop = '', backdropPressed = false;
+  let viewerTiltFrame = 0, viewerPointer = null;
   const escape = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 
   function announce(message) { $('#announcement').textContent = message; }
@@ -76,6 +81,81 @@
     return centers.reduce((best, item) => !best || Math.abs(item.x - clientX) < Math.abs(best.x - clientX) ? item : best, null)?.el;
   }
 
+  function renderPlayerProfile(player) {
+    const profile = player.profile || {};
+    $('#card-profile-title').textContent = player.name;
+    $('#card-profile-team').textContent = team.name;
+    $('#card-profile-real-name').textContent = typeof profile.realName === 'string' && profile.realName.trim() ? profile.realName : '待補充';
+    const birthday = typeof profile.birthday === 'string' && profile.birthday.match(/^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/);
+    $('#card-profile-birthday').textContent = birthday ? `${Number(birthday[1])}月${Number(birthday[2])}日` : '待補充';
+    $('#card-profile-intro').textContent = typeof profile.intro === 'string' && profile.intro.trim() ? profile.intro : `${team.name}競速選手，出戰2026 S聯賽秋季賽。`;
+    const sourceList = $('#card-profile-sources');
+    sourceList.replaceChildren();
+    if (Array.isArray(profile.sources)) profile.sources.forEach(source => {
+      if (!source || typeof source.url !== 'string') return;
+      let url;
+      try { url = new URL(source.url); } catch { return; }
+      if (!['https:', 'http:'].includes(url.protocol)) return;
+      const item = document.createElement('li');
+      const link = document.createElement('a');
+      link.href = url.href;
+      link.target = '_blank';
+      link.rel = 'noopener noreferrer';
+      link.textContent = typeof source.label === 'string' && source.label.trim() ? source.label : url.hostname;
+      item.append(link);
+      sourceList.append(item);
+    });
+    $('#card-profile-sources-block').hidden = !sourceList.childElementCount;
+  }
+
+  function resetViewerTilt() {
+    if (viewerTiltFrame) cancelAnimationFrame(viewerTiltFrame);
+    viewerTiltFrame = 0;
+    viewerPointer = null;
+    viewerTilt.classList.remove('is-tilting');
+    ['--tilt-x', '--tilt-y', '--card-depth', '--light-x', '--light-y', '--foil-x', '--foil-y', '--foil-opacity', '--glare-opacity', '--shadow-x', '--shadow-y', '--shadow-blur'].forEach(property => viewerTilt.style.removeProperty(property));
+  }
+
+  function queueViewerTilt(event) {
+    if (!viewer.open || event.pointerType !== 'mouse' || viewerReducedMotion.matches || !viewerFineHover.matches) return;
+    viewerPointer = {x: event.clientX, y: event.clientY};
+    if (viewerTiltFrame) return;
+    viewerTiltFrame = requestAnimationFrame(() => {
+      viewerTiltFrame = 0;
+      if (!viewer.open || !viewerPointer || viewerReducedMotion.matches || !viewerFineHover.matches) return;
+      // Measure the stationary outer area, never the transformed card surface.
+      const box = viewerInteraction.getBoundingClientRect();
+      if (!box.width || !box.height) return;
+      const x = Math.max(0, Math.min(1, (viewerPointer.x - box.left) / box.width));
+      const y = Math.max(0, Math.min(1, (viewerPointer.y - box.top) / box.height));
+      const nx = (x - .5) * 2, ny = (y - .5) * 2;
+      const strength = Math.min(1, Math.hypot(nx, ny));
+      const properties = {
+        '--tilt-x': `${(-ny * 12).toFixed(2)}deg`,
+        '--tilt-y': `${(nx * 12).toFixed(2)}deg`,
+        '--card-depth': '12px',
+        '--light-x': `${(x * 100).toFixed(2)}%`,
+        '--light-y': `${(y * 100).toFixed(2)}%`,
+        '--foil-x': `${(25 + x * 50).toFixed(2)}%`,
+        '--foil-y': `${(25 + y * 50).toFixed(2)}%`,
+        '--foil-opacity': (.22 + strength * .14).toFixed(2),
+        '--glare-opacity': (.24 + strength * .2).toFixed(2),
+        '--shadow-x': `${(-nx * 17).toFixed(2)}px`,
+        '--shadow-y': `${(23 - ny * 9).toFixed(2)}px`,
+        '--shadow-blur': `${(30 + strength * 13).toFixed(2)}px`
+      };
+      Object.entries(properties).forEach(([property, value]) => viewerTilt.style.setProperty(property, value));
+      viewerTilt.classList.add('is-tilting');
+    });
+  }
+
+  viewerInteraction.addEventListener('pointermove', queueViewerTilt);
+  viewerInteraction.addEventListener('pointerleave', resetViewerTilt);
+  viewerInteraction.addEventListener('pointercancel', resetViewerTilt);
+  viewerReducedMotion.addEventListener('change', resetViewerTilt);
+  viewerFineHover.addEventListener('change', resetViewerTilt);
+  addEventListener('resize', resetViewerTilt);
+
   function openCardViewer(card) {
     if (viewer.open) return;
     const player = team.players.find(item => item.id === card.dataset.player);
@@ -85,11 +165,14 @@
     $('#card-viewer-title').textContent = `${team.name} · ${player.name}`;
     $('#card-viewer-image').src = player.card;
     $('#card-viewer-image').alt = `${team.name} ${player.name} 秋季賽選手卡`;
+    renderPlayerProfile(player);
+    resetViewerTilt();
     viewerScrollY = window.scrollY;
     previousBodyTop = document.body.style.top;
     document.body.style.top = `-${viewerScrollY}px`;
     document.body.classList.add('card-viewer-open');
     viewer.showModal();
+    viewer.scrollTop = 0;
   }
 
   function outsideViewer(event) {
@@ -107,6 +190,7 @@
     backdropPressed = false;
   });
   viewer.addEventListener('close', () => {
+    resetViewerTilt();
     document.body.classList.remove('card-viewer-open');
     document.body.style.top = previousBodyTop;
     window.scrollTo({top: viewerScrollY, behavior: 'instant'});
