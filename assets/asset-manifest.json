@@ -93,14 +93,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5352176899064178.html",
-            "imageUrl": "https://wx1.sinaimg.cn/large/0079iZo4ly1ihwa4ztrm2j31z00wr1kx.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-wolves-xiaobailong.webp",
-            "left": -4.75,
-            "top": 17.055555555555557,
-            "width": 92.91666666666667,
+            "left": -50.166666666666664,
+            "top": -6,
+            "width": 196,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -135,16 +135,16 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5354751241225058.html",
-            "imageUrl": "https://wx3.sinaimg.cn/large/0079NSNPgy1ii4hsq9qdrj31ww12s4mq.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-wolves-jiuyan.webp",
-            "left": 26.583333333333332,
-            "top": 17.88888888888889,
-            "width": 63.166666666666664,
-            "fadeStart": 66.61111111111111,
-            "fadeEnd": 74.11111111111111
+            "left": -45.333333333333336,
+            "top": -10.88888888888889,
+            "width": 189.83333333333334,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           },
           "photoNote": null
         },
@@ -177,14 +177,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5356934820530780.html",
-            "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPgy1iibgku44t1j31ww12say0.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-wolves-linlong.webp",
-            "left": 12.666666666666666,
-            "top": 18.055555555555557,
-            "width": 67.33333333333333,
+            "left": -47.5,
+            "top": -17.88888888888889,
+            "width": 204.91666666666666,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -198,7 +198,7 @@
           "card": "assets/cards/wolves-lin.webp",
           "width": 600,
           "height": 900,
-          "photoPending": true,
+          "photoPending": false,
           "profile": {
             "realName": "鍾志華",
             "birthday": null,
@@ -214,9 +214,30 @@
               }
             ]
           },
-          "photoNote": "定裝照待核對，先收錄當季名單與已確認的個人資料。"
+          "photoSource": {
+            "url": null,
+            "imageUrl": null
+          },
+          "depth": {
+            "portrait": "assets/cards/portrait-wolves-lin.webp",
+            "left": -55.666666666666664,
+            "top": -14.833333333333334,
+            "width": 202.66666666666666,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
+          },
+          "photoNote": null
         }
-      ]
+      ],
+      "overviewOrder": [
+        "wolves-jiuyan",
+        "wolves-asheng",
+        "wolves-shen",
+        "wolves-linlong",
+        "wolves-xiaobailong",
+        "wolves-lin"
+      ],
+      "overviewTop": "wolves-shen"
     },
     {
       "id": "rsg",
@@ -461,7 +482,17 @@
           },
           "photoNote": null
         }
-      ]
+      ],
+      "overviewOrder": [
+        "rsg-feiyuan",
+        "rsg-xiaoyu",
+        "rsg-haishen",
+        "rsg-fengzai",
+        "rsg-duck",
+        "rsg-hanhan",
+        "rsg-nianjiu"
+      ],
+      "overviewTop": "rsg-fengzai"
     },
     {
       "id": "rw",
@@ -553,14 +584,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5357219228167533.html",
-            "imageUrl": "https://wx1.sinaimg.cn/large/007atyVlgy1iicd8qi5nzj31rp0zuk3u.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-rw-yehe.webp",
-            "left": 15.333333333333334,
-            "top": 17,
-            "width": 77.00000000000001,
+            "left": -38,
+            "top": 0.2222222222222222,
+            "width": 178.58333333333334,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -591,14 +622,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5355471776777879.html",
-            "imageUrl": "https://wx4.sinaimg.cn/large/007atyVlgy1ii6sjtbregj31rp0zuk3j.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-rw-yi.webp",
-            "left": 13,
-            "top": 17.166666666666668,
-            "width": 75.66666666666667,
+            "left": -34.916666666666664,
+            "top": 10.055555555555555,
+            "width": 162.41666666666666,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -629,14 +660,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5355102370270290.html",
-            "imageUrl": "https://wx2.sinaimg.cn/large/007atyVlgy1ii5m4i6sduj31rp0zuwqs.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-rw-feiyu.webp",
-            "left": 3.75,
-            "top": 18.944444444444443,
-            "width": 85.25,
+            "left": -53.75,
+            "top": -8.777777777777779,
+            "width": 185.91666666666666,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -663,20 +694,29 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5282235730364459.html",
-            "imageUrl": "https://wx3.sinaimg.cn/large/0079NSNPly1ibp2xtko2ag30jg0jgu1c.gif"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-rw-lingbian.webp",
-            "left": -11.666666666666666,
-            "top": 10,
-            "width": 122.91666666666667,
+            "left": -39.5,
+            "top": -2.2777777777777777,
+            "width": 170.08333333333334,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
-          "photoNote": "照片採用 2026 春季賽 RW 官方定裝素材。"
+          "photoNote": null
         }
-      ]
+      ],
+      "overviewOrder": [
+        "rw-feiyu",
+        "rw-beifeng",
+        "rw-walker",
+        "rw-yehe",
+        "rw-yi",
+        "rw-lingbian"
+      ],
+      "overviewTop": "rw-walker"
     },
     {
       "id": "kz",
@@ -872,7 +912,16 @@
           },
           "photoNote": null
         }
-      ]
+      ],
+      "overviewOrder": [
+        "kz-aya",
+        "kz-lion",
+        "kz-yang",
+        "kz-taiyang",
+        "kz-wu",
+        "kz-meng"
+      ],
+      "overviewTop": "kz-yang"
     },
     {
       "id": "xrock",
@@ -964,14 +1013,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5355440709829017.html",
-            "imageUrl": "https://wx4.sinaimg.cn/large/0079NSNPgy1ii6ozcp4xfj31rq0zt143.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-xrock-sasa.webp",
-            "left": 19.166666666666668,
-            "top": 18.88888888888889,
-            "width": 54.333333333333336,
+            "left": -57.916666666666664,
+            "top": -18.444444444444443,
+            "width": 222.66666666666666,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -998,18 +1047,18 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5282243279847980.html",
-            "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPly1ibp30dl9ayg30jg0jgb2q.gif"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-xrock-peng.webp",
-            "left": -18.333333333333332,
-            "top": 8.222222222222221,
-            "width": 141.08333333333334,
+            "left": -40,
+            "top": 3.7222222222222223,
+            "width": 170.16666666666666,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
-          "photoNote": "照片採用 2026 春季賽 eStar 時期官方定裝素材。"
+          "photoNote": null
         },
         {
           "id": "xrock-yingzi",
@@ -1036,14 +1085,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5354382830601283.html",
-            "imageUrl": "https://wx3.sinaimg.cn/large/8e9395f9gy1ii3bh87oohj21040kb779.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-xrock-yingzi.webp",
-            "left": 8.833333333333334,
-            "top": 16.38888888888889,
-            "width": 64.25,
+            "left": -28.416666666666668,
+            "top": -8.61111111111111,
+            "width": 185.91666666666666,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -1078,20 +1127,29 @@
             ]
           },
           "photoSource": {
-            "url": "https://wiki.biligame.com/qqspeed/%E6%96%87%E4%BB%B6:EStar.%E4%B8%9C%E4%B8%9C.png",
-            "imageUrl": "https://patchwiki.biligame.com/images/qqspeed/5/59/cs69xtm8slymv46c8czh3yuraddqg3x.png"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-xrock-dongdong.webp",
-            "left": -7.666666666666667,
-            "top": 11.444444444444445,
-            "width": 114.33333333333333,
+            "left": -51.666666666666664,
+            "top": -8.555555555555555,
+            "width": 204.91666666666666,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
-          "photoNote": "照片採用較早公開的 eStar 時期一般站姿定裝照。"
+          "photoNote": null
         }
-      ]
+      ],
+      "overviewOrder": [
+        "xrock-dongdong",
+        "xrock-yi",
+        "xrock-ani",
+        "xrock-peng",
+        "xrock-yingzi",
+        "xrock-sasa"
+      ],
+      "overviewTop": "xrock-ani"
     },
     {
       "id": "qy",
@@ -1297,7 +1355,16 @@
           },
           "photoNote": null
         }
-      ]
+      ],
+      "overviewOrder": [
+        "qy-gandong",
+        "qy-minmin",
+        "qy-qianxun",
+        "qy-xiaoju",
+        "qy-xuanzang",
+        "qy-lu"
+      ],
+      "overviewTop": "qy-qianxun"
     },
     {
       "id": "wz",
@@ -1389,18 +1456,18 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5261578274605864.html",
-            "imageUrl": "https://wx1.sinaimg.cn/large/0079NSNPgy1i9v8zrurx7j30u0140e81.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-wz-zui.webp",
-            "left": 6.75,
-            "top": 13.277777777777779,
-            "width": 84.25,
-            "fadeStart": 61.72222222222222,
-            "fadeEnd": 69.22222222222223
+            "left": -26.583333333333332,
+            "top": 11.277777777777779,
+            "width": 153.66666666666666,
+            "fadeStart": 66.88888888888889,
+            "fadeEnd": 74.38888888888889
           },
-          "photoNote": "照片採用較早公開的定裝照。"
+          "photoNote": null
         },
         {
           "id": "wz-beining",
@@ -1427,14 +1494,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5355421645930585.html",
-            "imageUrl": "https://wx4.sinaimg.cn/large/008wO2KMgy1ii6mqpgg1nj31hw0u0dma.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-wz-beining.webp",
-            "left": 9.083333333333334,
-            "top": 17.88888888888889,
-            "width": 85.33333333333333,
+            "left": -24.666666666666668,
+            "top": 12.5,
+            "width": 147,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -1469,14 +1536,14 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5352923835925300.html",
-            "imageUrl": "https://wx4.sinaimg.cn/large/008wO2KMgy1ihynwv04ppj31i70u07ab.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-wz-erjia.webp",
-            "left": 1.0833333333333333,
-            "top": 19.88888888888889,
-            "width": 81.91666666666667,
+            "left": -34.833333333333336,
+            "top": 8.88888888888889,
+            "width": 164.91666666666666,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
@@ -1507,20 +1574,29 @@
             ]
           },
           "photoSource": {
-            "url": "https://www.sina.cn/news/detail/5340519778746828.html",
-            "imageUrl": "https://wx1.sinaimg.cn/large/008wO2KMgy1igv3zv4kubj31r80zkjxi.jpg"
+            "url": null,
+            "imageUrl": null
           },
           "depth": {
             "portrait": "assets/cards/portrait-wz-guleng.webp",
-            "left": 14.833333333333334,
-            "top": 17.27777777777778,
-            "width": 68.5,
+            "left": -27.583333333333332,
+            "top": 11.166666666666666,
+            "width": 154.5,
             "fadeStart": 66.88888888888889,
             "fadeEnd": 74.38888888888889
           },
           "photoNote": null
         }
-      ]
+      ],
+      "overviewOrder": [
+        "wz-guleng",
+        "wz-anuo",
+        "wz-yueshang",
+        "wz-erjia",
+        "wz-zui",
+        "wz-beining"
+      ],
+      "overviewTop": "wz-yueshang"
     },
     {
       "id": "ag",
@@ -1729,7 +1805,16 @@
           },
           "photoNote": null
         }
-      ]
+      ],
+      "overviewOrder": [
+        "ag-donggua",
+        "ag-zhong",
+        "ag-heiren",
+        "ag-feixue",
+        "ag-yu",
+        "ag-bobo"
+      ],
+      "overviewTop": "ag-heiren"
     }
   ],
   "players": [
@@ -2344,14 +2429,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5352176899064178.html",
-        "imageUrl": "https://wx1.sinaimg.cn/large/0079iZo4ly1ihwa4ztrm2j31z00wr1kx.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-wolves-xiaobailong.webp",
-        "left": -4.75,
-        "top": 17.055555555555557,
-        "width": 92.91666666666667,
+        "left": -50.166666666666664,
+        "top": -6,
+        "width": 196,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -2386,16 +2471,16 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5354751241225058.html",
-        "imageUrl": "https://wx3.sinaimg.cn/large/0079NSNPgy1ii4hsq9qdrj31ww12s4mq.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-wolves-jiuyan.webp",
-        "left": 26.583333333333332,
-        "top": 17.88888888888889,
-        "width": 63.166666666666664,
-        "fadeStart": 66.61111111111111,
-        "fadeEnd": 74.11111111111111
+        "left": -45.333333333333336,
+        "top": -10.88888888888889,
+        "width": 189.83333333333334,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       },
       "photoNote": null
     },
@@ -2428,14 +2513,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5356934820530780.html",
-        "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPgy1iibgku44t1j31ww12say0.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-wolves-linlong.webp",
-        "left": 12.666666666666666,
-        "top": 18.055555555555557,
-        "width": 67.33333333333333,
+        "left": -47.5,
+        "top": -17.88888888888889,
+        "width": 204.91666666666666,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -2449,7 +2534,7 @@
       "card": "assets/cards/wolves-lin.webp",
       "width": 600,
       "height": 900,
-      "photoPending": true,
+      "photoPending": false,
       "profile": {
         "realName": "鍾志華",
         "birthday": null,
@@ -2465,7 +2550,19 @@
           }
         ]
       },
-      "photoNote": "定裝照待核對，先收錄當季名單與已確認的個人資料。"
+      "photoSource": {
+        "url": null,
+        "imageUrl": null
+      },
+      "depth": {
+        "portrait": "assets/cards/portrait-wolves-lin.webp",
+        "left": -55.666666666666664,
+        "top": -14.833333333333334,
+        "width": 202.66666666666666,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
+      },
+      "photoNote": null
     },
     {
       "id": "rsg-duck",
@@ -2606,14 +2703,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5357219228167533.html",
-        "imageUrl": "https://wx1.sinaimg.cn/large/007atyVlgy1iicd8qi5nzj31rp0zuk3u.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-rw-yehe.webp",
-        "left": 15.333333333333334,
-        "top": 17,
-        "width": 77.00000000000001,
+        "left": -38,
+        "top": 0.2222222222222222,
+        "width": 178.58333333333334,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -2644,14 +2741,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5355471776777879.html",
-        "imageUrl": "https://wx4.sinaimg.cn/large/007atyVlgy1ii6sjtbregj31rp0zuk3j.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-rw-yi.webp",
-        "left": 13,
-        "top": 17.166666666666668,
-        "width": 75.66666666666667,
+        "left": -34.916666666666664,
+        "top": 10.055555555555555,
+        "width": 162.41666666666666,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -2682,14 +2779,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5355102370270290.html",
-        "imageUrl": "https://wx2.sinaimg.cn/large/007atyVlgy1ii5m4i6sduj31rp0zuwqs.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-rw-feiyu.webp",
-        "left": 3.75,
-        "top": 18.944444444444443,
-        "width": 85.25,
+        "left": -53.75,
+        "top": -8.777777777777779,
+        "width": 185.91666666666666,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -2716,18 +2813,18 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5282235730364459.html",
-        "imageUrl": "https://wx3.sinaimg.cn/large/0079NSNPly1ibp2xtko2ag30jg0jgu1c.gif"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-rw-lingbian.webp",
-        "left": -11.666666666666666,
-        "top": 10,
-        "width": 122.91666666666667,
+        "left": -39.5,
+        "top": -2.2777777777777777,
+        "width": 170.08333333333334,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
-      "photoNote": "照片採用 2026 春季賽 RW 官方定裝素材。"
+      "photoNote": null
     },
     {
       "id": "kz-taiyang",
@@ -2860,14 +2957,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5355440709829017.html",
-        "imageUrl": "https://wx4.sinaimg.cn/large/0079NSNPgy1ii6ozcp4xfj31rq0zt143.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-xrock-sasa.webp",
-        "left": 19.166666666666668,
-        "top": 18.88888888888889,
-        "width": 54.333333333333336,
+        "left": -57.916666666666664,
+        "top": -18.444444444444443,
+        "width": 222.66666666666666,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -2894,18 +2991,18 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5282243279847980.html",
-        "imageUrl": "https://wx2.sinaimg.cn/large/0079NSNPly1ibp30dl9ayg30jg0jgb2q.gif"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-xrock-peng.webp",
-        "left": -18.333333333333332,
-        "top": 8.222222222222221,
-        "width": 141.08333333333334,
+        "left": -40,
+        "top": 3.7222222222222223,
+        "width": 170.16666666666666,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
-      "photoNote": "照片採用 2026 春季賽 eStar 時期官方定裝素材。"
+      "photoNote": null
     },
     {
       "id": "xrock-yingzi",
@@ -2932,14 +3029,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5354382830601283.html",
-        "imageUrl": "https://wx3.sinaimg.cn/large/8e9395f9gy1ii3bh87oohj21040kb779.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-xrock-yingzi.webp",
-        "left": 8.833333333333334,
-        "top": 16.38888888888889,
-        "width": 64.25,
+        "left": -28.416666666666668,
+        "top": -8.61111111111111,
+        "width": 185.91666666666666,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -2974,18 +3071,18 @@
         ]
       },
       "photoSource": {
-        "url": "https://wiki.biligame.com/qqspeed/%E6%96%87%E4%BB%B6:EStar.%E4%B8%9C%E4%B8%9C.png",
-        "imageUrl": "https://patchwiki.biligame.com/images/qqspeed/5/59/cs69xtm8slymv46c8czh3yuraddqg3x.png"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-xrock-dongdong.webp",
-        "left": -7.666666666666667,
-        "top": 11.444444444444445,
-        "width": 114.33333333333333,
+        "left": -51.666666666666664,
+        "top": -8.555555555555555,
+        "width": 204.91666666666666,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
-      "photoNote": "照片採用較早公開的 eStar 時期一般站姿定裝照。"
+      "photoNote": null
     },
     {
       "id": "qy-xuanzang",
@@ -3160,18 +3257,18 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5261578274605864.html",
-        "imageUrl": "https://wx1.sinaimg.cn/large/0079NSNPgy1i9v8zrurx7j30u0140e81.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-wz-zui.webp",
-        "left": 6.75,
-        "top": 13.277777777777779,
-        "width": 84.25,
-        "fadeStart": 61.72222222222222,
-        "fadeEnd": 69.22222222222223
+        "left": -26.583333333333332,
+        "top": 11.277777777777779,
+        "width": 153.66666666666666,
+        "fadeStart": 66.88888888888889,
+        "fadeEnd": 74.38888888888889
       },
-      "photoNote": "照片採用較早公開的定裝照。"
+      "photoNote": null
     },
     {
       "id": "wz-beining",
@@ -3198,14 +3295,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5355421645930585.html",
-        "imageUrl": "https://wx4.sinaimg.cn/large/008wO2KMgy1ii6mqpgg1nj31hw0u0dma.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-wz-beining.webp",
-        "left": 9.083333333333334,
-        "top": 17.88888888888889,
-        "width": 85.33333333333333,
+        "left": -24.666666666666668,
+        "top": 12.5,
+        "width": 147,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -3240,14 +3337,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5352923835925300.html",
-        "imageUrl": "https://wx4.sinaimg.cn/large/008wO2KMgy1ihynwv04ppj31i70u07ab.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-wz-erjia.webp",
-        "left": 1.0833333333333333,
-        "top": 19.88888888888889,
-        "width": 81.91666666666667,
+        "left": -34.833333333333336,
+        "top": 8.88888888888889,
+        "width": 164.91666666666666,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -3278,14 +3375,14 @@
         ]
       },
       "photoSource": {
-        "url": "https://www.sina.cn/news/detail/5340519778746828.html",
-        "imageUrl": "https://wx1.sinaimg.cn/large/008wO2KMgy1igv3zv4kubj31r80zkjxi.jpg"
+        "url": null,
+        "imageUrl": null
       },
       "depth": {
         "portrait": "assets/cards/portrait-wz-guleng.webp",
-        "left": 14.833333333333334,
-        "top": 17.27777777777778,
-        "width": 68.5,
+        "left": -27.583333333333332,
+        "top": 11.166666666666666,
+        "width": 154.5,
         "fadeStart": 66.88888888888889,
         "fadeEnd": 74.38888888888889
       },
@@ -3615,28 +3712,28 @@
         "file": "assets/cards/wolves-xiaobailong.webp",
         "width": 600,
         "height": 900,
-        "bytes": 151738,
+        "bytes": 166350,
         "alpha": false
       },
       {
         "file": "assets/cards/wolves-jiuyan.webp",
         "width": 600,
         "height": 900,
-        "bytes": 167924,
+        "bytes": 166030,
         "alpha": false
       },
       {
         "file": "assets/cards/wolves-linlong.webp",
         "width": 600,
         "height": 900,
-        "bytes": 168780,
+        "bytes": 169174,
         "alpha": false
       },
       {
         "file": "assets/cards/wolves-lin.webp",
         "width": 600,
         "height": 900,
-        "bytes": 155466,
+        "bytes": 164124,
         "alpha": false
       },
       {
@@ -3664,28 +3761,28 @@
         "file": "assets/cards/rw-yehe.webp",
         "width": 600,
         "height": 900,
-        "bytes": 166326,
+        "bytes": 171668,
         "alpha": false
       },
       {
         "file": "assets/cards/rw-yi.webp",
         "width": 600,
         "height": 900,
-        "bytes": 160572,
+        "bytes": 165518,
         "alpha": false
       },
       {
         "file": "assets/cards/rw-feiyu.webp",
         "width": 600,
         "height": 900,
-        "bytes": 161496,
+        "bytes": 169520,
         "alpha": false
       },
       {
         "file": "assets/cards/rw-lingbian.webp",
         "width": 600,
         "height": 900,
-        "bytes": 170712,
+        "bytes": 165194,
         "alpha": false
       },
       {
@@ -3713,28 +3810,28 @@
         "file": "assets/cards/xrock-sasa.webp",
         "width": 600,
         "height": 900,
-        "bytes": 165802,
+        "bytes": 161054,
         "alpha": false
       },
       {
         "file": "assets/cards/xrock-peng.webp",
         "width": 600,
         "height": 900,
-        "bytes": 164030,
+        "bytes": 164296,
         "alpha": false
       },
       {
         "file": "assets/cards/xrock-yingzi.webp",
         "width": 600,
         "height": 900,
-        "bytes": 160502,
+        "bytes": 168448,
         "alpha": false
       },
       {
         "file": "assets/cards/xrock-dongdong.webp",
         "width": 600,
         "height": 900,
-        "bytes": 159148,
+        "bytes": 169978,
         "alpha": false
       },
       {
@@ -3769,28 +3866,28 @@
         "file": "assets/cards/wz-zui.webp",
         "width": 600,
         "height": 900,
-        "bytes": 167230,
+        "bytes": 168788,
         "alpha": false
       },
       {
         "file": "assets/cards/wz-beining.webp",
         "width": 600,
         "height": 900,
-        "bytes": 167660,
+        "bytes": 171882,
         "alpha": false
       },
       {
         "file": "assets/cards/wz-erjia.webp",
         "width": 600,
         "height": 900,
-        "bytes": 164880,
+        "bytes": 173382,
         "alpha": false
       },
       {
         "file": "assets/cards/wz-guleng.webp",
         "width": 600,
         "height": 900,
-        "bytes": 168038,
+        "bytes": 171778,
         "alpha": false
       },
       {
@@ -3956,23 +4053,30 @@
       },
       {
         "file": "assets/cards/portrait-wolves-xiaobailong.webp",
-        "width": 665,
-        "height": 740,
-        "bytes": 37708,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 61290,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-wolves-jiuyan.webp",
-        "width": 640,
-        "height": 855,
-        "bytes": 76846,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 76358,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-wolves-linlong.webp",
-        "width": 605,
-        "height": 870,
-        "bytes": 72360,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 70452,
+        "alpha": true
+      },
+      {
+        "file": "assets/cards/portrait-wolves-lin.webp",
+        "width": 1045,
+        "height": 1567,
+        "bytes": 62020,
         "alpha": true
       },
       {
@@ -3998,30 +4102,30 @@
       },
       {
         "file": "assets/cards/portrait-rw-yehe.webp",
-        "width": 665,
-        "height": 825,
-        "bytes": 63264,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 87288,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-rw-yi.webp",
-        "width": 570,
-        "height": 835,
-        "bytes": 52642,
+        "width": 1024,
+        "height": 1536,
+        "bytes": 77022,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-rw-feiyu.webp",
-        "width": 725,
-        "height": 825,
-        "bytes": 64172,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 74082,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-rw-lingbian.webp",
-        "width": 700,
-        "height": 700,
-        "bytes": 55210,
+        "width": 1024,
+        "height": 1536,
+        "bytes": 81056,
         "alpha": true
       },
       {
@@ -4047,30 +4151,30 @@
       },
       {
         "file": "assets/cards/portrait-xrock-sasa.webp",
-        "width": 475,
-        "height": 810,
-        "bytes": 44456,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 69638,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-xrock-peng.webp",
-        "width": 700,
-        "height": 700,
-        "bytes": 62092,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 81164,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-xrock-yingzi.webp",
-        "width": 285,
-        "height": 458,
-        "bytes": 25456,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 67850,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-xrock-dongdong.webp",
-        "width": 1000,
-        "height": 1000,
-        "bytes": 63886,
+        "width": 1045,
+        "height": 1567,
+        "bytes": 72910,
         "alpha": true
       },
       {
@@ -4103,30 +4207,30 @@
       },
       {
         "file": "assets/cards/portrait-wz-zui.webp",
-        "width": 805,
-        "height": 803,
-        "bytes": 121424,
+        "width": 1100,
+        "height": 1100,
+        "bytes": 78526,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-wz-beining.webp",
-        "width": 635,
-        "height": 700,
-        "bytes": 56746,
+        "width": 1100,
+        "height": 1100,
+        "bytes": 93714,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-wz-erjia.webp",
-        "width": 630,
-        "height": 685,
-        "bytes": 55170,
+        "width": 1100,
+        "height": 1100,
+        "bytes": 82046,
         "alpha": true
       },
       {
         "file": "assets/cards/portrait-wz-guleng.webp",
-        "width": 715,
-        "height": 1157,
-        "bytes": 91448,
+        "width": 1100,
+        "height": 1100,
+        "bytes": 82792,
         "alpha": true
       },
       {
@@ -4158,15 +4262,15 @@
         "alpha": false
       }
     ],
-    "totalBytes": 12120358,
-    "count": 107
+    "totalBytes": 12462566,
+    "count": 108
   },
   "depthFrame": "assets/cards/depth-frame.webp",
-  "updatedAt": "2026-10-23",
+  "updatedAt": "2026-10-24",
   "collectionCounts": {
     "racing": 20,
     "item": 29,
     "total": 49,
-    "portraitPending": 1
+    "portraitPending": 0
   }
 }
