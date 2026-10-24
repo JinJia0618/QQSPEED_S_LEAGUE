@@ -10,7 +10,7 @@
   const viewerReducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const viewerFineHover = matchMedia('(hover: hover) and (pointer: fine)');
   let data, team, selected, collectionRole = 'racing';
-  let teamPlayers = [], cardView = 'depth';
+  let teamPlayers = [], deckTouch = null, suppressCardClick = false, viewerTouchId = null;
   const roleName = role => role === 'item' ? '道具' : '競速';
   let viewerTrigger, viewerScrollY = 0, previousBodyTop = '', backdropPressed = false;
   let viewerTiltFrame = 0, viewerPointer = null;
@@ -26,7 +26,9 @@
     stage.dataset.count = teamPlayers.length;
     stage.classList.toggle('is-overview', collectionRole === 'all');
     stage.classList.remove('has-active');
-    const middle = (teamPlayers.length - 1) / 2;
+    const topIndex = collectionRole === 'all' ? teamPlayers.findIndex(player => player.id === team.overviewTop) : -1;
+    const middle = topIndex >= 0 ? topIndex : (teamPlayers.length - 1) / 2;
+    stage.dataset.fanSpan = Math.max(middle, teamPlayers.length - 1 - middle) * 2 + 1;
     stage.innerHTML = teamPlayers.map((player, index) => {
       const d = index - middle;
       return `<button type="button" class="card-slot entering" data-player="${player.id}" aria-label="放大檢視${escape(team.name)} ${escape(player.name)} ${roleName(player.role)}選手卡" aria-haspopup="dialog" aria-controls="card-viewer" aria-pressed="${selected?.id === player.id}" style="--d:${d};--angle:${d * 9};--y:${d * d * (collectionRole === 'all' ? 5 : 13)};--index:${index};--z:${10 - Math.ceil(Math.abs(d))}"><span class="card-visual"><img src="${player.card}" alt="${escape(team.name)} ${escape(player.name)} 秋季賽選手卡" width="600" height="900" draggable="false"><span class="card-role-label">${roleName(player.role)}</span></span></button>`;
@@ -69,7 +71,11 @@
     if (!next) return;
     team = next;
     teamPlayers = team.players.filter(p => collectionRole === 'all' || (p.role || 'racing') === collectionRole);
-    selected = teamPlayers[Math.floor((teamPlayers.length - 1) / 2)];
+    if (collectionRole === 'all' && Array.isArray(team.overviewOrder)) {
+      const position = new Map(team.overviewOrder.map((playerId, index) => [playerId, index]));
+      teamPlayers.sort((a, b) => (position.get(a.id) ?? Infinity) - (position.get(b.id) ?? Infinity));
+    }
+    selected = (collectionRole === 'all' && teamPlayers.find(player => player.id === team.overviewTop)) || teamPlayers[Math.floor((teamPlayers.length - 1) / 2)];
     $('#current-team-logo').src = team.logo;
     $('#current-team-logo').alt = `${team.name} 隊伍 Logo`;
     $('#current-team-name').textContent = team.name;
@@ -128,12 +134,13 @@
   }
 
   function queueViewerTilt(event) {
-    if (!viewer.open || event.pointerType !== 'mouse' || viewerReducedMotion.matches || !viewerFineHover.matches) return;
-    viewerPointer = {x: event.clientX, y: event.clientY};
+    const touch = event.pointerType !== 'mouse';
+    if (!viewer.open || viewerReducedMotion.matches || (touch ? viewerTouchId !== event.pointerId : !viewerFineHover.matches)) return;
+    viewerPointer = {x: event.clientX, y: event.clientY, touch};
     if (viewerTiltFrame) return;
     viewerTiltFrame = requestAnimationFrame(() => {
       viewerTiltFrame = 0;
-      if (!viewer.open || !viewerPointer || viewerReducedMotion.matches || !viewerFineHover.matches) return;
+      if (!viewer.open || !viewerPointer || viewerReducedMotion.matches || (!viewerPointer.touch && !viewerFineHover.matches)) return;
       // Measure the stationary outer area, never the transformed card surface.
       const box = viewerInteraction.getBoundingClientRect();
       if (!box.width || !box.height) return;
@@ -142,11 +149,10 @@
       const nx = (x - .5) * 2, ny = (y - .5) * 2;
       const strength = Math.min(1, Math.hypot(nx, ny));
       const properties = {
-        '--tilt-x': `${(-ny * 14).toFixed(2)}deg`,
-        '--tilt-y': `${(nx * 17).toFixed(2)}deg`,
-        '--card-depth': '10px',
-        '--parallax-x': `${(nx * 6).toFixed(2)}px`,
-        '--parallax-y': `${(ny * 4).toFixed(2)}px`,
+        '--tilt-x': `${(-ny * 5).toFixed(2)}deg`,
+        '--tilt-y': `${(nx * 6).toFixed(2)}deg`,
+        '--parallax-x': `${(nx * 4).toFixed(2)}px`,
+        '--parallax-y': `${(ny * 3).toFixed(2)}px`,
         '--light-x': `${(x * 100).toFixed(2)}%`,
         '--light-y': `${(y * 100).toFixed(2)}%`,
         '--foil-x': `${(25 + x * 50).toFixed(2)}%`,
@@ -163,28 +169,31 @@
   }
 
   viewerInteraction.addEventListener('pointermove', queueViewerTilt);
-  viewerInteraction.addEventListener('pointerleave', resetViewerTilt);
-  viewerInteraction.addEventListener('pointercancel', resetViewerTilt);
+  viewerInteraction.addEventListener('pointerdown', event => {
+    if (event.pointerType === 'mouse' || viewerReducedMotion.matches) return;
+    viewerTouchId = event.pointerId;
+    viewerInteraction.setPointerCapture(event.pointerId);
+    queueViewerTilt(event);
+  });
+  function finishViewerTouch(event) {
+    if (event.pointerId !== viewerTouchId) return;
+    viewerTouchId = null;
+    if (viewerInteraction.hasPointerCapture(event.pointerId)) viewerInteraction.releasePointerCapture(event.pointerId);
+    resetViewerTilt();
+  }
+  viewerInteraction.addEventListener('pointerup', finishViewerTouch);
+  viewerInteraction.addEventListener('pointercancel', finishViewerTouch);
+  viewerInteraction.addEventListener('pointerleave', event => { if (event.pointerType === 'mouse') resetViewerTilt(); });
   viewerReducedMotion.addEventListener('change', resetViewerTilt);
   viewerFineHover.addEventListener('change', resetViewerTilt);
   addEventListener('resize', resetViewerTilt);
 
-  function setCardView(mode) {
-    cardView = mode;
-    viewerTilt.dataset.view = mode;
-    $$('#card-view-controls [data-card-view]').forEach(button=>button.setAttribute('aria-pressed', String(button.dataset.cardView===mode)));
-    resetViewerTilt();
-  }
-  $('#card-view-controls').addEventListener('click',event=>{
-    const button=event.target.closest('[data-card-view]');
-    if(button)setCardView(button.dataset.cardView);
-  });
-
-  function renderDepthCard(player) {
+  function renderAnimatedCard(player) {
     const depth=player.depth;
     const available=depth && data.depthFrame;
-    $('#card-view-controls').hidden=!available;
-    if(!available){setCardView('original');return;}
+    viewerTilt.dataset.player=player.id;
+    viewerTilt.classList.remove('has-portrait');
+    if(!available)return;
     $('#depth-background').src=data.depthFrame;
     $('#depth-heading').src=player.card;
     $('#depth-plaque').src=player.card;
@@ -197,7 +206,10 @@
     portrait.style.width=`${depth.width}%`;
     $('#depth-portrait-wrap').style.setProperty('--portrait-fade-start',`${Math.min(72,depth.fadeStart)}%`);
     $('#depth-portrait-wrap').style.setProperty('--portrait-fade-end',`${Math.min(75,depth.fadeEnd)}%`);
-    setCardView('depth');
+    const images=$$('#card-depth-scene img');
+    Promise.all(images.map(image=>image.decode())).then(()=>{
+      if(viewerTilt.dataset.player===player.id)viewerTilt.classList.add('has-portrait');
+    }).catch(()=>{}); // The complete original card remains visible if a layer fails.
   }
 
   function openCardViewer(card) {
@@ -210,7 +222,7 @@
     $('#card-viewer-image').src = player.card;
     $('#card-viewer-image').alt = `${team.name} ${player.name} 秋季賽選手卡`;
     renderPlayerProfile(player);
-    renderDepthCard(player);
+    renderAnimatedCard(player);
     resetViewerTilt();
     viewerScrollY = window.scrollY;
     previousBodyTop = document.body.style.top;
@@ -244,14 +256,37 @@
     viewerTrigger = null;
   });
 
+  stage.addEventListener('pointerdown', event => {
+    suppressCardClick = false;
+    if (event.pointerType !== 'mouse') deckTouch = {id:event.pointerId,x:event.clientX,y:event.clientY,dragging:false};
+  });
   stage.addEventListener('pointermove', event => {
-    if (event.pointerType !== 'mouse' || !data) return;
+    if (!data) return;
+    if (event.pointerType !== 'mouse') {
+      if (!deckTouch || deckTouch.id !== event.pointerId) return;
+      const dx=event.clientX-deckTouch.x,dy=event.clientY-deckTouch.y;
+      if (!deckTouch.dragging && (Math.abs(dx)<8 || Math.abs(dx)<=Math.abs(dy))) return;
+      deckTouch.dragging=true;
+      suppressCardClick=true;
+      if (!stage.hasPointerCapture(event.pointerId)) stage.setPointerCapture(event.pointerId);
+      event.preventDefault();
+      const nearest=nearestCard(event.clientX);
+      if(nearest)activate(nearest.dataset.player);
+      return;
+    }
     const rect = stage.getBoundingClientRect();
     const y = event.clientY - rect.top;
     if (y < 24 || y > rect.height - 10) { restDeck(); return; }
     const nearest = nearestCard(event.clientX);
     if (nearest) activate(nearest.dataset.player);
   });
+  function finishDeckTouch(event) {
+    if (!deckTouch || deckTouch.id!==event.pointerId) return;
+    if(stage.hasPointerCapture(event.pointerId))stage.releasePointerCapture(event.pointerId);
+    deckTouch=null;
+  }
+  stage.addEventListener('pointerup',finishDeckTouch);
+  stage.addEventListener('pointercancel',finishDeckTouch);
   stage.addEventListener('pointerleave', () => { if (!stage.contains(document.activeElement)) restDeck(); });
   stage.addEventListener('focusin', event => {
     const card = event.target.closest('.card-slot');
@@ -259,6 +294,7 @@
   });
   stage.addEventListener('focusout', event => { if (!stage.contains(event.relatedTarget)) restDeck(); });
   stage.addEventListener('click', event => {
+    if(suppressCardClick && event.detail!==0){event.preventDefault();return;}
     const card = event.target.closest('.card-slot');
     if (card && stage.contains(card) && data) {
       card.focus({preventScroll: true});

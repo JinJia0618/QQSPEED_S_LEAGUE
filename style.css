@@ -252,36 +252,32 @@ body.card-viewer-open{position:fixed;inset-inline:0;width:100%;overflow:hidden}
 .roster-player-name small{display:block;margin-top:4px;color:#a18ab8;font-size:9px;line-height:1.4;font-weight:400;letter-spacing:1.2px}
 .empty-roster{display:grid;place-items:center;min-height:240px;color:var(--muted);font-size:13px;text-align:center}
 
-/* Keep the scene's ancestors unfiltered and unclipped so Z layers stay separate. */
+/* One original-style card preview with subtle portrait motion and laminate light. */
 .card-viewer-content{gap:32px;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}
 .card-viewer-header{z-index:10}
-.card-viewer-interaction{--viewer-card-width:min(330px,max(220px,calc((100vh - 300px) * .6666667)));--viewer-card-width:min(330px,max(220px,calc((100dvh - 300px) * .6666667)));padding:34px 44px 32px;perspective:1000px;perspective-origin:50% 45%;isolation:auto}
-.card-viewer-tilt{transform-style:preserve-3d}
-.card-viewer-tilt[data-view="depth"]{transform:rotateX(var(--tilt-x,-2deg)) rotateY(var(--tilt-y,-4deg)) translateZ(var(--card-depth,0px));box-shadow:none}
+.card-viewer-interaction{--viewer-card-width:min(330px,max(220px,calc((100vh - 260px) * .6666667)));--viewer-card-width:min(330px,max(220px,calc((100dvh - 260px) * .6666667)));padding:34px 44px 32px;perspective:1000px;perspective-origin:50% 45%;isolation:auto;touch-action:none}
+.card-viewer-tilt{transform-style:flat}
 .card-viewer-image{position:absolute;inset:0}
-.card-depth-scene{position:absolute;inset:0;display:none;transform-style:preserve-3d;pointer-events:none}
-.card-viewer-tilt[data-view="depth"]>.card-viewer-image{visibility:hidden}
-.card-viewer-tilt[data-view="depth"]>.card-depth-scene{display:block}
-.card-viewer-tilt[data-view="original"]>.card-depth-scene{display:none}
+.card-depth-scene{position:absolute;inset:0;display:none;overflow:hidden;transform-style:flat;pointer-events:none}
+.card-viewer-tilt.has-portrait>.card-viewer-image{opacity:0}
+.card-viewer-tilt.has-portrait>.card-depth-scene{display:block}
 .card-depth-scene>*{position:absolute;backface-visibility:hidden;-webkit-backface-visibility:hidden;pointer-events:none}
-.depth-back{inset:0;border:1px solid #9d8562;border-radius:2px;background:linear-gradient(135deg,#bd9460,#44214f 18%,#180b2b 70%,#c39b58);transform:translateZ(-4px);box-shadow:var(--shadow-x,9px) var(--shadow-y,24px) var(--shadow-blur,35px) #03000dc9}
-.depth-back:before{content:"";position:absolute;inset:0;border:1px solid #7c4fb0;box-shadow:inset 3px 0 0 #f0d39370,inset -3px 0 0 #432054;transform:translateZ(5px)}
-.depth-background{inset:0;width:100%;height:100%;object-fit:fill;transform:translateZ(0)}
-.depth-portal{display:none}
-.depth-portrait-wrap{inset:0;transform:translate3d(var(--parallax-x,0px),var(--parallax-y,0px),30px);-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 var(--portrait-fade-start,67%),transparent var(--portrait-fade-end,74%),transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 var(--portrait-fade-start,67%),transparent var(--portrait-fade-end,74%),transparent 100%)}
+.depth-background{inset:0;width:100%;height:100%;object-fit:fill;z-index:0}
+.depth-portrait-wrap{inset:0;z-index:1;transform:translate(var(--parallax-x,0px),var(--parallax-y,0px));transition:transform .18s ease-out;-webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 var(--portrait-fade-start,67%),transparent var(--portrait-fade-end,74%),transparent 100%);mask-image:linear-gradient(to bottom,#000 0%,#000 var(--portrait-fade-start,67%),transparent var(--portrait-fade-end,74%),transparent 100%)}
 #depth-portrait{position:absolute;max-width:none;height:auto;object-fit:contain;filter:drop-shadow(2px 5px 5px #10051a33);user-select:none;-webkit-user-select:none}
 .depth-heading,.depth-plaque{inset:0;width:100%;height:100%;object-fit:fill;user-select:none;-webkit-user-select:none}
-.depth-heading{clip-path:inset(0 0 91%);transform:translateZ(2px)}
-.depth-plaque{clip-path:inset(74% 0 0);transform:translateZ(2px)}
-.depth-league-logo,.depth-team-logo{top:8.1%;width:20%;height:11.2%;object-fit:contain;filter:drop-shadow(0 3px 2px #10071d88);transform:translateZ(5px)}
+.depth-heading{clip-path:inset(0 0 91%);z-index:3}
+.depth-plaque{clip-path:inset(74% 0 0);z-index:3}
+.depth-league-logo,.depth-team-logo{top:8.1%;width:20%;height:11.2%;object-fit:contain;filter:drop-shadow(0 3px 2px #10071d88);z-index:4}
 .depth-league-logo{left:6.4%}
 .depth-team-logo{right:6.4%}
-.card-viewer-tilt[data-view="depth"]>.card-viewer-foil,.card-viewer-tilt[data-view="depth"]>.card-viewer-glare{transform:translateZ(32px)}
-.card-viewer-tilt[data-view="depth"]>.card-viewer-foil{box-shadow:none}
-.card-view-controls{position:relative;z-index:2;display:flex;justify-content:center;gap:5px;width:max-content;max-width:100%;margin:12px auto 11px;padding:4px;border:1px solid #b28fc438;border-radius:6px;background:#130b24}
-.card-view-controls button{min-height:36px;padding:7px 14px;border:1px solid transparent;border-radius:3px;background:transparent;color:#a892c0;font-size:11px;letter-spacing:.5px;transition:color .2s,background .2s,border-color .2s}
-.card-view-controls button:hover{color:#f8e8b7;background:#f4d98b0a}
-.card-view-controls button[aria-pressed=true]{color:var(--gold);border-color:#c5a16455;background:linear-gradient(130deg,#5a397d80,#352040)}
+.card-viewer-foil,.card-viewer-glare{z-index:10;transform:none}
+.card-viewer-hint{margin-top:12px}
+.card-viewer-edge-glow,.card-viewer-corner-glow{position:absolute;inset:0;z-index:12;pointer-events:none;mix-blend-mode:screen}
+.card-viewer-edge-glow{padding:2px;background:linear-gradient(135deg,#fff5bc,#ebbe6288 12%,transparent 33%,transparent 62%,#e7b95388 88%,#fff4bf);-webkit-mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);mask:linear-gradient(#fff 0 0) content-box,linear-gradient(#fff 0 0);-webkit-mask-composite:xor;mask-composite:exclude;filter:drop-shadow(0 0 4px #f8d98766);animation:card-edge-breathe 6.5s ease-in-out infinite}
+.card-viewer-corner-glow{background:radial-gradient(ellipse at 3% 3%,#fff5bdcc, #f7ce6c44 5%,transparent 18%),radial-gradient(ellipse at 97% 97%,#fff1b4bb,#eebf5844 5%,transparent 19%);animation:card-corner-breathe 7.5s ease-in-out -2s infinite}
+@keyframes card-edge-breathe{0%,100%{opacity:.2}50%{opacity:.48}}
+@keyframes card-corner-breathe{0%,100%{opacity:.16}50%{opacity:.36}}
 .card-viewer-profile{align-self:center}
 
 @media(max-width:760px){
@@ -292,21 +288,19 @@ body.card-viewer-open{position:fixed;inset-inline:0;width:100%;overflow:hidden}
   .collection-navigation+.arena{margin-top:14px}
   .card-viewer-content{grid-template-columns:minmax(0,1fr);gap:23px}
   .card-viewer-interaction{--viewer-card-width:min(280px,calc(100vw - 132px));padding:29px 38px 28px;perspective:1000px}
-  .card-view-controls{margin-top:10px}
   .card-viewer-profile{padding:12px 10px;border-top:1px solid var(--line)}
 }
 @media(max-width:430px){
   .card-viewer-interaction{--viewer-card-width:min(260px,calc(100vw - 126px));padding-inline:32px}
   .card-viewer-profile{padding-inline:5px}
-  .card-view-controls button{padding-inline:12px}
 }
 @media(hover:none){
   .card-viewer-tilt{will-change:auto}
-  .card-viewer-foil,.card-viewer-glare,.card-viewer-hint{display:none}
-  .card-viewer-tilt[data-view="depth"]{transform:rotateX(-2deg) rotateY(-5deg)}
 }
 @media(prefers-reduced-motion:reduce){
-  .card-viewer-tilt,.card-viewer-tilt[data-view="depth"]{transform:none!important;transition:none;will-change:auto}
+  .card-viewer-tilt,.depth-portrait-wrap{transform:none!important;transition:none;will-change:auto}
+  .card-viewer-interaction{touch-action:pan-y}
+  .card-viewer-edge-glow,.card-viewer-corner-glow{animation:none;opacity:.22}
   .card-viewer-foil,.card-viewer-glare,.card-viewer-hint{display:none}
 }
 
@@ -316,9 +310,9 @@ body.card-viewer-open{position:fixed;inset-inline:0;width:100%;overflow:hidden}
 
 /* Full team collection uses the same fan as the role collections. */
 .player-stage.is-overview{--card-width:208px;--spread:85px;--fan-angle:5deg;--lift:65px;height:460px}
-.player-stage.is-overview[data-count="7"]{--spread:78px}
+.player-stage.is-overview[data-fan-span="7"]{--spread:78px}
 .player-stage.is-overview .card-role-label{display:none}
 @media(max-width:1050px){.player-stage.is-overview{--card-width:190px;--spread:66px;height:430px}}
-@media(max-width:760px){.player-stage.is-overview{--card-width:clamp(140px,29vw,190px);--spread:8.2vw;--fan-angle:3deg;--lift:45px;height:390px}.player-stage.is-overview[data-count="7"]{--spread:7.2vw}}
-@media(max-width:430px){.player-stage.is-overview{--card-width:38vw;--spread:7.5vw;--fan-angle:3deg;--lift:36px;height:340px}.player-stage.is-overview[data-count="7"]{--spread:6.4vw}}
+@media(max-width:760px){.player-stage.is-overview{--card-width:clamp(140px,29vw,190px);--spread:8.2vw;--fan-angle:3deg;--lift:45px;height:390px}.player-stage.is-overview[data-fan-span="7"]{--spread:7.2vw}}
+@media(max-width:430px){.player-stage.is-overview{--card-width:38vw;--spread:7.5vw;--fan-angle:3deg;--lift:36px;height:340px}.player-stage.is-overview[data-fan-span="7"]{--spread:4.5vw}}
 .card-profile-photo-note{font-size:12px;line-height:1.7;color:var(--muted);margin:0 0 20px}

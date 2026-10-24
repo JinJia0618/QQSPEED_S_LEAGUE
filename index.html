@@ -7,8 +7,8 @@
   <meta name="description" content="2026 S聯賽秋季賽選手圖鑑。瀏覽八支隊伍的競速、道具選手與立體互動卡牌。">
   <title>S聯賽秋季賽｜選手圖鑑</title>
   <link rel="icon" type="image/webp" href="assets/logos/league.webp">
-  <link rel="stylesheet" href="style.css?v=20261023-collection">
-  <script src="app.js?v=20261023-collection" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261024-portraits-top">
+  <script src="app.js?v=20261024-portraits-top" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#teams">前往隊伍與選手</a>
@@ -52,7 +52,7 @@
         <div class="arena-lines" aria-hidden="true"><span></span><span></span><span></span></div>
         <div class="arena-topline">
           <div class="current-team"><img id="current-team-logo" alt="" width="44" height="44"><div><span class="micro-label" id="arena-category">PLAYER COLLECTION</span><h3 id="current-team-name">—</h3></div><span id="roster-count" class="roster-count"></span></div>
-          <p class="interaction-hint" id="interaction-hint"><span aria-hidden="true">↗</span><span class="desktop-hint">滑鼠移入展開，點擊卡牌放大</span><span class="touch-hint">輕點卡牌，放大檢視</span></p>
+          <p class="interaction-hint" id="interaction-hint"><span aria-hidden="true">↗</span><span class="desktop-hint">滑鼠移入展開，點擊卡牌放大</span><span class="touch-hint">左右滑動瀏覽，輕點卡牌放大</span></p>
         </div>
         <div id="player-stage" class="player-stage" role="group" aria-label="選手卡牌，移動滑鼠或使用Tab與方向鍵瀏覽，點選卡牌可放大檢視"></div>
         <div class="player-caption">
@@ -81,9 +81,7 @@
             <div id="card-viewer-tilt" class="card-viewer-tilt">
               <img id="card-viewer-image" class="card-viewer-image" width="600" height="900" alt="" draggable="false">
               <div id="card-depth-scene" class="card-depth-scene" aria-hidden="true">
-                <div class="depth-back"></div>
                 <img id="depth-background" class="depth-background" alt="" draggable="false">
-                <div class="depth-portal"></div>
                 <div id="depth-portrait-wrap" class="depth-portrait-wrap"><img id="depth-portrait" alt="" draggable="false"></div>
                 <img id="depth-heading" class="depth-heading" alt="" draggable="false">
                 <img id="depth-league-logo" class="depth-league-logo" alt="" draggable="false">
@@ -92,10 +90,11 @@
               </div>
               <span class="card-viewer-foil" aria-hidden="true"></span>
               <span class="card-viewer-glare" aria-hidden="true"></span>
+              <span class="card-viewer-edge-glow" aria-hidden="true"></span>
+              <span class="card-viewer-corner-glow" aria-hidden="true"></span>
             </div>
           </div>
-          <div id="card-view-controls" class="card-view-controls" role="group" aria-label="卡牌檢視模式"><button type="button" data-card-view="depth" aria-pressed="true">立體卡牌</button><button type="button" data-card-view="original" aria-pressed="false">原卡牌</button></div>
-            <p class="card-viewer-hint">移動滑鼠，欣賞卡牌的立體層次。</p>
+          <p class="card-viewer-hint">移動滑鼠或手指拖曳，感受人物微動與卡面流光。</p>
         </div>
         <aside class="card-viewer-profile" aria-labelledby="card-profile-title">
           <p class="eyebrow">PLAYER PROFILE</p>
