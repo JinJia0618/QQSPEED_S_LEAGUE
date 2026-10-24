@@ -12,6 +12,7 @@
   let data, team, selected, collectionRole = 'racing';
   let teamPlayers = [], deckTouch = null, suppressCardClick = false, viewerTouchId = null;
   const roleName = role => role === 'item' ? '道具' : '競速';
+  const asset = file => `${file}?v=${encodeURIComponent(data.assetVersion || data.updatedAt || '')}`;
   let viewerTrigger, viewerScrollY = 0, previousBodyTop = '', backdropPressed = false;
   let viewerTiltFrame = 0, viewerPointer = null;
   const escape = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -19,7 +20,7 @@
   function announce(message) { $('#announcement').textContent = message; }
 
   function renderTeams() {
-    $('#team-selector').innerHTML = data.teams.map(item => `<button type="button" class="team-choice" data-team="${item.id}" aria-pressed="${item.id === team.id}" aria-label="瀏覽${escape(item.name)}，${item.players.length}位選手"><img src="${item.logo}" alt="" width="48" height="48"><span class="team-choice-name">${escape(item.name)}</span><span class="team-choice-count">${item.players.length} 位選手</span></button>`).join('');
+    $('#team-selector').innerHTML = data.teams.map(item => `<button type="button" class="team-choice" data-team="${item.id}" aria-pressed="${item.id === team.id}" aria-label="瀏覽${escape(item.name)}，${item.players.length}位選手"><img src="${asset(item.logo)}" alt="" width="48" height="48"><span class="team-choice-name">${escape(item.name)}</span><span class="team-choice-count">${item.players.length} 位選手</span></button>`).join('');
   }
 
   function renderDeck() {
@@ -31,7 +32,7 @@
     stage.dataset.fanSpan = Math.max(middle, teamPlayers.length - 1 - middle) * 2 + 1;
     stage.innerHTML = teamPlayers.map((player, index) => {
       const d = index - middle;
-      return `<button type="button" class="card-slot entering" data-player="${player.id}" aria-label="放大檢視${escape(team.name)} ${escape(player.name)} ${roleName(player.role)}選手卡" aria-haspopup="dialog" aria-controls="card-viewer" aria-pressed="${selected?.id === player.id}" style="--d:${d};--angle:${d * 9};--y:${d * d * (collectionRole === 'all' ? 5 : 13)};--index:${index};--z:${10 - Math.ceil(Math.abs(d))}"><span class="card-visual"><img src="${player.card}" alt="${escape(team.name)} ${escape(player.name)} 秋季賽選手卡" width="600" height="900" draggable="false"><span class="card-role-label">${roleName(player.role)}</span></span></button>`;
+      return `<button type="button" class="card-slot entering" data-player="${player.id}" aria-label="放大檢視${escape(team.name)} ${escape(player.name)} ${roleName(player.role)}選手卡" aria-haspopup="dialog" aria-controls="card-viewer" aria-pressed="${selected?.id === player.id}" style="--d:${d};--angle:${d * 9};--y:${d * d * (collectionRole === 'all' ? 5 : 13)};--index:${index};--z:${10 - Math.ceil(Math.abs(d))}"><span class="card-visual"><img src="${asset(player.card)}" alt="${escape(team.name)} ${escape(player.name)} 秋季賽選手卡" width="600" height="900" draggable="false"><span class="card-role-label">${roleName(player.role)}</span></span></button>`;
     }).join('') || '<p class="empty-roster">此隊伍目前沒有這個分類的選手資料。</p>';
     setTimeout(() => $$('.card-slot.entering').forEach(el => el.classList.remove('entering')), 650);
   }
@@ -76,7 +77,7 @@
       teamPlayers.sort((a, b) => (position.get(a.id) ?? Infinity) - (position.get(b.id) ?? Infinity));
     }
     selected = (collectionRole === 'all' && teamPlayers.find(player => player.id === team.overviewTop)) || teamPlayers[Math.floor((teamPlayers.length - 1) / 2)];
-    $('#current-team-logo').src = team.logo;
+    $('#current-team-logo').src = asset(team.logo);
     $('#current-team-logo').alt = `${team.name} 隊伍 Logo`;
     $('#current-team-name').textContent = team.name;
     $('#roster-count').textContent = `${teamPlayers.length} 位${collectionRole === 'all' ? '選手' : roleName(collectionRole)+'手'}`;
@@ -194,15 +195,15 @@
     viewerTilt.dataset.player=player.id;
     viewerTilt.classList.remove('has-portrait');
     if(!available)return;
-    $('#depth-background').src=data.depthFrame;
-    $('#depth-heading').src=player.card;
-    $('#depth-plaque').src=player.card;
+    $('#depth-background').src=asset(data.depthFrame);
+    $('#depth-heading').src=asset(player.card);
+    $('#depth-plaque').src=asset(player.card);
     // Reuse the original card's exact branding pixels so no second logo is
     // resized or shifted over the printed card artwork.
-    $('#depth-league-logo').src=player.card;
-    $('#depth-team-logo').src=player.card;
+    $('#depth-league-logo').src=asset(player.card);
+    $('#depth-team-logo').src=asset(player.card);
     const portrait=$('#depth-portrait');
-    portrait.src=depth.portrait;
+    portrait.src=asset(depth.portrait);
     portrait.style.left=`${depth.left}%`;
     portrait.style.top=`${depth.top}%`;
     portrait.style.width=`${depth.width}%`;
@@ -221,7 +222,7 @@
     activate(player.id);
     viewerTrigger = card;
     $('#card-viewer-title').textContent = `${team.name} · ${player.name}`;
-    $('#card-viewer-image').src = player.card;
+    $('#card-viewer-image').src = asset(player.card);
     $('#card-viewer-image').alt = `${team.name} ${player.name} 秋季賽選手卡`;
     renderPlayerProfile(player);
     renderAnimatedCard(player);
@@ -354,7 +355,7 @@
     renderTeams();
     setTeam(team.id, false);
     // Prepare the other teams after the first deck has loaded.
-    if ('requestIdleCallback' in window) requestIdleCallback(() => data.players.forEach(player => { const img = new Image(); img.src = player.card; }));
+    if ('requestIdleCallback' in window) requestIdleCallback(() => data.players.forEach(player => { const img = new Image(); img.src = asset(player.card); }));
   }).catch(error => {
     console.error(error);
     $('#team-selector').innerHTML = '<p class="loading">卡牌載入失敗，請重新整理頁面。</p>';
