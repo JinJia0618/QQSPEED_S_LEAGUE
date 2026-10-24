@@ -197,8 +197,10 @@
     $('#depth-background').src=data.depthFrame;
     $('#depth-heading').src=player.card;
     $('#depth-plaque').src=player.card;
-    $('#depth-league-logo').src=data.league;
-    $('#depth-team-logo').src=team.logo;
+    // Reuse the original card's exact branding pixels so no second logo is
+    // resized or shifted over the printed card artwork.
+    $('#depth-league-logo').src=player.card;
+    $('#depth-team-logo').src=player.card;
     const portrait=$('#depth-portrait');
     portrait.src=depth.portrait;
     portrait.style.left=`${depth.left}%`;
