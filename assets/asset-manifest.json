@@ -16,15 +16,23 @@
           "width": 600,
           "height": 900,
           "profile": {
-            "realName": null,
+            "realName": "石智升",
             "birthday": "04-03",
             "intro": "廣州狼隊競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
             "sources": [
               {
                 "label": "本人生日貼文",
                 "url": "https://www.sina.cn/news/detail/5283406508458991.html"
+              },
+              {
+                "label": "俱樂部官方大名單",
+                "url": "https://www.sina.cn/news/detail/5340484584868792.html"
               }
-            ]
+            ],
+            "checkedAt": "2026-11-01",
+            "zodiac": "牡羊座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -52,7 +60,10 @@
                 "label": "官博生日貼文",
                 "url": "https://www.sina.cn/news/detail/5248979253592617.html"
               }
-            ]
+            ],
+            "zodiac": "摩羯座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -90,7 +101,10 @@
                 "label": "當季名單",
                 "url": "https://sina.cn/news/detail/5340484584868792.html"
               }
-            ]
+            ],
+            "zodiac": "處女座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": null,
@@ -132,7 +146,10 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340484584868792.html"
               }
-            ]
+            ],
+            "zodiac": "天蠍座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": null,
@@ -174,7 +191,10 @@
                 "label": "當季名單",
                 "url": "https://sina.cn/news/detail/5340484584868792.html"
               }
-            ]
+            ],
+            "zodiac": "天秤座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": null,
@@ -212,7 +232,8 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340484584868792.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": null,
@@ -260,7 +281,8 @@
                 "label": "姓名公開資料",
                 "url": "https://sina.cn/news/detail/5340542844275294.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -292,7 +314,10 @@
                 "label": "公開採訪",
                 "url": "https://www.toutiao.com/article/7265898908579299897/"
               }
-            ]
+            ],
+            "zodiac": "水瓶座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -312,7 +337,7 @@
           "width": 600,
           "height": 900,
           "profile": {
-            "realName": null,
+            "realName": "潘仁鈺",
             "birthday": "05-24",
             "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
             "sources": [
@@ -323,8 +348,26 @@
               {
                 "label": "本人生日貼文",
                 "url": "https://www.sina.cn/news/detail/5301888258937413.html"
+              },
+              {
+                "label": "官方選手介紹（搜尋索引）",
+                "url": "https://baijiahao.baidu.com/s?id=1640234749354701788"
+              },
+              {
+                "label": "電競媒體人物頁",
+                "url": "https://www.dianjingfeng.com/player/xiaoyusp/"
+              },
+              {
+                "label": "選手公開影片轉載",
+                "url": "https://www.bilibili.com/video/BV1TG4y197mN/"
               }
-            ]
+            ],
+            "checkedAt": "2026-11-01",
+            "researchNote": "新增資料參考官方選手介紹的搜尋索引，並以其他公開資料交叉核對；原文全文尚未核讀。",
+            "realNameVerification": "official_biography_search_index",
+            "zodiac": "雙子座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -352,7 +395,8 @@
                 "label": "姓名公開資料",
                 "url": "https://www.sina.cn/media/5093548036"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -386,7 +430,10 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5351308368022521.html"
               }
-            ]
+            ],
+            "zodiac": "處女座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5347836577451670.html",
@@ -412,7 +459,7 @@
           "height": 900,
           "photoPending": false,
           "profile": {
-            "realName": null,
+            "realName": "林威雄",
             "birthday": "02-12",
             "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
             "sources": [
@@ -427,8 +474,22 @@
               {
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              },
+              {
+                "label": "官方選手介紹（搜尋索引）",
+                "url": "https://baijiahao.baidu.com/s?id=1661227505860034401"
+              },
+              {
+                "label": "歷史隊伍名單（交叉核對）",
+                "url": "https://zh.wikipedia.org/wiki/RNG%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80%E4%BF%B1%E4%B9%90%E9%83%A8"
               }
-            ]
+            ],
+            "checkedAt": "2026-11-01",
+            "researchNote": "新增資料參考官方選手介紹的搜尋索引，並以其他公開資料交叉核對；原文全文尚未核讀。",
+            "realNameVerification": "official_biography_search_index",
+            "zodiac": "水瓶座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5344237562628374.html",
@@ -455,7 +516,7 @@
           "photoPending": false,
           "profile": {
             "realName": null,
-            "birthday": null,
+            "birthday": "11-06",
             "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
             "sources": [
               {
@@ -465,8 +526,16 @@
               {
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+              },
+              {
+                "label": "俱樂部生日祝賀（明示前一天）",
+                "url": "https://www.sina.cn/news/detail/5230442408315896.html"
               }
-            ]
+            ],
+            "checkedAt": "2026-11-01",
+            "zodiac": "天蠍座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5345296078865270.html",
@@ -515,7 +584,8 @@
                 "label": "姓名公開資料",
                 "url": "https://www.sina.cn/news/detail/5340581989187663.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -551,7 +621,10 @@
                 "label": "公開生日祝賀",
                 "url": "https://www.sina.cn/news/detail/5323638459076147.html"
               }
-            ]
+            ],
+            "zodiac": "獅子座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -581,7 +654,8 @@
                 "label": "姓名來源／當季名單",
                 "url": "https://www.sina.cn/news/detail/5340581989187663.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": null,
@@ -619,7 +693,10 @@
                 "label": "生日來源",
                 "url": "https://www.sina.cn/media/6567738947"
               }
-            ]
+            ],
+            "zodiac": "天秤座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": null,
@@ -657,7 +734,8 @@
                 "label": "當季名單／姓名來源",
                 "url": "https://www.sina.cn/news/detail/5340581989187663.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": null,
@@ -691,7 +769,8 @@
                 "label": "姓名來源／當季名單",
                 "url": "https://www.sina.cn/news/detail/5340581989187663.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": null,
@@ -743,7 +822,10 @@
                 "label": "姓名公開資料",
                 "url": "https://www.sina.cn/news/detail/5340500841202881.html"
               }
-            ]
+            ],
+            "zodiac": "天秤座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -771,7 +853,10 @@
                 "label": "官博生日貼文",
                 "url": "https://www.sina.cn/news/detail/5355734623846763.html"
               }
-            ]
+            ],
+            "zodiac": "天秤座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -794,7 +879,8 @@
             "realName": null,
             "birthday": null,
             "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-            "sources": []
+            "sources": [],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -816,15 +902,27 @@
           "height": 900,
           "photoPending": false,
           "profile": {
-            "realName": null,
+            "realName": "李奔宇",
             "birthday": null,
             "intro": "KZ道具組選手，列入2026 S聯賽秋季賽參賽名單。",
             "sources": [
               {
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340504532978164.html"
+              },
+              {
+                "label": "官方選手介紹（搜尋索引）",
+                "url": "https://baijiahao.baidu.com/s?id=1661227505860034401"
+              },
+              {
+                "label": "歷史隊伍名單（交叉核對）",
+                "url": "https://zh.wikipedia.org/wiki/RNG%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80%E4%BF%B1%E4%B9%90%E9%83%A8"
               }
-            ]
+            ],
+            "checkedAt": "2026-11-01",
+            "researchNote": "新增資料參考官方選手介紹的搜尋索引，並以其他公開資料交叉核對；原文全文尚未核讀。",
+            "realNameVerification": "official_biography_search_index",
+            "zodiac": null
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5342308565520171.html",
@@ -862,7 +960,10 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340504532978164.html"
               }
-            ]
+            ],
+            "zodiac": "雙魚座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5342308565520171.html",
@@ -896,7 +997,8 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340504532978164.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5356894978049913.html",
@@ -944,7 +1046,8 @@
                 "label": "姓名公開資料",
                 "url": "https://www.sina.cn/news/detail/5322081579303072.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -976,7 +1079,10 @@
                 "label": "官博生日貼文",
                 "url": "https://www.sina.cn/news/detail/5298988619663609.html"
               }
-            ]
+            ],
+            "zodiac": "金牛座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -1010,7 +1116,10 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5335147299209749.html"
               }
-            ]
+            ],
+            "zodiac": "水瓶座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": null,
@@ -1044,7 +1153,8 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5335147299209749.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": null,
@@ -1082,7 +1192,8 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5335147299209749.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": null,
@@ -1124,7 +1235,10 @@
                 "label": "生日來源",
                 "url": "https://www.sina.cn/news/detail/5354438253610997.html"
               }
-            ]
+            ],
+            "zodiac": "天秤座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": null,
@@ -1172,7 +1286,8 @@
                 "label": "姓名公開資料",
                 "url": "https://www.sina.cn/news/detail/5340572857666160.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -1192,10 +1307,25 @@
           "width": 600,
           "height": 900,
           "profile": {
-            "realName": null,
+            "realName": "張希淼",
             "birthday": null,
             "intro": "QY競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-            "sources": []
+            "sources": [
+              {
+                "label": "官方選手介紹（搜尋索引）",
+                "url": "https://baijiahao.baidu.com/s?id=1640229593039013675"
+              },
+              {
+                "label": "歷史隊伍名單（交叉核對）",
+                "url": "https://zh.wikipedia.org/wiki/RNG%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80%E4%BF%B1%E4%B9%90%E9%83%A8"
+              }
+            ],
+            "checkedAt": "2026-11-01",
+            "researchNote": "新增資料參考官方選手介紹的搜尋索引，並以其他公開資料交叉核對；原文全文尚未核讀。",
+            "realNameVerification": "official_biography_search_index",
+            "zodiac": "摩羯座",
+            "zodiacBasis": "官方選手介紹直接列明星座；生日月日仍待補充。",
+            "zodiacVerification": "official_biography_search_index"
           },
           "role": "racing",
           "depth": {
@@ -1229,7 +1359,10 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5351308368022521.html"
               }
-            ]
+            ],
+            "zodiac": "巨蟹座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5344834361492182.html",
@@ -1263,7 +1396,8 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5351308368022521.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5356869373658325.html",
@@ -1297,7 +1431,8 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5351308368022521.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5344834361492182.html",
@@ -1339,7 +1474,10 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5351308368022521.html"
               }
-            ]
+            ],
+            "zodiac": "天秤座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5344834361492182.html",
@@ -1391,7 +1529,10 @@
                 "label": "官博生日貼文",
                 "url": "https://www.sina.cn/news/detail/5344790167159558.html"
               }
-            ]
+            ],
+            "zodiac": "處女座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -1419,7 +1560,8 @@
                 "label": "姓名公開資料",
                 "url": "https://weibo.com/7813832396/Q5UYV7WSj"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -1453,7 +1595,10 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340527328233219.html"
               }
-            ]
+            ],
+            "zodiac": "水瓶座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": null,
@@ -1491,7 +1636,8 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340527328233219.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": null,
@@ -1533,7 +1679,10 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340527328233219.html"
               }
-            ]
+            ],
+            "zodiac": "巨蟹座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": null,
@@ -1571,7 +1720,8 @@
                 "label": "當季名單",
                 "url": "https://www.sina.cn/news/detail/5340527328233219.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": null,
@@ -1619,7 +1769,8 @@
                 "label": "姓名公開資料",
                 "url": "https://www.sina.cn/news/detail/5340852578686045.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -1647,7 +1798,8 @@
                 "label": "姓名公開資料",
                 "url": "https://www.sina.cn/news/detail/5340870333174237.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "role": "racing",
           "depth": {
@@ -1679,7 +1831,10 @@
                 "label": "官博生日貼文",
                 "url": "https://www.sina.cn/news/detail/5356243620725618.html"
               }
-            ]
+            ],
+            "zodiac": "天秤座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "role": "racing",
           "depth": {
@@ -1713,7 +1868,10 @@
                 "label": "生日來源",
                 "url": "https://www.sina.cn/news/detail/5261578274605864.html"
               }
-            ]
+            ],
+            "zodiac": "水瓶座",
+            "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+            "zodiacVerification": "derived_from_published_birthday"
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5261578274605864.html",
@@ -1751,7 +1909,8 @@
                 "label": "姓名來源",
                 "url": "https://www.sina.cn/news/detail/5340895260180649.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5340895260180649.html",
@@ -1789,7 +1948,8 @@
                 "label": "姓名來源",
                 "url": "https://www.sina.cn/news/detail/5340883348357136.html"
               }
-            ]
+            ],
+            "zodiac": null
           },
           "photoSource": {
             "url": "https://www.sina.cn/news/detail/5340883348357136.html",
@@ -1826,15 +1986,23 @@
       "width": 600,
       "height": 900,
       "profile": {
-        "realName": null,
+        "realName": "石智升",
         "birthday": "04-03",
         "intro": "廣州狼隊競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
         "sources": [
           {
             "label": "本人生日貼文",
             "url": "https://www.sina.cn/news/detail/5283406508458991.html"
+          },
+          {
+            "label": "俱樂部官方大名單",
+            "url": "https://www.sina.cn/news/detail/5340484584868792.html"
           }
-        ]
+        ],
+        "checkedAt": "2026-11-01",
+        "zodiac": "牡羊座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -1862,7 +2030,10 @@
             "label": "官博生日貼文",
             "url": "https://www.sina.cn/news/detail/5248979253592617.html"
           }
-        ]
+        ],
+        "zodiac": "摩羯座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -1890,7 +2061,8 @@
             "label": "姓名公開資料",
             "url": "https://sina.cn/news/detail/5340542844275294.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -1922,7 +2094,10 @@
             "label": "公開採訪",
             "url": "https://www.toutiao.com/article/7265898908579299897/"
           }
-        ]
+        ],
+        "zodiac": "水瓶座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -1942,7 +2117,7 @@
       "width": 600,
       "height": 900,
       "profile": {
-        "realName": null,
+        "realName": "潘仁鈺",
         "birthday": "05-24",
         "intro": "RSG競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
         "sources": [
@@ -1953,8 +2128,26 @@
           {
             "label": "本人生日貼文",
             "url": "https://www.sina.cn/news/detail/5301888258937413.html"
+          },
+          {
+            "label": "官方選手介紹（搜尋索引）",
+            "url": "https://baijiahao.baidu.com/s?id=1640234749354701788"
+          },
+          {
+            "label": "電競媒體人物頁",
+            "url": "https://www.dianjingfeng.com/player/xiaoyusp/"
+          },
+          {
+            "label": "選手公開影片轉載",
+            "url": "https://www.bilibili.com/video/BV1TG4y197mN/"
           }
-        ]
+        ],
+        "checkedAt": "2026-11-01",
+        "researchNote": "新增資料參考官方選手介紹的搜尋索引，並以其他公開資料交叉核對；原文全文尚未核讀。",
+        "realNameVerification": "official_biography_search_index",
+        "zodiac": "雙子座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -1982,7 +2175,8 @@
             "label": "姓名公開資料",
             "url": "https://www.sina.cn/media/5093548036"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -2010,7 +2204,8 @@
             "label": "姓名公開資料",
             "url": "https://www.sina.cn/news/detail/5340581989187663.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -2046,7 +2241,10 @@
             "label": "公開生日祝賀",
             "url": "https://www.sina.cn/news/detail/5323638459076147.html"
           }
-        ]
+        ],
+        "zodiac": "獅子座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -2078,7 +2276,10 @@
             "label": "姓名公開資料",
             "url": "https://www.sina.cn/news/detail/5340500841202881.html"
           }
-        ]
+        ],
+        "zodiac": "天秤座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -2106,7 +2307,10 @@
             "label": "官博生日貼文",
             "url": "https://www.sina.cn/news/detail/5355734623846763.html"
           }
-        ]
+        ],
+        "zodiac": "天秤座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -2129,7 +2333,8 @@
         "realName": null,
         "birthday": null,
         "intro": "KZ競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-        "sources": []
+        "sources": [],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -2157,7 +2362,8 @@
             "label": "姓名公開資料",
             "url": "https://www.sina.cn/news/detail/5322081579303072.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -2189,7 +2395,10 @@
             "label": "官博生日貼文",
             "url": "https://www.sina.cn/news/detail/5298988619663609.html"
           }
-        ]
+        ],
+        "zodiac": "金牛座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -2217,7 +2426,8 @@
             "label": "姓名公開資料",
             "url": "https://www.sina.cn/news/detail/5340572857666160.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -2237,10 +2447,25 @@
       "width": 600,
       "height": 900,
       "profile": {
-        "realName": null,
+        "realName": "張希淼",
         "birthday": null,
         "intro": "QY競速選手，代表隊伍出戰2026 S聯賽秋季賽。",
-        "sources": []
+        "sources": [
+          {
+            "label": "官方選手介紹（搜尋索引）",
+            "url": "https://baijiahao.baidu.com/s?id=1640229593039013675"
+          },
+          {
+            "label": "歷史隊伍名單（交叉核對）",
+            "url": "https://zh.wikipedia.org/wiki/RNG%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80%E4%BF%B1%E4%B9%90%E9%83%A8"
+          }
+        ],
+        "checkedAt": "2026-11-01",
+        "researchNote": "新增資料參考官方選手介紹的搜尋索引，並以其他公開資料交叉核對；原文全文尚未核讀。",
+        "realNameVerification": "official_biography_search_index",
+        "zodiac": "摩羯座",
+        "zodiacBasis": "官方選手介紹直接列明星座；生日月日仍待補充。",
+        "zodiacVerification": "official_biography_search_index"
       },
       "role": "racing",
       "depth": {
@@ -2272,7 +2497,10 @@
             "label": "官博生日貼文",
             "url": "https://www.sina.cn/news/detail/5344790167159558.html"
           }
-        ]
+        ],
+        "zodiac": "處女座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -2300,7 +2528,8 @@
             "label": "姓名公開資料",
             "url": "https://weibo.com/7813832396/Q5UYV7WSj"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -2328,7 +2557,8 @@
             "label": "姓名公開資料",
             "url": "https://www.sina.cn/news/detail/5340852578686045.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -2356,7 +2586,8 @@
             "label": "姓名公開資料",
             "url": "https://www.sina.cn/news/detail/5340870333174237.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "role": "racing",
       "depth": {
@@ -2388,7 +2619,10 @@
             "label": "官博生日貼文",
             "url": "https://www.sina.cn/news/detail/5356243620725618.html"
           }
-        ]
+        ],
+        "zodiac": "天秤座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "role": "racing",
       "depth": {
@@ -2426,7 +2660,10 @@
             "label": "當季名單",
             "url": "https://sina.cn/news/detail/5340484584868792.html"
           }
-        ]
+        ],
+        "zodiac": "處女座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": null,
@@ -2468,7 +2705,10 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340484584868792.html"
           }
-        ]
+        ],
+        "zodiac": "天蠍座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": null,
@@ -2510,7 +2750,10 @@
             "label": "當季名單",
             "url": "https://sina.cn/news/detail/5340484584868792.html"
           }
-        ]
+        ],
+        "zodiac": "天秤座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": null,
@@ -2548,7 +2791,8 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340484584868792.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": null,
@@ -2586,7 +2830,10 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5351308368022521.html"
           }
-        ]
+        ],
+        "zodiac": "處女座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5347836577451670.html",
@@ -2612,7 +2859,7 @@
       "height": 900,
       "photoPending": false,
       "profile": {
-        "realName": null,
+        "realName": "林威雄",
         "birthday": "02-12",
         "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
         "sources": [
@@ -2627,8 +2874,22 @@
           {
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          },
+          {
+            "label": "官方選手介紹（搜尋索引）",
+            "url": "https://baijiahao.baidu.com/s?id=1661227505860034401"
+          },
+          {
+            "label": "歷史隊伍名單（交叉核對）",
+            "url": "https://zh.wikipedia.org/wiki/RNG%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80%E4%BF%B1%E4%B9%90%E9%83%A8"
           }
-        ]
+        ],
+        "checkedAt": "2026-11-01",
+        "researchNote": "新增資料參考官方選手介紹的搜尋索引，並以其他公開資料交叉核對；原文全文尚未核讀。",
+        "realNameVerification": "official_biography_search_index",
+        "zodiac": "水瓶座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5344237562628374.html",
@@ -2655,7 +2916,7 @@
       "photoPending": false,
       "profile": {
         "realName": null,
-        "birthday": null,
+        "birthday": "11-06",
         "intro": "RSG道具組選手，列入2026 S聯賽秋季賽參賽名單。",
         "sources": [
           {
@@ -2665,8 +2926,16 @@
           {
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5351308368022521.html"
+          },
+          {
+            "label": "俱樂部生日祝賀（明示前一天）",
+            "url": "https://www.sina.cn/news/detail/5230442408315896.html"
           }
-        ]
+        ],
+        "checkedAt": "2026-11-01",
+        "zodiac": "天蠍座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5345296078865270.html",
@@ -2700,7 +2969,8 @@
             "label": "姓名來源／當季名單",
             "url": "https://www.sina.cn/news/detail/5340581989187663.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": null,
@@ -2738,7 +3008,10 @@
             "label": "生日來源",
             "url": "https://www.sina.cn/media/6567738947"
           }
-        ]
+        ],
+        "zodiac": "天秤座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": null,
@@ -2776,7 +3049,8 @@
             "label": "當季名單／姓名來源",
             "url": "https://www.sina.cn/news/detail/5340581989187663.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": null,
@@ -2810,7 +3084,8 @@
             "label": "姓名來源／當季名單",
             "url": "https://www.sina.cn/news/detail/5340581989187663.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": null,
@@ -2836,15 +3111,27 @@
       "height": 900,
       "photoPending": false,
       "profile": {
-        "realName": null,
+        "realName": "李奔宇",
         "birthday": null,
         "intro": "KZ道具組選手，列入2026 S聯賽秋季賽參賽名單。",
         "sources": [
           {
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340504532978164.html"
+          },
+          {
+            "label": "官方選手介紹（搜尋索引）",
+            "url": "https://baijiahao.baidu.com/s?id=1661227505860034401"
+          },
+          {
+            "label": "歷史隊伍名單（交叉核對）",
+            "url": "https://zh.wikipedia.org/wiki/RNG%E7%94%B5%E5%AD%90%E7%AB%9E%E6%8A%80%E4%BF%B1%E4%B9%90%E9%83%A8"
           }
-        ]
+        ],
+        "checkedAt": "2026-11-01",
+        "researchNote": "新增資料參考官方選手介紹的搜尋索引，並以其他公開資料交叉核對；原文全文尚未核讀。",
+        "realNameVerification": "official_biography_search_index",
+        "zodiac": null
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5342308565520171.html",
@@ -2882,7 +3169,10 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340504532978164.html"
           }
-        ]
+        ],
+        "zodiac": "雙魚座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5342308565520171.html",
@@ -2916,7 +3206,8 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340504532978164.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5356894978049913.html",
@@ -2954,7 +3245,10 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5335147299209749.html"
           }
-        ]
+        ],
+        "zodiac": "水瓶座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": null,
@@ -2988,7 +3282,8 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5335147299209749.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": null,
@@ -3026,7 +3321,8 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5335147299209749.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": null,
@@ -3068,7 +3364,10 @@
             "label": "生日來源",
             "url": "https://www.sina.cn/news/detail/5354438253610997.html"
           }
-        ]
+        ],
+        "zodiac": "天秤座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": null,
@@ -3106,7 +3405,10 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5351308368022521.html"
           }
-        ]
+        ],
+        "zodiac": "巨蟹座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5344834361492182.html",
@@ -3140,7 +3442,8 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5351308368022521.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5356869373658325.html",
@@ -3174,7 +3477,8 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5351308368022521.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5344834361492182.html",
@@ -3216,7 +3520,10 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5351308368022521.html"
           }
-        ]
+        ],
+        "zodiac": "天秤座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5344834361492182.html",
@@ -3254,7 +3561,10 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340527328233219.html"
           }
-        ]
+        ],
+        "zodiac": "水瓶座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": null,
@@ -3292,7 +3602,8 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340527328233219.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": null,
@@ -3334,7 +3645,10 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340527328233219.html"
           }
-        ]
+        ],
+        "zodiac": "巨蟹座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": null,
@@ -3372,7 +3686,8 @@
             "label": "當季名單",
             "url": "https://www.sina.cn/news/detail/5340527328233219.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": null,
@@ -3410,7 +3725,10 @@
             "label": "生日來源",
             "url": "https://www.sina.cn/news/detail/5261578274605864.html"
           }
-        ]
+        ],
+        "zodiac": "水瓶座",
+        "zodiacBasis": "依已公開生日月日及常見西洋星座日期區間換算；交界日期可能因出生年份與時間不同而有差異。",
+        "zodiacVerification": "derived_from_published_birthday"
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5261578274605864.html",
@@ -3448,7 +3766,8 @@
             "label": "姓名來源",
             "url": "https://www.sina.cn/news/detail/5340895260180649.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5340895260180649.html",
@@ -3486,7 +3805,8 @@
             "label": "姓名來源",
             "url": "https://www.sina.cn/news/detail/5340883348357136.html"
           }
-        ]
+        ],
+        "zodiac": null
       },
       "photoSource": {
         "url": "https://www.sina.cn/news/detail/5340883348357136.html",
@@ -4266,12 +4586,20 @@
     "count": 108
   },
   "depthFrame": "assets/cards/depth-frame.webp",
-  "updatedAt": "2026-10-24",
+  "updatedAt": "2026-11-01",
   "collectionCounts": {
     "racing": 20,
     "item": 29,
     "total": 49,
     "portraitPending": 0
   },
-  "assetVersion": "1d87b06a1c17f03f"
+  "assetVersion": "1d87b06a1c17f03f",
+  "profileSummary": {
+    "realNames": 38,
+    "birthdays": 25,
+    "zodiacs": 26,
+    "addedRealNames": 5,
+    "officialIntroductionIndexNames": 4,
+    "candidateValuesPublished": false
+  }
 }
