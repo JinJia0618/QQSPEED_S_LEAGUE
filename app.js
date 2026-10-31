@@ -99,16 +99,14 @@
   function renderPlayerProfile(player) {
     const profile = player.profile || {};
     $('#card-profile-title').textContent = player.name;
-    $('#card-profile-team').textContent = team.name;
+    const profileTeam = data.teams.find(item => item.id === player.team) || team;
+    $('#card-profile-team').textContent = profileTeam.name;
     $('#card-profile-role').textContent = `${roleName(player.role)}手`;
-    $('#card-profile-real-name').textContent = typeof profile.realName === 'string' && profile.realName.trim() ? profile.realName : '待補充';
-    const birthday = typeof profile.birthday === 'string' && profile.birthday.match(/^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/);
-    $('#card-profile-birthday').textContent = birthday ? `${Number(birthday[1])}月${Number(birthday[2])}日` : '待補充';
     $('#card-profile-zodiac').textContent = profile.zodiac || '待補充';
-    const researchNote = [profile.researchNote, profile.zodiacBasis].filter(Boolean).join(' ');
+    const researchNote = profile.zodiacBasis || '';
     $('#card-profile-research-note').textContent = researchNote;
     $('#card-profile-research-note').hidden = !researchNote;
-    $('#card-profile-intro').textContent = typeof profile.intro === 'string' && profile.intro.trim() ? profile.intro : `${team.name}${roleName(player.role)}選手，出戰2026 S聯賽秋季賽。`;
+    $('#card-profile-intro').textContent = typeof profile.intro === 'string' && profile.intro.trim() ? profile.intro : `${profileTeam.name}${roleName(player.role)}選手，出戰2026 S聯賽秋季賽。`;
     $('#card-profile-photo-note').textContent = player.photoNote || '';
     $('#card-profile-photo-note').hidden = !player.photoNote;
     const sourceList = $('#card-profile-sources');
@@ -219,15 +217,16 @@
     }).catch(()=>{}); // The complete original card remains visible if a layer fails.
   }
 
-  function openCardViewer(card) {
-    if (viewer.open) return;
-    const player = team.players.find(item => item.id === card.dataset.player);
-    if (!player) return;
-    activate(player.id);
+  function openCardViewer(card, playerId = card?.dataset.player) {
+    if (viewer.open || !data) return false;
+    const player = data.players.find(item => item.id === playerId);
+    if (!player) return false;
+    const playerTeam = data.teams.find(item => item.id === player.team);
+    if (teamPlayers.some(item => item.id === player.id)) activate(player.id);
     viewerTrigger = card;
-    $('#card-viewer-title').textContent = `${team.name} · ${player.name}`;
+    $('#card-viewer-title').textContent = `${playerTeam.name} · ${player.name}`;
     $('#card-viewer-image').src = asset(player.card);
-    $('#card-viewer-image').alt = `${team.name} ${player.name} 秋季賽選手卡`;
+    $('#card-viewer-image').alt = `${playerTeam.name} ${player.name} 秋季賽選手卡`;
     renderPlayerProfile(player);
     renderAnimatedCard(player);
     resetViewerTilt();
@@ -237,7 +236,10 @@
     document.body.classList.add('card-viewer-open');
     viewer.showModal();
     viewer.scrollTop = 0;
+    return true;
   }
+
+  window.SLeagueCardViewer = Object.freeze({open: (playerId, trigger = document.activeElement) => openCardViewer(trigger, playerId)});
 
   function outsideViewer(event) {
     const box = viewer.getBoundingClientRect();

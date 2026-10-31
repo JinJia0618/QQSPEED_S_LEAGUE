@@ -36,6 +36,10 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offse
 .brand-copy>span{font-size:9px;letter-spacing:2.6px;color:var(--muted)}
 .header-link{font-size:13px;letter-spacing:.5px;margin-left:auto;color:#d4c6e7}
 .header-link span{margin-left:8px;color:var(--gold)}
+.header-navigation{display:flex;gap:22px;margin-left:auto;align-items:center}
+.header-navigation .header-link{margin-left:0;white-space:nowrap}
+.header-pack-link{color:var(--gold)}
+@media(max-width:700px){.header-navigation{gap:12px}.header-navigation .header-link{font-size:11px}.site-header{gap:12px}}
 .season-stamp{display:flex;align-items:center;gap:9px;font-size:12px;letter-spacing:1px;padding:8px 13px;border:1px solid #b694dc30}
 .live-dot{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--gold);box-shadow:0 0 10px #f4d98b66;flex:none}
 .intro{display:flex;align-items:center;justify-content:space-between;padding-top:52px;padding-bottom:41px;gap:35px}

@@ -4,11 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#130b25">
-  <meta name="description" content="2026 S聯賽秋季賽選手圖鑑。瀏覽八支隊伍的競速、道具選手與立體互動卡牌。">
+  <meta name="description" content="2026 S聯賽秋季賽選手圖鑑。瀏覽八支隊伍的競速、道具選手，免費開卡包、收集49張秋季賽卡牌。">
   <title>S聯賽秋季賽｜選手圖鑑</title>
   <link rel="icon" type="image/webp" href="assets/logos/league.webp">
-  <link rel="stylesheet" href="style.css?v=20261101-profiles-zodiac">
-  <script src="app.js?v=20261101-profiles-zodiac" defer></script>
+  <link rel="stylesheet" href="style.css?v=20261101-card-packs">
+  <link rel="stylesheet" href="packs.css?v=20261101-card-packs">
+  <script src="app.js?v=20261101-card-packs" defer></script>
+  <script src="packs.js?v=20261101-card-packs" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#teams">前往隊伍與選手</a>
@@ -39,7 +41,7 @@
       <img src="assets/logos/league.webp" width="92" height="78" alt="QQ飛車手遊 S聯賽">
       <span class="brand-copy"><b>選手圖鑑</b><span>S LEAGUE PLAYER COLLECTION</span></span>
     </a>
-    <a class="header-link" href="#teams">瀏覽隊伍 <span aria-hidden="true">↗</span></a>
+    <nav class="header-navigation" aria-label="主要導覽"><a class="header-link" href="#teams">瀏覽隊伍</a><a class="header-link header-pack-link" href="#card-packs">免費開卡包 <span aria-hidden="true">↗</span></a></nav>
     <div class="season-stamp"><span class="live-dot"></span>2026 秋季賽</div>
   </header>
 
@@ -87,6 +89,7 @@
         <div id="player-roster" class="player-roster" role="group" aria-label="目前隊伍的競速選手"></div>
       </section>
     </section>
+    <section id="card-packs" class="pack-section wrap" aria-labelledby="pack-section-title"><div id="pack-app"><p class="loading">正在準備秋季賽卡包…</p></div></section>
   </main>
 
   <footer class="site-footer wrap"><div><span class="footer-mark">S /</span><span>八支隊伍，同一份對勝利的熱愛。</span></div><p>2026 S LEAGUE AUTUMN <span>非官方選手圖鑑</span></p><a href="#">回到頂端 ↑</a></footer>
@@ -123,8 +126,6 @@
           <dl class="card-profile-facts">
             <div><dt>隊伍</dt><dd id="card-profile-team">—</dd></div>
             <div><dt>定位</dt><dd id="card-profile-role">競速手</dd></div>
-            <div><dt>本名</dt><dd id="card-profile-real-name">待補充</dd></div>
-            <div><dt>生日</dt><dd id="card-profile-birthday">待補充</dd></div>
             <div><dt>星座</dt><dd id="card-profile-zodiac">待補充</dd></div>
           </dl>
           <p id="card-profile-research-note" class="card-profile-research-note" hidden></p>
