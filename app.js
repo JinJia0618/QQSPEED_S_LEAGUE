@@ -102,30 +102,9 @@
     const profileTeam = data.teams.find(item => item.id === player.team) || team;
     $('#card-profile-team').textContent = profileTeam.name;
     $('#card-profile-role').textContent = `${roleName(player.role)}手`;
-    $('#card-profile-zodiac').textContent = profile.zodiac || '待補充';
-    const researchNote = profile.zodiacBasis || '';
-    $('#card-profile-research-note').textContent = researchNote;
-    $('#card-profile-research-note').hidden = !researchNote;
     $('#card-profile-intro').textContent = typeof profile.intro === 'string' && profile.intro.trim() ? profile.intro : `${profileTeam.name}${roleName(player.role)}選手，出戰2026 S聯賽秋季賽。`;
     $('#card-profile-photo-note').textContent = player.photoNote || '';
     $('#card-profile-photo-note').hidden = !player.photoNote;
-    const sourceList = $('#card-profile-sources');
-    sourceList.replaceChildren();
-    if (Array.isArray(profile.sources)) profile.sources.forEach(source => {
-      if (!source || typeof source.url !== 'string') return;
-      let url;
-      try { url = new URL(source.url); } catch { return; }
-      if (!['https:', 'http:'].includes(url.protocol)) return;
-      const item = document.createElement('li');
-      const link = document.createElement('a');
-      link.href = url.href;
-      link.target = '_blank';
-      link.rel = 'noopener noreferrer';
-      link.textContent = typeof source.label === 'string' && source.label.trim() ? source.label : url.hostname;
-      item.append(link);
-      sourceList.append(item);
-    });
-    $('#card-profile-sources-block').hidden = !sourceList.childElementCount;
   }
 
   function resetViewerTilt() {

@@ -13,7 +13,41 @@
   let storageMode = 'local', storageMessage = '', busy = false;
   let teamFilter = 'all', onlyMissing = false, albumExpanded = false;
   let displayedPackId = null, cardNodes = [], redeemTarget = null;
+  let dailyTimer = null;
   let ui = {};
+
+  function localDay(date = new Date()) {
+    return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
+  }
+  function localTime(date = new Date()) {
+    return `${localDay(date)} ${String(date.getHours()).padStart(2, '0')}:${String(date.getMinutes()).padStart(2, '0')}:${String(date.getSeconds()).padStart(2, '0')}`;
+  }
+  function historyEntry(kind, date = new Date()) {
+    return { kind, timestamp: date.toISOString(), localTime: localTime(date), localDate: localDay(date) };
+  }
+  function validDay(value) {
+    if (typeof value !== 'string' || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+    const [year, month, day] = value.split('-').map(Number);
+    const date = new Date(year, month - 1, day, 12);
+    return localDay(date) === value;
+  }
+  function legacyPackDay(pack) {
+    const match = pack?.id.match(/^([0-9a-z]{6,12})-[0-9a-z]{1,20}$/);
+    if (!match) return null;
+    const timestamp = parseInt(match[1], 36);
+    if (!Number.isSafeInteger(timestamp)) return null;
+    const date = new Date(timestamp);
+    return Number.isFinite(date.getTime()) && date.getFullYear() >= 2020 && date.getFullYear() <= 9999 ? localDay(date) : null;
+  }
+  function nextLocalMidnight(date = new Date()) {
+    return new Date(date.getFullYear(), date.getMonth(), date.getDate() + 1);
+  }
+  function refreshDailyClock() {
+    if (dailyTimer !== null) clearTimeout(dailyTimer);
+    updateControls();
+    const now = new Date();
+    dailyTimer = setTimeout(refreshDailyClock, Math.min(60000, Math.max(250, nextLocalMidnight(now).getTime() - now.getTime() + 50)));
+  }
 
   function element(tag, className, text) {
     const node = document.createElement(tag);
@@ -43,7 +77,7 @@
     return Number.isSafeInteger(value) && value >= 0 && value <= MAX_VALUE ? value : fallback;
   }
   function blankState() {
-    return { version: VERSION, collection: {}, dust: 0, packsOpened: 0, activePack: null };
+    return { version: VERSION, collection: {}, dust: 0, packsOpened: 0, activePack: null, lastOpenedDate: null, history: [] };
   }
   function normalize(raw) {
     const next = blankState();
@@ -71,14 +105,53 @@
         Array.isArray(pack.revealed) && pack.revealed.length === 5 && pack.revealed.every(value => typeof value === 'boolean') &&
         pack.ids.some(id => byId.get(id).role === 'racing') && pack.ids.some(id => byId.get(id).role === 'item');
       if (valid) {
-        next.activePack = { id: pack.id, ids: [...pack.ids], isNew: [...pack.isNew], revealed: [...pack.revealed] };
+        const nominalDust = pack.isNew.filter(value => !value).length * DUST_PER_DUPLICATE;
+        const dustEarned = Number.isSafeInteger(pack.dustEarned) && pack.dustEarned >= 0 && pack.dustEarned <= nominalDust ? pack.dustEarned : nominalDust;
+        next.activePack = { id: pack.id, ids: [...pack.ids], isNew: [...pack.isNew], revealed: [...pack.revealed], dustEarned };
       } else repaired = true;
+    }
+    // Keep v1 collections intact; old pack IDs contain their creation timestamp.
+    if (validDay(raw.lastOpenedDate)) next.lastOpenedDate = raw.lastOpenedDate;
+    else {
+      next.lastOpenedDate = legacyPackDay(next.activePack);
+      if (raw.lastOpenedDate !== undefined && raw.lastOpenedDate !== null) repaired = true;
+    }
+    if (Array.isArray(raw.history)) {
+      const seen = new Set();
+      const validId = id => typeof id === 'string' && /^[a-z0-9-]+$/.test(id) && id.length < 120;
+      for (const record of raw.history) {
+        if (!record || typeof record !== 'object' || typeof record.id !== 'string' || record.id.length > 160 || seen.has(record.id) || !['pack', 'redeem'].includes(record.kind) || typeof record.timestamp !== 'string' || record.timestamp.length > 40 || !Number.isFinite(Date.parse(record.timestamp)) || !validDay(record.localDate) || typeof record.localTime !== 'string' || !/^\d{4}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}$/.test(record.localTime)) { repaired = true; continue; }
+        const [recordHours, recordMinutes, recordSeconds] = record.localTime.slice(11).split(':').map(Number);
+        if (!record.localTime.startsWith(record.localDate + ' ') || recordHours > 23 || recordMinutes > 59 || recordSeconds > 59) { repaired = true; continue; }
+        const dustAfterValid = Number.isSafeInteger(record.dustAfter) && record.dustAfter >= 0 && record.dustAfter <= MAX_VALUE;
+        const item = { id: record.id, kind: record.kind, timestamp: record.timestamp, localTime: record.localTime, localDate: record.localDate, dustAfter: dustAfterValid ? record.dustAfter : null };
+        if (!dustAfterValid && record.dustAfter !== null) repaired = true;
+        if (record.kind === 'pack') {
+          if (typeof record.packId !== 'string' || record.packId.length > 120 || !Array.isArray(record.cards) || record.cards.length !== 5 || new Set(record.cards.map(card => card?.playerId)).size !== 5 || !record.cards.every(card => card && validId(card.playerId) && typeof card.isNew === 'boolean')) { repaired = true; continue; }
+          item.packId = record.packId;
+          item.packNumber = integer(record.packNumber);
+          item.cards = record.cards.map(card => ({ playerId: card.playerId, isNew: card.isNew }));
+          const nominalDust = item.cards.filter(card => !card.isNew).length * DUST_PER_DUPLICATE;
+          item.dustChange = Number.isSafeInteger(record.dustChange) && record.dustChange >= 0 && record.dustChange <= nominalDust ? record.dustChange : nominalDust;
+          if (record.legacy === true) item.legacy = true;
+        } else {
+          if (!validId(record.playerId)) { repaired = true; continue; }
+          item.playerId = record.playerId;
+          item.dustChange = -REDEEM_COST;
+        }
+        seen.add(record.id);
+        next.history.push(item);
+      }
+    } else if (raw.history !== undefined) repaired = true;
+    else if (next.activePack && legacyPackDay(next.activePack)) {
+      const date = new Date(parseInt(next.activePack.id.split('-')[0], 36));
+      next.history.push({ ...historyEntry('pack', date), id: 'pack-' + next.activePack.id, packId: next.activePack.id, packNumber: next.packsOpened, cards: next.activePack.ids.map((playerId, index) => ({ playerId, isNew: next.activePack.isNew[index] })), dustChange: next.activePack.isNew.filter(value => !value).length * DUST_PER_DUPLICATE, dustAfter: null, legacy: true });
     }
     return { state: next, repaired };
   }
   function useMemory(message) {
     storageMode = 'memory';
-    storageMessage = message || '瀏覽器無法儲存收藏；本頁仍可正常開包，但關閉或重新整理後，本次進度不會保留。';
+    storageMessage = message || '瀏覽器無法儲存收藏；請允許網站儲存資料並重新載入後，再領取每日卡包。既有卡牌仍可查看。';
   }
   function readStorage() {
     if (storageMode !== 'local') return state || blankState();
@@ -103,28 +176,45 @@
     }
   }
   function saveStorage(next) {
-    if (storageMode !== 'local') return;
-    try { window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); }
-    catch (_) { useMemory(); }
+    if (storageMode !== 'local') return false;
+    try { window.localStorage.setItem(STORAGE_KEY, JSON.stringify(next)); return true; }
+    catch (_) { useMemory(); return false; }
   }
   function announce(message) { ui.live.textContent = message; }
   function complete(pack = state.activePack) { return !pack || pack.revealed.every(Boolean); }
   function ownedCount() { return players.filter(player => state.collection[player.id] > 0).length; }
   function roleName(player) { return player.role === 'racing' ? '競速' : '道具'; }
   function teamName(player) { return teams.find(team => team.id === player.team)?.name || ''; }
+  function rarityFor(player) {
+    const team = teams.find(item => item.id === player.team);
+    if (team?.overviewTop !== player.id) return { key: 'standard', label: '標準', weight: 100 };
+    if (['wolves', 'rsg'].includes(player.team)) return { key: 'ultra', label: '極稀有', weight: 5 };
+    if (['rw', 'kz'].includes(player.team)) return { key: 'super', label: '次稀有', weight: 10 };
+    return { key: 'rare', label: '稀有', weight: 25 };
+  }
   function format(value) { return value.toLocaleString('zh-TW'); }
 
   // One snapshot commits a whole pack before the reveal animation. Flips never award cards.
-  async function transact(change) {
+  async function transact(change, { requirePersistence = false } = {}) {
     if (busy) return;
     busy = true;
     updateControls();
     const execute = () => {
       state = readStorage();
+      if (requirePersistence && storageMode !== 'local') {
+        render();
+        announce('這項操作需要儲存紀錄。請允許網站儲存資料並重新載入後再試。');
+        return;
+      }
       const next = JSON.parse(JSON.stringify(state));
       const message = change(next);
+      const saved = saveStorage(next);
+      if (requirePersistence && !saved) {
+        render();
+        announce('紀錄未能儲存，這次操作尚未完成。請允許網站儲存資料並重新載入。');
+        return;
+      }
       state = next;
-      saveStorage(next);
       render();
       if (message) announce(message);
     };
@@ -139,7 +229,7 @@
       updateControls();
     }
   }
-  // Rejection sampling avoids modulo bias. Every pick is uniform within its pool.
+  // Rejection sampling avoids modulo bias. Each integer ticket is uniform within its range.
   function randomIndex(length) {
     if (window.crypto && typeof window.crypto.getRandomValues === 'function') {
       const value = new Uint32Array(1);
@@ -152,31 +242,49 @@
   function drawPack() {
     const racing = players.filter(player => player.role === 'racing');
     const item = players.filter(player => player.role === 'item');
-    const selected = [racing[randomIndex(racing.length)], item[randomIndex(item.length)]];
+    const selected = [pickWeighted(racing), pickWeighted(item)];
     const pool = players.filter(player => !selected.includes(player));
-    for (let i = 0; i < 3; i++) selected.push(pool.splice(randomIndex(pool.length), 1)[0]);
+    for (let i = 0; i < 3; i++) {
+      const picked = pickWeighted(pool);
+      selected.push(picked);
+      pool.splice(pool.indexOf(picked), 1);
+    }
     for (let i = selected.length - 1; i > 0; i--) {
       const j = randomIndex(i + 1);
       [selected[i], selected[j]] = [selected[j], selected[i]];
     }
     return selected;
   }
+  function pickWeighted(pool) {
+    let ticket = randomIndex(pool.reduce((sum, player) => sum + rarityFor(player).weight, 0));
+    for (const player of pool) {
+      ticket -= rarityFor(player).weight;
+      if (ticket < 0) return player;
+    }
+    return pool[pool.length - 1];
+  }
   function openPack() {
     const previousId = state.activePack?.id;
     void transact(next => {
+      const now = new Date();
+      const today = localDay(now);
+      if (next.lastOpenedDate === today) return '今天的卡包已領取，當地時間明天 00:00 再來領取。';
       if (!complete(next.activePack)) return '先翻開這一包的全部卡牌，再繼續開包。';
       const cards = drawPack();
       const isNew = cards.map(player => !next.collection[player.id]);
       cards.forEach(player => { next.collection[player.id] = Math.min(MAX_VALUE, (next.collection[player.id] || 0) + 1); });
       const dust = isNew.filter(value => !value).length * DUST_PER_DUPLICATE;
-      next.dust = Math.min(MAX_VALUE, next.dust + dust);
+      const dustEarned = Math.min(MAX_VALUE, next.dust + dust) - next.dust;
+      next.dust += dustEarned;
       next.packsOpened = Math.min(MAX_VALUE, next.packsOpened + 1);
+      next.lastOpenedDate = today;
       next.activePack = {
-        id: Date.now().toString(36) + '-' + Math.random().toString(36).slice(2),
-        ids: cards.map(player => player.id), isNew, revealed: cards.map(() => false)
+        id: now.getTime().toString(36) + '-' + Math.random().toString(36).slice(2),
+        ids: cards.map(player => player.id), isNew, revealed: cards.map(() => false), dustEarned
       };
+      next.history.push({ ...historyEntry('pack', now), id: 'pack-' + next.activePack.id, packId: next.activePack.id, packNumber: next.packsOpened, cards: cards.map((player, index) => ({ playerId: player.id, isNew: isNew[index] })), dustChange: dustEarned, dustAfter: next.dust });
       return '卡包已開啟，5 張卡已自動入藏。點擊卡背逐張翻開，或選擇一鍵翻開。';
-    }).then(() => {
+    }, { requirePersistence: true }).then(() => {
       if (state.activePack?.id !== previousId && cardNodes[0]) cardNodes[0].card.focus({ preventScroll: true });
     });
   }
@@ -188,7 +296,7 @@
       pack.revealed[index] = true;
       const player = byId.get(pack.ids[index]);
       const result = pack.isNew[index] ? '新收藏' : '重複卡，獲得 10 星塵';
-      return `${teamName(player)} ${player.name}，${roleName(player)}，${result}。${complete(pack) ? '本包已全部翻開，可以再開一包。' : ''}`;
+      return `${teamName(player)} ${player.name}，${roleName(player)}，${result}。${complete(pack) ? '本包已全部翻開。' : ''}`;
     });
   }
   function revealAll() {
@@ -198,7 +306,7 @@
       if (!pack || pack.id !== packId || complete(pack)) return '';
       pack.revealed.fill(true);
       const fresh = pack.isNew.filter(Boolean).length;
-      return `全部翻開：${pack.ids.map(id => byId.get(id).name).join('、')}。本包新增 ${fresh} 張收藏，獲得 ${(5 - fresh) * DUST_PER_DUPLICATE} 星塵。`;
+      return `全部翻開：${pack.ids.map(id => byId.get(id).name).join('、')}。本包新增 ${fresh} 張收藏，獲得 ${pack.dustEarned ?? (5 - fresh) * DUST_PER_DUPLICATE} 星塵。`;
     });
   }
   function viewCard(player, trigger) {
@@ -222,7 +330,7 @@
     copy.append(element('p', 'pack-eyebrow', 'COLLECT YOUR PASSION'));
     const title = element('h2', 'pack-title', '把應援，收進卡冊。');
     title.id = 'pack-section-title';
-    copy.append(title, element('p', 'pack-subtitle', '免費無限開包，每一張都是你的主場。'));
+    copy.append(title, element('p', 'pack-subtitle', '每天一包免費卡牌，每一張都是你的主場。'));
     const free = element('span', 'pack-free-label', 'FREE / 永遠免費');
     header.append(copy, free);
     ui.warning = element('p', 'pack-storage-warning');
@@ -254,8 +362,8 @@
     packet.append(packetInner);
     const welcomeCopy = element('div', 'pack-welcome-copy');
     welcomeCopy.append(element('p', 'pack-eyebrow', 'READY FOR YOUR FIRST FIVE?'), element('h3', 'pack-welcome-title', '今天，會遇見哪位選手？'), element('p', 'pack-welcome-text', '一包 5 張選手卡，同包不重複。至少遇見 1 位競速選手與 1 位道具選手，剩餘 3 張從其餘卡牌隨機抽出。'));
-    ui.firstOpen = button('拆開我的應援包 →', 'pack-primary pack-first-open', openPack, 'first-open');
-    welcomeCopy.append(ui.firstOpen, element('p', 'pack-free-note', '不需登入・無次數限制・無付費內容'));
+    ui.firstOpen = button('領取今日卡包 →', 'pack-primary pack-first-open', openPack, 'first-open');
+    welcomeCopy.append(ui.firstOpen, element('p', 'pack-free-note', '每日 1 包・當地午夜更新・無付費內容'));
     ui.welcome.append(packet, welcomeCopy);
 
     ui.opened = element('div', 'pack-opened');
@@ -272,16 +380,32 @@
     ui.cards.setAttribute('aria-label', '本包 5 張選手卡；可使用 Tab 與 Enter 翻開');
     const bottom = element('div', 'pack-opened-bottom');
     ui.result = element('p', 'pack-result');
-    ui.nextOpen = button('再開一包 →', 'pack-primary', openPack, 'next-open');
+    ui.nextOpen = button('領取今日卡包 →', 'pack-primary', openPack, 'next-open');
     bottom.append(ui.result, ui.nextOpen);
     ui.opened.append(openedHeader, ui.cards, bottom);
-    panel.append(top, ui.welcome, ui.opened);
+    ui.dailyStatus = element('p', 'pack-daily-status');
+    panel.append(top, ui.dailyStatus, ui.welcome, ui.opened);
 
     const rules = element('div', 'pack-rules');
     const rule1 = element('p', 'pack-rule');
     rule1.append(element('span', 'pack-rule-mark', '✦'), element('span', 'pack-rule-copy', '重複卡 +10 星塵，50 星塵可指定兌換任一張未收藏卡。'));
     const rule2 = element('p', 'pack-rule pack-rule-storage', '開包即自動入藏。收藏僅儲存於本瀏覽器；清除網站資料會一併清除進度。');
     rules.append(rule1, rule2);
+    const probabilityGuide = element('details', 'pack-rarity-guide');
+    probabilityGuide.append(element('summary', 'pack-rarity-summary', '查看一號位稀有度與抽選說明'));
+    const probabilityTable = element('table', 'pack-rarity-table');
+    const tableHead = element('thead');
+    const headings = element('tr');
+    ['卡片類型', '選手', '相對權重'].forEach(text => headings.append(element('th', '', text)));
+    tableHead.append(headings);
+    const tableBody = element('tbody');
+    [['極稀有', '廣州狼隊 Shen、RSG 風仔', '5'], ['次稀有', 'RW 沃克、KZ YanG', '10'], ['稀有', 'Ani、千尋、月上、HeiRen', '25'], ['標準', '其餘所有選手（含二號位）', '100']].forEach(cells => {
+      const row = element('tr');
+      cells.forEach(text => row.append(element('td', '', text)));
+      tableBody.append(row);
+    });
+    probabilityTable.append(tableHead, tableBody);
+    probabilityGuide.append(probabilityTable, element('p', 'pack-rarity-note', '權重越低越難抽到；先抽 1 位競速與 1 位道具，再從其餘選手抽 3 張。同包不重複，因此權重不等於每包的固定百分比。'));
 
     const album = element('div', 'album-panel');
     const albumHeader = element('div', 'album-header');
@@ -330,7 +454,9 @@
     ui.empty = element('p', 'album-empty', '這個篩選下的選手卡都收齊了。換一隊繼續應援！');
     ui.albumContent.append(filters, ui.filterStatus, ui.grid, ui.empty);
     album.append(albumHeader, ui.teamProgress, ui.albumContent);
-    host.append(header, ui.warning, panel, rules, ui.live, album);
+    const historyHost = element('section', 'pack-history-panel');
+    historyHost.id = 'pack-history-app';
+    host.append(header, ui.warning, panel, rules, probabilityGuide, ui.live, album, historyHost);
     buildRedeemDialog();
   }
   function buildRedeemDialog() {
@@ -361,8 +487,9 @@
     if (busy) return;
     state = readStorage();
     render();
+    if (storageMode !== 'local') return announce('兌換需要儲存紀錄。請允許網站儲存資料並重新載入後再試。');
     if (state.collection[player.id]) return announce('這張卡已經收藏了，可以點擊卡牌查看。');
-    if (state.dust < REDEEM_COST) return announce(`兌換需要 50 星塵，目前有 ${format(state.dust)} 星塵；再開幾包就有機會累積。`);
+    if (state.dust < REDEEM_COST) return announce(`兌換需要 50 星塵，目前有 ${format(state.dust)} 星塵；每天領包可繼續累積。`);
     redeemTarget = player.id;
     ui.redeemImage.src = player.card;
     ui.redeemImage.alt = teamName(player) + ' ' + player.name + ' 選手卡';
@@ -379,8 +506,10 @@
       if (next.dust < REDEEM_COST) return '目前星塵不足 50，未進行兌換。';
       next.collection[playerId] = 1;
       next.dust -= REDEEM_COST;
+      const now = new Date();
+      next.history.push({ ...historyEntry('redeem', now), id: 'redeem-' + now.getTime().toString(36) + '-' + Math.random().toString(36).slice(2), playerId, dustChange: -REDEEM_COST, dustAfter: next.dust });
       return `兌換成功！${teamName(byId.get(playerId))} ${byId.get(playerId).name} 已加入收藏，剩餘 ${format(next.dust)} 星塵。`;
-    });
+    }, { requirePersistence: true });
   }
   function buildPackCards(pack) {
     displayedPackId = pack.id;
@@ -432,25 +561,32 @@
       node.card.setAttribute('aria-label', revealed ? `${teamName(player)} ${player.name}，${roleName(player)}，${pack.isNew[index] ? '新收藏' : '重複卡加10星塵'}；點擊查看卡牌` : `第 ${index + 1} 張卡，點擊翻開`);
       node.name.textContent = revealed ? player.name : `CARD 0${index + 1}`;
       node.detail.textContent = revealed ? teamName(player) + ' · ' + roleName(player) : '點擊卡背，揭曉應援';
-      node.badge.textContent = revealed ? (pack.isNew[index] ? 'NEW / 新收藏' : '重複卡 · +10 星塵') : '尚未翻開';
+      const rarity = rarityFor(player);
+      node.badge.textContent = revealed ? `${rarity.label} · ${pack.isNew[index] ? '新收藏' : '重複卡 +10 星塵'}` : '尚未翻開';
       node.badge.classList.toggle('pack-badge-new', revealed && pack.isNew[index]);
+      ['ultra', 'super', 'rare', 'standard'].forEach(key => node.badge.classList.toggle('pack-rarity-' + key, revealed && rarity.key === key));
     });
     if (complete(pack)) {
       const fresh = pack.isNew.filter(Boolean).length;
-      ui.result.textContent = `本包新增 ${fresh} 張收藏 · +${(5 - fresh) * DUST_PER_DUPLICATE} 星塵${ownedCount() === players.length ? ' · 全圖鑑收齊！' : ''}`;
+      ui.result.textContent = `本包新增 ${fresh} 張收藏 · +${pack.dustEarned ?? (5 - fresh) * DUST_PER_DUPLICATE} 星塵${ownedCount() === players.length ? ' · 全圖鑑收齊！' : ''}`;
     } else ui.result.textContent = '5 張卡已自動入藏；重新整理可接著翻，不會重複計入。';
   }
   function updateControls() {
     if (!ui.firstOpen) return;
-    ui.firstOpen.disabled = busy;
-    ui.nextOpen.disabled = busy || !complete();
-    ui.nextOpen.textContent = complete() ? '再開一包 →' : '翻完 5 張，再開一包';
+    const claimed = state.lastOpenedDate === localDay();
+    const unavailable = busy || claimed || storageMode !== 'local';
+    ui.firstOpen.disabled = unavailable;
+    ui.firstOpen.textContent = claimed ? '今日已領取，明天再來' : '領取今日卡包 →';
+    ui.nextOpen.disabled = unavailable || !complete();
+    ui.nextOpen.textContent = claimed ? '今日已領取，明天再來' : complete() ? '領取今日卡包 →' : '先翻完這一包';
+    const nextDay = nextLocalMidnight();
+    ui.dailyStatus.textContent = storageMode !== 'local' ? '每日卡包需要儲存領取紀錄，請允許網站儲存資料後重新載入。' : claimed ? `今日已領取 1 / 1 包 · 下次領取：${nextDay.getMonth() + 1}月${nextDay.getDate()}日 00:00（裝置當地時間）` : '今日可領取 1 包 · 每日裝置當地時間 00:00 更新，不累積。';
     ui.flipAll.disabled = busy || complete();
     ui.flipAll.textContent = complete() ? '已全部翻開 ✓' : '一鍵翻開';
     cardNodes.forEach(node => { node.card.disabled = busy; });
-    ui.redeemConfirm.disabled = busy;
+    ui.redeemConfirm.disabled = busy || storageMode !== 'local';
     host.querySelectorAll('.album-redeem-button').forEach(node => {
-      node.disabled = busy || state.dust < REDEEM_COST;
+      node.disabled = busy || storageMode !== 'local' || state.dust < REDEEM_COST;
     });
   }
   function updateAlbum() {
@@ -505,11 +641,13 @@
       }
       const description = element('div', 'album-card-info');
       description.append(element('strong', 'album-player-name', player.name), element('span', 'album-player-team', teamName(player) + ' · ' + roleName(player)));
+      const rarity = rarityFor(player);
+      description.append(element('span', 'album-rarity-badge pack-rarity-' + rarity.key, rarity.label));
       if (count) description.append(element('span', 'album-collected-label', '已收藏 ✓'));
       else {
         const redeem = button('✦ 50 兌換', 'album-redeem-button', () => requestRedeem(player), 'redeem-' + player.id);
         redeem.setAttribute('aria-label', `使用 50 星塵兌換 ${teamName(player)} ${player.name}`);
-        redeem.disabled = busy || state.dust < REDEEM_COST;
+        redeem.disabled = busy || storageMode !== 'local' || state.dust < REDEEM_COST;
         description.append(redeem);
       }
       card.append(imageButton, description);
@@ -531,6 +669,7 @@
       const target = Array.from(host.querySelectorAll('[data-pack-focus]')).find(node => node.dataset.packFocus === focusKey);
       if (target && target !== document.activeElement && !target.disabled) target.focus({ preventScroll: true });
     }
+    if (typeof window.CustomEvent === 'function') window.dispatchEvent(new window.CustomEvent('sleague:collection-updated', { detail: { history: state.history, players: players.map(player => ({ id: player.id, name: player.name, teamName: teamName(player), role: player.role })), storageMode } }));
   }
   async function initialize() {
     host.append(element('p', 'pack-loading', '應援卡包載入中…'));
@@ -543,7 +682,7 @@
       teams = manifest.teams.map(team => {
         if (!team || typeof team.id !== 'string' || !/^[a-z0-9-]+$/.test(team.id) || seenTeams.has(team.id) || typeof team.name !== 'string' || !validAsset(team.logo) || !Array.isArray(team.players)) throw new Error('team');
         seenTeams.add(team.id);
-        return { id: team.id, name: team.name, logo: team.logo, players: team.players.map(player => {
+        return { id: team.id, name: team.name, logo: team.logo, overviewTop: team.overviewTop, players: team.players.map(player => {
           if (!player || typeof player.id !== 'string' || !/^[a-z0-9-]+$/.test(player.id) || seenPlayers.has(player.id) || typeof player.name !== 'string' || !validAsset(player.card) || !['racing', 'item'].includes(player.role)) throw new Error('player');
           seenPlayers.add(player.id);
           return { id: player.id, name: player.name, team: team.id, card: player.card, role: player.role };
@@ -559,6 +698,16 @@
       ui.league = manifest.league;
       buildInterface();
       render();
+      refreshDailyClock();
+      const refreshOnReturn = () => {
+        if (document.visibilityState === 'hidden') return;
+        state = readStorage();
+        render();
+        refreshDailyClock();
+      };
+      window.addEventListener('focus', refreshOnReturn);
+      window.addEventListener('pageshow', refreshOnReturn);
+      document.addEventListener('visibilitychange', refreshOnReturn);
       window.addEventListener('storage', event => {
         if (storageMode !== 'local' || (event.key !== STORAGE_KEY && event.key !== null)) return;
         state = readStorage();
@@ -573,5 +722,6 @@
       }));
     }
   }
+  window.SLeagueCollectionSnapshot = () => state ? { history: state.history, players: players.map(player => ({ id: player.id, name: player.name, teamName: teamName(player), role: player.role })), storageMode } : null;
   void initialize();
 })();
