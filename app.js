@@ -104,6 +104,10 @@
     $('#card-profile-real-name').textContent = typeof profile.realName === 'string' && profile.realName.trim() ? profile.realName : '待補充';
     const birthday = typeof profile.birthday === 'string' && profile.birthday.match(/^(0[1-9]|1[0-2])-(0[1-9]|[12]\d|3[01])$/);
     $('#card-profile-birthday').textContent = birthday ? `${Number(birthday[1])}月${Number(birthday[2])}日` : '待補充';
+    $('#card-profile-zodiac').textContent = profile.zodiac || '待補充';
+    const researchNote = [profile.researchNote, profile.zodiacBasis].filter(Boolean).join(' ');
+    $('#card-profile-research-note').textContent = researchNote;
+    $('#card-profile-research-note').hidden = !researchNote;
     $('#card-profile-intro').textContent = typeof profile.intro === 'string' && profile.intro.trim() ? profile.intro : `${team.name}${roleName(player.role)}選手，出戰2026 S聯賽秋季賽。`;
     $('#card-profile-photo-note').textContent = player.photoNote || '';
     $('#card-profile-photo-note').hidden = !player.photoNote;

@@ -326,3 +326,6 @@ body.card-viewer-open{position:fixed;inset-inline:0;width:100%;overflow:hidden}
 @media(max-width:760px){.player-stage.is-overview{--card-width:clamp(140px,29vw,190px);--spread:8.2vw;--fan-angle:3deg;--lift:45px;height:390px}.player-stage.is-overview[data-fan-span="7"]{--spread:7.2vw}}
 @media(max-width:430px){.player-stage.is-overview{--card-width:38vw;--spread:7.5vw;--fan-angle:3deg;--lift:36px;height:340px}.player-stage.is-overview[data-fan-span="7"]{--spread:4.5vw}}
 .card-profile-photo-note{font-size:12px;line-height:1.7;color:var(--muted);margin:0 0 20px}
+
+.card-profile-research-note{font-size:11px;line-height:1.8;color:#b6a3c8;margin:16px 0 0;overflow-wrap:anywhere}
+.card-profile-research-note[hidden]{display:none}
