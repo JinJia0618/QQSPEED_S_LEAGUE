@@ -4,15 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#130b25">
-  <meta name="description" content="2026 S聯賽秋季賽選手圖鑑。瀏覽八支隊伍的競速、道具選手，免費開卡包、收集49張秋季賽卡牌。">
-  <title>S聯賽秋季賽｜選手圖鑑</title>
+  <meta name="description" content="2026 QQ飛車手遊選手圖鑑。瀏覽S聯賽秋季賽與年度總決賽晉級隊伍，免費開卡包、收集49張秋季賽卡牌。">
+  <title>2026 QQ飛車手遊｜選手圖鑑</title>
   <link rel="icon" type="image/webp" href="assets/logos/league.webp">
-  <link rel="stylesheet" href="style.css?v=20261101-daily-history">
+  <link rel="stylesheet" href="style.css?v=20261121-events">
   <link rel="stylesheet" href="packs.css?v=20261101-daily-history">
   <link rel="stylesheet" href="pack-history.css?v=20261101-daily-history">
-  <script src="app.js?v=20261101-daily-history" defer></script>
+  <link rel="stylesheet" href="champion.css?v=20261121">
+  <script src="app.js?v=20261121-events" defer></script>
   <script src="packs.js?v=20261101-daily-history" defer></script>
   <script src="pack-history.js?v=20261101-daily-history" defer></script>
+  <script src="champion.js?v=20261121" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#teams">前往隊伍與選手</a>
@@ -44,7 +46,7 @@
       <span class="brand-copy"><b>選手圖鑑</b><span>S LEAGUE PLAYER COLLECTION</span></span>
     </a>
     <nav class="header-navigation" aria-label="主要導覽"><a class="header-link" href="#teams">瀏覽隊伍</a><a class="header-link header-pack-link" href="#card-packs">免費開卡包 <span aria-hidden="true">↗</span></a></nav>
-    <div class="season-stamp"><span class="live-dot"></span>2026 秋季賽</div>
+    <div class="season-stamp"><span class="live-dot"></span><span id="season-stamp-text">2026 秋季賽</span></div>
   </header>
 
   <main>
@@ -52,18 +54,27 @@
       <div>
         <p class="eyebrow"><span></span> THE SPEED. THE PLAYERS.</p>
         <h1 id="page-title">認識賽道上的<em>每一位選手。</em></h1>
-        <p class="intro-copy">八支隊伍，競速與道具的賽場群像。<br class="mobile-break">選擇隊伍，展開秋季賽專屬卡牌。</p>
+        <p class="intro-copy" id="autumn-intro">八支隊伍，競速與道具的賽場群像。<br class="mobile-break">選擇隊伍，展開秋季賽專屬卡牌。</p>
+        <p class="intro-copy" id="finals-intro" hidden>六支隊伍晉級年度總決賽。<br class="mobile-break">點選晉級隊伍，瀏覽他們的秋季賽選手卡牌。</p>
       </div>
       <div class="season-numbers" id="season-numbers" aria-label="8支隊伍">
-        <div><strong>08</strong><span>支隊伍</span></div>
+        <div><strong id="total-team-count">08</strong><span>支隊伍</span></div>
         <span class="slash" aria-hidden="true">/</span>
         <div><strong id="total-player-count">—</strong><span>位賽場選手</span></div>
       </div>
+      <nav class="tournament-navigation" aria-label="賽事切換">
+        <p class="tournament-label">賽事切換</p>
+        <div id="tournament-selector" class="tournament-selector" role="group" aria-label="選擇賽事">
+          <button type="button" class="tournament-choice" data-tournament="autumn" aria-pressed="true" aria-controls="teams"><span>2026年QQ飛車手遊</span><strong>S聯賽秋季賽</strong></button>
+          <button type="button" class="tournament-choice" data-tournament="finals" aria-pressed="false" aria-controls="teams"><span>2026年QQ飛車手遊</span><strong>年度總決賽</strong></button>
+        </div>
+      </nav>
     </section>
 
     <section id="teams" class="roster-section wrap" aria-labelledby="teams-title">
-      <div class="team-heading"><h2 id="teams-title">點選你想瀏覽的隊伍</h2><span>EXPLORE THE TEAMS</span></div>
-      <div id="team-selector" class="team-selector" role="group" aria-label="參賽隊伍"><p class="loading">正在載入八隊與選手卡牌…</p></div>
+      <div class="team-heading"><h2 id="teams-title">點選你想瀏覽的隊伍</h2><span id="teams-heading-label">EXPLORE THE TEAMS</span></div>
+      <p class="tournament-note" id="tournament-note" hidden>選手名單及卡牌為秋季賽資料。</p>
+      <div id="team-selector" class="team-selector" role="group" aria-label="秋季賽參賽隊伍"><p class="loading">正在載入隊伍與選手卡牌…</p></div>
       <div class="collection-navigation">
         <div id="role-selector" class="role-selector" role="group" aria-label="選手分類">
           <button type="button" data-role="racing" aria-pressed="true">競速<span id="racing-player-count"></span></button>
@@ -94,7 +105,7 @@
     <section id="card-packs" class="pack-section wrap" aria-labelledby="pack-section-title"><div id="pack-app"><p class="loading">正在準備秋季賽卡包…</p></div></section>
   </main>
 
-  <footer class="site-footer wrap"><div><span class="footer-mark">S /</span><span>八支隊伍，同一份對勝利的熱愛。</span></div><p>2026 S LEAGUE AUTUMN <span>非官方選手圖鑑</span></p><a href="#">回到頂端 ↑</a></footer>
+  <footer class="site-footer wrap"><div><span class="footer-mark">S /</span><span>為每一位賽道選手喝采。</span></div><p>2026 S LEAGUE <span>非官方選手圖鑑</span></p><a href="#">回到頂端 ↑</a></footer>
   <dialog id="card-viewer" class="card-viewer" aria-labelledby="card-viewer-title">
     <div class="card-viewer-panel">
       <header class="card-viewer-header">
@@ -134,6 +145,18 @@
         </aside>
       </div>
     </div>
+  </dialog>
+  <dialog id="champion-dialog" class="champion-dialog" aria-labelledby="champion-title">
+    <form method="dialog" class="champion-close-form">
+      <button type="submit" class="champion-close" aria-label="關閉冠軍公告" autofocus>×</button>
+    </form>
+    <figure class="champion-figure">
+      <img class="champion-photo" src="wolves-autumn-champion.webp" width="1600" height="900" alt="狼隊官微發布的秋季賽總冠軍合照海報，廣州狼隊選手與教練站在獎盃前" fetchpriority="high">
+      <figcaption class="champion-caption">
+        <h2 id="champion-title">恭喜廣州狼隊，奪得2026QQ飛車手遊S聯賽秋季賽總冠軍</h2>
+        <a id="champion-photo-source" target="_blank" rel="noopener noreferrer">照片來源<span aria-hidden="true"> ↗</span></a>
+      </figcaption>
+    </figure>
   </dialog>
   <div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
   <noscript><p class="noscript">請開啟 JavaScript，瀏覽隊伍名單與互動選手卡牌。</p></noscript>

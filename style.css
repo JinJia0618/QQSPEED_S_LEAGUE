@@ -333,3 +333,67 @@ body.card-viewer-open{position:fixed;inset-inline:0;width:100%;overflow:hidden}
 
 .card-profile-research-note{font-size:11px;line-height:1.8;color:#b6a3c8;margin:16px 0 0;overflow-wrap:anywhere}
 .card-profile-research-note[hidden]{display:none}
+
+.intro{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(210px, .4fr);
+  gap:clamp(18px, 2.4vw, 32px);
+}
+.tournament-navigation{
+  padding:12px;
+  border:1px solid var(--line);
+  border-radius:9px;
+  background:linear-gradient(150deg,#281940e8,#150d26f5);
+}
+.tournament-label{
+  margin:0 0 8px 2px;
+  color:var(--muted);
+  font-size:.875rem;
+  letter-spacing:.08em;
+}
+.tournament-selector{display:grid;gap:6px}
+.tournament-choice{
+  position:relative;
+  display:grid;
+  align-content:center;
+  gap:3px;
+  min-height:58px;
+  padding:8px 12px;
+  text-align:left;
+  border:1px solid #bd9be635;
+  border-radius:5px;
+  background:#221531;
+  transition:background .2s,border-color .2s;
+}
+.tournament-choice span{color:#cab6dc;font-size:.75rem}
+.tournament-choice strong{font-size:.9375rem;line-height:1.3;letter-spacing:.025em}
+.tournament-choice:hover{border-color:#bd9be680;background:#332148}
+.tournament-choice[aria-pressed=true]{
+  border-color:#d9b76da6;
+  background:linear-gradient(110deg,#65419080,#352044);
+  color:var(--gold);
+}
+.tournament-choice[aria-pressed=true]::before{
+  position:absolute;
+  inset:11px auto 11px 0;
+  width:2px;
+  background:var(--gold);
+  border-radius:2px;
+  content:"";
+}
+.tournament-choice:focus-visible{outline-offset:2px}
+.tournament-note{margin:-8px 0 13px;color:var(--muted);font-size:.875rem}
+.team-selector[data-tournament=finals]{grid-template-columns:repeat(6,minmax(0,1fr))}
+@media(max-width:900px){
+  .intro{grid-template-columns:minmax(0,1fr) auto}
+  .tournament-navigation{grid-column:1/-1}
+  .tournament-selector{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .team-selector[data-tournament=finals]{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:375px){
+  .tournament-choice{padding-inline:8px}
+  .tournament-choice span{font-size:.6875rem}
+}
+@media(prefers-reduced-motion:reduce){.tournament-choice{transition:none}}

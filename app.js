@@ -9,7 +9,9 @@
   const viewerTilt = $('#card-viewer-tilt');
   const viewerReducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const viewerFineHover = matchMedia('(hover: hover) and (pointer: fine)');
+  const qualifiedTeamIds = ['wolves', 'rsg', 'rw', 'xrock', 'qy', 'kz'];
   let data, team, selected, collectionRole = 'racing';
+  let tournamentTeams = [];
   let teamPlayers = [], deckTouch = null, suppressCardClick = false, viewerTouchId = null;
   const roleName = role => role === 'item' ? '道具' : '競速';
   const asset = file => `${file}?v=${encodeURIComponent(data.assetVersion || data.updatedAt || '')}`;
@@ -20,7 +22,31 @@
   function announce(message) { $('#announcement').textContent = message; }
 
   function renderTeams() {
-    $('#team-selector').innerHTML = data.teams.map(item => `<button type="button" class="team-choice" data-team="${item.id}" aria-pressed="${item.id === team.id}" aria-label="瀏覽${escape(item.name)}，${item.players.length}位選手"><img src="${asset(item.logo)}" alt="" width="48" height="48"><span class="team-choice-name">${escape(item.name)}</span><span class="team-choice-count">${item.players.length} 位選手</span></button>`).join('');
+    $('#team-selector').innerHTML = tournamentTeams.map(item => `<button type="button" class="team-choice" data-team="${item.id}" aria-pressed="${item.id === team.id}" aria-label="瀏覽${escape(item.name)}，${item.players.length}位選手"><img src="${asset(item.logo)}" alt="" width="48" height="48"><span class="team-choice-name">${escape(item.name)}</span><span class="team-choice-count">${item.players.length} 位選手</span></button>`).join('');
+  }
+
+  function setTournament(tournament, announceChange = true) {
+    const finals = tournament === 'finals';
+    const title = finals ? '年度總決賽' : '秋季賽';
+    tournamentTeams = finals ? qualifiedTeamIds.map(id => data.teams.find(item => item.id === id)).filter(Boolean) : data.teams;
+    team = tournamentTeams.find(item => item.id === team?.id) || tournamentTeams[0];
+    const playerCount = tournamentTeams.reduce((sum, item) => sum + item.players.length, 0);
+    $('#season-stamp-text').textContent = `2026 ${title}`;
+    $('#autumn-intro').hidden = finals;
+    $('#finals-intro').hidden = !finals;
+    $('#total-team-count').textContent = String(tournamentTeams.length).padStart(2, '0');
+    $('#total-player-count').textContent = playerCount;
+    $('#season-numbers').setAttribute('aria-label', `${tournamentTeams.length}支隊伍，${playerCount}位選手`);
+    $('#teams-title').textContent = finals ? '瀏覽年度總決賽晉級隊伍' : '點選你想瀏覽的隊伍';
+    $('#teams-heading-label').textContent = finals ? 'QUALIFIED TEAMS' : 'EXPLORE THE TEAMS';
+    $('#tournament-note').hidden = !finals;
+    const teamSelector = $('#team-selector');
+    teamSelector.dataset.tournament = tournament;
+    teamSelector.setAttribute('aria-label', finals ? '年度總決賽晉級隊伍' : '秋季賽參賽隊伍');
+    $$('#tournament-selector [data-tournament]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.tournament === tournament)));
+    renderTeams();
+    setTeam(team.id, false);
+    if (announceChange) announce(`已切換至2026${title}，${tournamentTeams.length}支隊伍。目前瀏覽${team.name}。`);
   }
 
   function renderDeck() {
@@ -68,7 +94,7 @@
   }
 
   function setTeam(id, announceChange = true) {
-    const next = data.teams.find(item => item.id === id);
+    const next = tournamentTeams.find(item => item.id === id);
     if (!next) return;
     team = next;
     teamPlayers = team.players.filter(p => collectionRole === 'all' || (p.role || 'racing') === collectionRole);
@@ -297,6 +323,10 @@
     const next = event.key === 'Home' ? 0 : event.key === 'End' ? cards.length - 1 : (index + (event.key === 'ArrowRight' ? 1 : -1) + cards.length) % cards.length;
     cards[next].focus();
   });
+  $('#tournament-selector').addEventListener('click', event => {
+    const button = event.target.closest('[data-tournament]');
+    if (button && data && button.getAttribute('aria-pressed') !== 'true') setTournament(button.dataset.tournament);
+  });
   $('#team-selector').addEventListener('click', event => {
     const button = event.target.closest('[data-team]');
     if (button && data) setTeam(button.dataset.team);
@@ -334,11 +364,7 @@
     return response.json();
   }).then(manifest => {
     data = manifest;
-    $('#total-player-count').textContent=data.players.length;
-    $('#season-numbers').setAttribute('aria-label',`${data.teams.length}支隊伍，${data.players.length}位選手`);
-    team = data.teams[0];
-    renderTeams();
-    setTeam(team.id, false);
+    setTournament('autumn', false);
     // Prepare the other teams after the first deck has loaded.
     if ('requestIdleCallback' in window) requestIdleCallback(() => data.players.forEach(player => { const img = new Image(); img.src = asset(player.card); }));
   }).catch(error => {
