@@ -397,3 +397,16 @@ body.card-viewer-open{position:fixed;inset-inline:0;width:100%;overflow:hidden}
   .tournament-choice span{font-size:.6875rem}
 }
 @media(prefers-reduced-motion:reduce){.tournament-choice{transition:none}}
+
+/* The crown sits over the frame and moves with the full card. */
+.has-autumn-crown::before {
+  content: "";
+  position: absolute;
+  left: -8.66667%;
+  top: -7.44444%;
+  width: 25.33333%;
+  aspect-ratio: 152 / 127;
+  background: url("wolves-autumn-crown.webp") center / contain no-repeat;
+  pointer-events: none;
+  z-index: 13;
+}

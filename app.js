@@ -15,6 +15,7 @@
   let teamPlayers = [], deckTouch = null, suppressCardClick = false, viewerTouchId = null;
   const roleName = role => role === 'item' ? '道具' : '競速';
   const asset = file => `${file}?v=${encodeURIComponent(data.assetVersion || data.updatedAt || '')}`;
+  const hasAutumnCrown = player => player.team === 'wolves' && $('#team-selector').dataset.tournament === 'autumn';
   let viewerTrigger, viewerScrollY = 0, previousBodyTop = '', backdropPressed = false;
   let viewerTiltFrame = 0, viewerPointer = null;
   const escape = value => String(value).replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
@@ -58,7 +59,9 @@
     stage.dataset.fanSpan = Math.max(middle, teamPlayers.length - 1 - middle) * 2 + 1;
     stage.innerHTML = teamPlayers.map((player, index) => {
       const d = index - middle;
-      return `<button type="button" class="card-slot entering" data-player="${player.id}" aria-label="放大檢視${escape(team.name)} ${escape(player.name)} ${roleName(player.role)}選手卡" aria-haspopup="dialog" aria-controls="card-viewer" aria-pressed="${selected?.id === player.id}" style="--d:${d};--angle:${d * 9};--y:${d * d * (collectionRole === 'all' ? 5 : 13)};--index:${index};--z:${10 - Math.ceil(Math.abs(d))}"><span class="card-visual"><img src="${asset(player.card)}" alt="${escape(team.name)} ${escape(player.name)} 秋季賽選手卡" width="600" height="900" draggable="false"><span class="card-role-label">${roleName(player.role)}</span></span></button>`;
+      const crowned = hasAutumnCrown(player);
+      const honor = crowned ? '，秋季賽總冠軍' : '';
+      return `<button type="button" class="card-slot entering" data-player="${player.id}" aria-label="放大檢視${escape(team.name)} ${escape(player.name)} ${roleName(player.role)}選手卡${honor}" aria-haspopup="dialog" aria-controls="card-viewer" aria-pressed="${selected?.id === player.id}" style="--d:${d};--angle:${d * 9};--y:${d * d * (collectionRole === 'all' ? 5 : 13)};--index:${index};--z:${10 - Math.ceil(Math.abs(d))}"><span class="card-visual${crowned ? ' has-autumn-crown' : ''}"><img src="${asset(player.card)}" alt="${escape(team.name)} ${escape(player.name)} 秋季賽選手卡" width="600" height="900" draggable="false"><span class="card-role-label">${roleName(player.role)}</span></span></button>`;
     }).join('') || '<p class="empty-roster">此隊伍目前沒有這個分類的選手資料。</p>';
     setTimeout(() => $$('.card-slot.entering').forEach(el => el.classList.remove('entering')), 650);
   }
@@ -227,11 +230,13 @@
     const player = data.players.find(item => item.id === playerId);
     if (!player) return false;
     const playerTeam = data.teams.find(item => item.id === player.team);
+    const crowned = stage.contains(card) && hasAutumnCrown(player);
+    viewerTilt.classList.toggle('has-autumn-crown', crowned);
     if (teamPlayers.some(item => item.id === player.id)) activate(player.id);
     viewerTrigger = card;
     $('#card-viewer-title').textContent = `${playerTeam.name} · ${player.name}`;
     $('#card-viewer-image').src = asset(player.card);
-    $('#card-viewer-image').alt = `${playerTeam.name} ${player.name} 秋季賽選手卡`;
+    $('#card-viewer-image').alt = `${playerTeam.name} ${player.name} 秋季賽選手卡${crowned ? '，秋季賽總冠軍' : ''}`;
     renderPlayerProfile(player);
     renderAnimatedCard(player);
     resetViewerTilt();
